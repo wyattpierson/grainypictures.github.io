@@ -1,0 +1,35 @@
+To: %webmaster_email_address%
+From: %email_address%
+Subject: Создана учётная запись (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+Пользовательская учётная запись автоматически одобрена и утверждена для:
+
+Full name: %full_name%
+Email: %email_address%
+Username: %username%
+
+Дополнительные комментарии:
+
+%comments%
+
+С уважением,
+%webmaster_full_name%
+%webmaster_email_address%
+
+_____________________________________________________________________________
+
+Full Parameter List
+===================
+
+%full_form%
+
+Full Environment List
+=====================
+
+%full_env%

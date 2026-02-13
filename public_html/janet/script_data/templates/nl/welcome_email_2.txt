@@ -1,0 +1,24 @@
+To: %email_address%
+From: %webmaster_email_address%
+Onderwerp: Web autorisatie account aangemaakt (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+Een web autorisatie account is voor u aangemaakt op:
+
+%full_script_url%
+
+Gebruik deze gegevens om toegang tot uw account te krijgen:
+
+Gebruikersnaam: %username%
+Wachtwoord: %password%
+
+Neem contact met me op indien u hulp nodig heeft.
+
+Groeten,
+%webmaster_full_name%
+%webmaster_email_address%

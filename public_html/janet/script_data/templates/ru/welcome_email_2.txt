@@ -1,0 +1,24 @@
+To: %email_address%
+From: %webmaster_email_address%
+Subject: Создана учётная запись (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+Для вас создана учётная запись на:
+
+%full_script_url%
+
+Используйте эти данные для доступа:
+
+Username: %username%
+Password: %password%
+
+Вы можете связаться со мной если вам понадобиться какая либо помощь.
+
+С уважением,
+%webmaster_full_name%
+%webmaster_email_address%

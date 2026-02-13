@@ -1,0 +1,124 @@
+_____________________________________________________________________________
+
+<Genesis:UserInput>
+
+# Create an HTML form that will be shown to the user.  Be sure to properly
+# close all HTML tags.  The following names are reserved for use by Genesis;
+# don't create name-value pairs with them: "Action"; "sa"; "Template"; "CWD"
+
+<p><b>Multi Upload</b></p>
+
+<p>This template demonstrates multiple file uploads.</p>
+
+<table border="0">
+<tr>
+	<td align="right"><b>File 1:</b></td>
+	<td><input name="f1_filename" /> <i>URL or existing filename</i></td>
+</tr>
+<tr>
+	<td><br></td>
+	<td><input name="f1" type="file" /> <i>Upload new file</i></td>
+</tr>
+
+<tr>
+	<td align="right"><b>File 2:</b></td>
+	<td><input name="f2_filename" /> <i>URL or existing filename</i></td>
+</tr>
+<tr>
+	<td><br></td>
+	<td><input name="f2" type="file" /> <i>Upload new file</i></td>
+</tr>
+
+<tr>
+	<td align="right"><b>File 3:</b></td>
+	<td><input name="f3_filename" /> <i>URL or existing filename</i></td>
+</tr>
+<tr>
+	<td><br></td>
+	<td><input name="f3" type="file" /> <i>Upload new file</i></td>
+</tr>
+
+<tr>
+	<td align="right"><b>File 4:</b></td>
+	<td><input name="f4_filename" /> <i>URL or existing filename</i></td>
+</tr>
+<tr>
+	<td><br></td>
+	<td><input name="f4" type="file" /> <i>Upload new file</i></td>
+</tr>
+</table>
+
+</Genesis:UserInput>
+_____________________________________________________________________________
+
+<Genesis:File name="images.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Multiple Files</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+
+<p><b>File 1</b></p>
+
+<% if f1_filename %>
+
+	<p><img src="%f1_filename%" /></p>
+
+<% end if %>
+<% if not f1_filename %>
+
+	<p>No image uploaded.</p>
+
+<% end if %>
+
+
+<p><b>File 2</b></p>
+
+<% if f2_filename %>
+
+	<p><img src="%f2_filename%" /></p>
+
+<% end if %>
+<% if not f2_filename %>
+
+	<p>No image uploaded.</p>
+
+<% end if %>
+
+
+<p><b>File 3</b></p>
+
+<% if f3_filename %>
+
+	<p><img src="%f3_filename%" /></p>
+
+<% end if %>
+<% if not f3_filename %>
+
+	<p>No image uploaded.</p>
+
+<% end if %>
+
+
+<p><b>File 4</b></p>
+
+<% if f4_filename %>
+
+	<p><img src="%f4_filename%" /></p>
+
+<% end if %>
+<% if not f4_filename %>
+
+	<p>No image uploaded.</p>
+
+<% end if %>
+
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________

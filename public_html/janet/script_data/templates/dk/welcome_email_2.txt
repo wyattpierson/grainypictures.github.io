@@ -1,0 +1,24 @@
+To: %email_address%
+From: %webmaster_email_address%
+Subject: Web redigerings konto opprettet (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+En Genesis webbrugerkonto er blevet oprettet til dig p&aring;:
+
+%full_script_url%
+
+Brug disse oplysninger for at logge ind p&aring; din konto:
+
+Username: %username%
+Password: %password%
+
+Kontakt mig hvis du har nogle problemer.
+
+Hilsen,
+%webmaster_full_name%
+%webmaster_email_address%

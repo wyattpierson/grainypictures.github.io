@@ -1,0 +1,1027 @@
+_____________________________________________________________________________
+
+<Genesis:Defaults>
+
+# This section is used to declare default values for use in the next
+# section, Genesis:UserInput.
+
+# These default values will appear *only* on the visitor's first visit to
+# the template form; all subsequent visits will use their previously-entered
+# values.
+
+# To ensure compatibility with the SetDefaults function, declare all
+# default values in this section rather than hardcoding VALUE/CHECKED
+# attributes in the UserInput form elements.
+
+# The name-value pairs are case sensitive for purposes of declaring
+# defaults and generating the form in User Input.  The later replacements
+# in the Genesis:File sections are case insensitive.
+
+	site_title=Site-Wide Title Here
+
+	shared_email=
+	contact_email_title=Contact Us Link
+
+	copyright=This site &copy; 1997 by Fluid Dynamics Software
+
+	tw=640px
+
+	p1_menu=Menu Link One
+
+	p1_title=Page One Title
+
+	p1_a_title=Paragraph One
+
+	p1_a_text=This is the text of page one, paragraph one. Éste es el texto de la página una, párrafo uno. Dieses ist der Text von Seite eine, Punkt einer.
+
+	p1_b_title=Párrafo Dos
+
+	p1_b_text=This is the text of page one, paragraph two. Éste es el texto de la página una, párrafo dos. Dieses ist der Text von Seite eine, Punkt zwei.
+
+	p1_c_title=Punkt Drei
+	p1_c_text=This is the text of page one, paragraph three. Éste es el texto de la página una, párrafo tres. Dieses ist der Text von Seite eine, Punkt drei.
+
+	p2_menu=Introduction
+
+	p2_title=Introduction to this Site
+
+	p2_a_text=If trees could scream, would we be so cavalier about cutting them down? We might, if they screamed all the time, for no good reason.
+
+	p2_b_text=If you ever teach a yodeling class, probably the hardest thing is to keep the students from just trying to yodel right off. You see, we build to that.
+
+	p2_c_text=Instead of trying to build newer and bigger weapons of destruction, we should be thinking about getting more use out of the ones we already have.
+
+
+
+	p3_menu=Philosophy
+	p3_title=Philosophy Matters
+
+	p3_a_text=This is a book about Unix programming, but in it we're going to toss around the words 'culture', 'art' and 'philosophy' a lot. If you are not a programmer, or you are a programmer that has had little contact with the Unix world, this may seem strange. But Unix has a culture; it has a distinctive art of programming; and it carries with it a powerful design philosophy. Understanding these traditions will help you build better software, even if you're developing for a non-Unix platform.
+
+	p3_b_text=Every branch of engineering and design has technical cultures. In most kinds of engineering, the unwritten traditions of the field are parts of a working practitioner's education as important as (and, as experience grows, often more important than) the official handbooks and textbooks. Senior engineers develop huge bodies of implicit knowledge, which they pass to their juniors by (as Zen Buddhists put it) "a special transmission, outside the scriptures".
+
+	p3_c_text=Software engineering is generally an exception to this rule; in most of its sub-specialties, technology has changed so rapidly, software environments come and gone so quickly, that technical cultures have been weak and evanescent. There are, however, exceptions to this exception...
+
+
+
+	p4_menu=History
+	p4_title=The Importance of History
+	p4_a_text=
+	p4_b_text=
+	p4_c_text=
+
+	p5_menu=Revenue
+	p5_title=Revenue Projects for 2002-05
+	p5_a_text=
+	p5_b_text=
+	p5_c_text=
+
+	p6_menu=Contact Us
+	p6_title=How to Reach our Staff
+	p6_a_text=
+	p6_b_text=
+	p6_c_text=
+
+
+	m1_name=xav.com
+	m1_link=http://www.xav.com/
+
+	m2_name=Microsoft
+	m2_link=http://www.microsoft.com/
+
+	m3_name=Yahoo!
+	m3_link=http://www.yahoo.com/
+
+
+
+</Genesis:Defaults>
+_____________________________________________________________________________
+
+<Genesis:UserInput>
+
+# Create an HTML form that will be shown to the user.  Be sure to properly
+# close all HTML tags.  The following names are reserved for use by Genesis;
+# don't create name-value pairs with them: "Action"; "sa"; "Template"; "CWD"
+
+<p><b>Advanced 6 Page Site</b></p>
+
+<p>This form will allow you to create a 6 page website.</p>
+
+<p>Simply fill out the form and the program will create your site for you. You can return and edit your site at any time. Fill out the form below, and then click "Build Web Site".</p>
+
+<ul>
+
+	<li><p>Leave the Menu Link Name blank to remove the page from the menu</p></li>
+
+	<li><p>You do not have to use all 6 pages</p></li>
+
+	<li><p>You do not have to use Paragraph Title</p></li>
+
+	<li><p>You do not have to use every Paragraph</p></li>
+
+	<li><p>Although recommended, you do not have to use Page Title</p></li>
+
+	<li><p><span style="color:#cc0000;font-weight:bold">Mandatory fields are in Red Bold</span></p></li>
+
+</ul>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Site Information - Header</b></p>
+
+<p>These fields control informationt that will appear at the top of every page.</p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><b>Web Site Title:</b></td>
+	<td><input name="site_title" size="60" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Logo Image:</b></td>
+	<td><input name="logo_filename" size="20" /> <em>filename or URL of existing logo image</em></td>
+</tr>
+<tr>
+	<td><br /></td>
+	<td><input type="file" name="logo" /> <em>upload new logo image</em></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Page width:</b></td>
+	<td><select name="tw">
+		<option value="100%">100%</option>
+		<option value="90%">90%</option>
+		<option value="80%">80%</option>
+		<option value="600px">600 Pixels</option>
+		<option value="620px">620 Pixels</option>
+		<option value="640px">640 Pixels</option>
+	</select></td>
+</tr>
+<tr>
+	<td><br /></td>
+	<td><em>This will force a page width.</em></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<p><b>Site Information - Footer</b></p>
+
+<p>This information will appear at the bottom of every page.</p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><span style="color:#cc0000;font-weight:bold">Email Address:</span></td>
+	<td><input name="shared_email" size="20" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><span style="color:#cc0000;font-weight:bold">Email Link Text:</span></td>
+	<td><input name="contact_email_title" size="20" /></td>
+</tr>
+<tr>
+	<td><br /></td>
+	<td><em>This will appear as the email link text.&nbsp; Choose something like &quot;Write to me&quot; or &quot;Contact Us&quot;.</em></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap">Copyright String:</td>
+	<td><input name="copyright" size="60" /></td>
+</tr>
+<tr>
+	<td><br /></td>
+	<td>ex: <em>This site &amp;copy; 1997 by Fluid Dynamics Software</em></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Page Information - Page #1</b></p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Link Name:</b></td>
+	<td><input name="p1_menu" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Page Title:</b></td>
+	<td><input name="p1_title" size="60" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p1_a_title" size="20" /> Align <select name="p1_a_align">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p1_a_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p1_b_title" size="20" /> Align <select name="p1_b_blign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p1_b_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p1_c_title" size="20" /> Align <select name="p1_c_clign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p1_c_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Page Information - Page #2</b></p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Link Name:</b></td>
+	<td><input name="p2_menu" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Page Title:</b></td>
+	<td><input name="p2_title" size="60" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p2_a_title" size="20" /> Align <select name="p2_a_align">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p2_a_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p2_b_title" size="20" /> Align <select name="p2_b_blign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p2_b_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p2_c_title" size="20" /> Align <select name="p2_c_clign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p2_c_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Page Information - Page #3</b></p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Link Name:</b></td>
+	<td><input name="p3_menu" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Page Title:</b></td>
+	<td><input name="p3_title" size="60" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p3_a_title" size="20" /> Align <select name="p3_a_align">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p3_a_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p3_b_title" size="20" /> Align <select name="p3_b_blign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p3_b_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p3_c_title" size="20" /> Align <select name="p3_c_clign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p3_c_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Page Information - Page #4</b></p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Link Name:</b></td>
+	<td><input name="p4_menu" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Page Title:</b></td>
+	<td><input name="p4_title" size="60" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p4_a_title" size="20" /> Align <select name="p4_a_align">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p4_a_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p4_b_title" size="20" /> Align <select name="p4_b_blign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p4_b_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p4_c_title" size="20" /> Align <select name="p4_c_clign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p4_c_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Page Information - Page #5</b></p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Link Name:</b></td>
+	<td><input name="p5_menu" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Page Title:</b></td>
+	<td><input name="p5_title" size="60" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p5_a_title" size="20" /> Align <select name="p5_a_align">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p5_a_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p5_b_title" size="20" /> Align <select name="p5_b_blign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p5_b_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p5_c_title" size="20" /> Align <select name="p5_c_clign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p5_c_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Page Information - Page #6</b></p>
+
+<table border="0" cellpadding="4">
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Link Name:</b></td>
+	<td><input name="p6_menu" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Page Title:</b></td>
+	<td><input name="p6_title" size="60" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p6_a_title" size="20" /> Align <select name="p6_a_align">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p6_a_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p6_b_title" size="20" /> Align <select name="p6_b_blign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p6_b_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Title:</b></td>
+	<td><input name="p6_c_title" size="20" /> Align <select name="p6_c_clign">
+		<option value="left">Left
+		<option value="center">Center
+		<option value="right">Right
+	</select></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Paragraph Text:</b></td>
+	<td><textarea name="p6_c_text" rows="4" cols="40" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+	<td coslpan="2"><br /></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+<hr size="1" />
+
+<p><b>Additional Menu Links</b></p>
+
+<p>The navigational sidebar on each page will feature links to any of the six pages that you have defined. In addition, it can feature up to six links to other sites. Enter those links here.</p>
+
+<table>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Item #1:</b></td>
+	<td><input name="m1_name" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Link:</b></td>
+	<td><input name="m1_link" size="60" /></td>
+</tr>
+<tr>
+	<td colspan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Item #2:</b></td>
+	<td><input name="m2_name" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Link:</b></td>
+	<td><input name="m2_link" size="60" /></td>
+</tr>
+<tr>
+	<td colspan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Item #3:</b></td>
+	<td><input name="m3_name" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Link:</b></td>
+	<td><input name="m3_link" size="60" /></td>
+</tr>
+<tr>
+	<td colspan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Item #4:</b></td>
+	<td><input name="m4_name" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Link:</b></td>
+	<td><input name="m4_link" size="60" /></td>
+</tr>
+<tr>
+	<td colspan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Item #5:</b></td>
+	<td><input name="m5_name" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Link:</b></td>
+	<td><input name="m5_link" size="60" /></td>
+</tr>
+<tr>
+	<td colspan="2"><br /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Menu Item #6:</b></td>
+	<td><input name="m6_name" size="35" /></td>
+</tr>
+<tr>
+	<td align="right" nowrap="nowrap"><b>Link:</b></td>
+	<td><input name="m6_link" size="60" /></td>
+</tr>
+<tr>
+	<td colspan="2"><br /></td>
+</tr>
+</table>
+
+<p><br /></p>
+
+
+
+</Genesis:UserInput>
+_____________________________________________________________________________
+
+<Genesis:Fragment name="header">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	<!--
+
+	body,p,td {
+		font-family:verdana,sans-serif;
+		font-size:10pt;
+		}
+	body {
+		height:100%;
+		}
+
+	.DataElement {
+		color:#000000;
+		background-color:#ffffff;
+		}
+	td.BackgroundCell {
+		color:#000000;
+		background-color:#9eb3c7;
+		}
+	.ShadeElement {
+		color:#000000;
+		background-color:#d5d2bb;
+		}
+
+	table.NavLinkTable {
+		color:#000000;
+		background-color:#ffffff;
+		width:100%;
+		}
+
+	/* nav table cell links */
+
+	a.BackgroundLink {
+		color:#000000;
+		background-color:#9eb3c7;
+		font-weight:bold;
+		font-family:verdana,sans-serif;
+		font-size:10pt;
+		}
+	a.BackgroundLink:hover {
+		color:#ff4444;
+		background-color:#9eb3c7;
+		}
+
+	//-->
+	</style>
+</head>
+<body background="%background%" class="DataElement">
+<center>
+
+	<table border="0" cellpadding="5" cellspacing="3" style="height:90%;width:%tw%" class="ShadeElement">
+	<tr>
+		<td colspan="4" align="center" height="1%">
+
+			<table border="2" cellspacing="0" cellpadding="5" style="height:100%;width:100%"><tr><td align="center" class="DataElement">
+
+				<% if logo_filename %>
+					<img src="%logo_filename%" alt="" border="0" />
+				<% end if %>
+
+				<font size="+8">Site-Wide Title Here</font>
+
+			</td></tr></table>
+
+		</td>
+	</tr>
+	<tr>
+		<td><br /></td>
+		<td align="center" valign="top">
+
+					<p><br /></p>
+
+					<table border="0" cellpadding="4" cellspacing="2" class="NavLinkTable">
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="a6_index.html" class="BackgroundLink">HOME</a></td>
+					</tr>
+					</table>
+
+					<p><br /></p>
+
+					<table border="0" cellpadding="4" cellspacing="2" class="NavLinkTable">
+					<% if p1_menu %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="a6_index.html" class="BackgroundLink">%p1_menu%</a></td>
+					</tr>
+					<% end if %>
+					<% if p2_menu %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="a6_page2.html" class="BackgroundLink">%p2_menu%</a></td>
+					</tr>
+					<% end if %>
+					<% if p3_menu %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="a6_page3.html" class="BackgroundLink">%p3_menu%</a></td>
+					</tr>
+					<% end if %>
+					<% if p4_menu %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="a6_page4.html" class="BackgroundLink">%p4_menu%</a></td>
+					</tr>
+					<% end if %>
+					<% if p5_menu %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="a6_page5.html" class="BackgroundLink">%p5_menu%</a></td>
+					</tr>
+					<% end if %>
+					<% if p6_menu %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="a6_page6.html" class="BackgroundLink">%p6_menu%</a></td>
+					</tr>
+					<% end if %>
+					</table>
+
+					<p><br /></p>
+
+					<table border="0" cellpadding="4" cellspacing="2" class="NavLinkTable">
+					<% if m1_name %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="%m1_link%" class="BackgroundLink">%m1_name%</a></td>
+					</tr>
+					<% end if %>
+					<% if m2_name %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="%m2_link%" class="BackgroundLink">%m2_name%</a></td>
+					</tr>
+					<% end if %>
+					<% if m3_name %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="%m3_link%" class="BackgroundLink">%m3_name%</a></td>
+					</tr>
+					<% end if %>
+					<% if m4_name %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="%m4_link%" class="BackgroundLink">%m4_name%</a></td>
+					</tr>
+					<% end if %>
+					<% if m5_name %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="%m5_link%" class="BackgroundLink">%m5_name%</a></td>
+					</tr>
+					<% end if %>
+					<% if m6_name %>
+					<tr>
+						<td align="center" class="BackgroundCell"><a href="%m6_link%" class="BackgroundLink">%m6_name%</a></td>
+					</tr>
+					<% end if %>
+					</table>
+
+		</td>
+		<td align="left" valign="top">
+
+					<table border="1" cellspacing="0" cellpadding="8" style="height:100%">
+					<tr>
+						<td align="left" valign="top" class="DataElement">
+
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:Fragment name="footer">
+
+
+							<!-- start blank spacer -->
+
+							<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+							<!-- end blank spacer -->
+
+						</td>
+					</tr>
+					</table>
+
+		</td>
+		<td><br /></td>
+	</tr>
+	<tr>
+		<td colspan="4" align="center" height="1%">
+
+			<table border="2" cellspacing="0" cellpadding="5" style="height:100%;width:100%"><tr><td align="center" class="DataElement">
+
+				<p>
+
+					%copyright% -
+
+					<% if shared_email %>
+						<a href="mailto:%shared_email%">%contact_link_title%</a>
+					<% end if %>
+
+				<br /></p>
+
+			</td></tr></table>
+
+		</td>
+	</tr>
+	</table>
+
+</center>
+</body>
+</html>
+
+
+
+
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a6_index.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%site_title% - %p1_menu%</title>
+
+%Fragment:Header%
+
+	<h3>%p1_title%</h3>
+
+	<p align="%p1_a_align%"><b>%p1_a_title%</b></p>
+
+	%p1_a_text%
+
+	<p align="%p1_b_blign%"><b>%p1_b_title%</b></p>
+
+	%p1_b_text%
+
+	<p align="%p1_c_clign%"><b>%p1_c_title%</b></p>
+
+	%p1_c_text%
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="a6_page2.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%site_title% - %p2_menu%</title>
+
+%Fragment:Header%
+
+	<h3>%p2_title%</h3>
+
+	<p align="%p2_a_align%"><b>%p2_a_title%</b></p>
+
+	%p2_a_text%
+
+	<p align="%p2_b_blign%"><b>%p2_b_title%</b></p>
+
+	%p2_b_text%
+
+	<p align="%p2_c_clign%"><b>%p2_c_title%</b></p>
+
+	%p2_c_text%
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="a6_page3.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%site_title% - %p3_menu%</title>
+
+%Fragment:Header%
+
+	<h3>%p3_title%</h3>
+
+	<p align="%p3_a_align%"><b>%p3_a_title%</b></p>
+
+	%p3_a_text%
+
+	<p align="%p3_b_blign%"><b>%p3_b_title%</b></p>
+
+	%p3_b_text%
+
+	<p align="%p3_c_clign%"><b>%p3_c_title%</b></p>
+
+	%p3_c_text%
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="a6_page4.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%site_title% - %p4_menu%</title>
+
+%Fragment:Header%
+
+	<h3>%p4_title%</h3>
+
+	<p align="%p4_a_align%"><b>%p4_a_title%</b></p>
+
+	%p4_a_text%
+
+	<p align="%p4_b_blign%"><b>%p4_b_title%</b></p>
+
+	%p4_b_text%
+
+	<p align="%p4_c_clign%"><b>%p4_c_title%</b></p>
+
+	%p4_c_text%
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="a6_page5.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%site_title% - %p5_menu%</title>
+
+%Fragment:Header%
+
+	<h3>%p5_title%</h3>
+
+	<p align="%p5_a_align%"><b>%p5_a_title%</b></p>
+
+	%p5_a_text%
+
+	<p align="%p5_b_blign%"><b>%p5_b_title%</b></p>
+
+	%p5_b_text%
+
+	<p align="%p5_c_clign%"><b>%p5_c_title%</b></p>
+
+	%p5_c_text%
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="a6_page6.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%site_title% - %p6_menu%</title>
+
+%Fragment:Header%
+
+	<h3>%p6_title%</h3>
+
+	<p align="%p6_a_align%"><b>%p6_a_title%</b></p>
+
+	%p6_a_text%
+
+	<p align="%p6_b_blign%"><b>%p6_b_title%</b></p>
+
+	%p6_b_text%
+
+	<p align="%p6_c_clign%"><b>%p6_c_title%</b></p>
+
+	%p6_c_text%
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________

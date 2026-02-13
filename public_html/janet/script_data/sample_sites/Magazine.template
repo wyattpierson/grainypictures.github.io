@@ -1,0 +1,1836 @@
+_____________________________________________________________________________
+
+<Genesis:Defaults>
+
+# This section is used to declare default values for use in the next
+# section, Genesis:UserInput.
+
+# These default values will appear *only* on the visitor's first visit to
+# the template form; all subsequent visits will use their previously-entered
+# values.
+
+# To ensure compatibility with the SetDefaults function, declare all
+# default values in this section rather than hardcoding VALUE/CHECKED
+# attributes in the UserInput form elements.
+
+# The name-value pairs are case sensitive for purposes of declaring
+# defaults and generating the form in User Input.  The later replacements
+# in the Genesis:File sections are case insensitive.
+
+	mag_name=Example News Magazine
+	issue_name=May 2002
+	by_line="Your trusted source in electronic news."
+	cover_filename=http://www.xav.com/images/cover.jpg
+	cover_caption=
+
+	L101_author=Sally Sue
+	L101_text=<p>In your last issue, I think you did an excellent piece on how important dry towels are.</p>
+	L101_location=Anchorage, Alaska
+	L101_response=<p>Yes, twas a nice piece. - Editor</p>
+
+	L102_author=Joey Ramone, President, FDAWFWE
+	L102_text=<p>Your article about FDAWFWE was excellent but you neglected to mention that fdjsalfjsakfj.</p>
+	L102_location=Anchorage, Alaska
+
+
+	a101_id=Top Stories
+	a101_title=Monkeys Overtake Denver
+	a101_author=Pete Moss
+	a101_text=<p>It looks like the monkeys have finally won one.</p>
+
+	a102_id=
+	a102_title=Fortress Penetrated
+	a102_author=Nicken Knockin
+	a102_text=
+
+
+	a105_id=Food
+	a105_title=Oatmeal Raisin Cookies
+	a105_author=Zoltan Milosevic
+	a105_text=<p>Start with some raisins and oatmeal...</p>
+
+	a107_id=Nature
+
+	a108_id=Books
+	a110_id=Movies
+	a112_id=Commentary
+
+	style_font=font-family:verdana,sans-serif;font-size:10pt;
+	style_table_main=background-color:#cd5c5c;
+	style_link=color:#cd5c5c;
+	style_link=color:#ff4444;
+	style_headline=font-family:verdana,sans-serif;font-size:14pt;font-weight:bold;
+
+</Genesis:Defaults>
+_____________________________________________________________________________
+
+<Genesis:UserInput>
+
+# Create an HTML form that will be shown to the user.  Be sure to properly
+# close all HTML tags.  The following names are reserved for use by Genesis;
+# don't create name-value pairs with them: "Action"; "sa"; "Template"; "CWD"
+
+	<p>The <b>Magazine</b> template is an example template for creating your own online magazine.</p>
+
+	<p>Each issue consists of a front cover, a top story, a letters to the editor section, main stories labeled A1 through A3, and then special-interest articles on books, food, and nature.</p>
+
+	<p>You should enter information for the front cover and top story. Other sections are optional.</p>
+
+	<hr size="1" />
+
+	<p>Enter the following values to create a new issue of your magazine.</p>
+
+	<table border="1" cellpadding="4" cellspacing="1">
+	<tr>
+		<td align="right">Magazine Name:</td>
+		<td><input name="mag_name" size="60" /></td>
+	</tr>
+	<tr>
+		<td align="right">By-line:</td>
+		<td><input name="by_line" size="60" /></td>
+	</tr>
+	<tr>
+		<td align="right">Issue:</td>
+		<td><input name="issue_name" /></td>
+	</tr>
+	</table>
+
+	<hr size="1" />
+
+	<p>Enter an image to appear on the front cover:</p>
+
+	<table border="1" cellpadding="4" cellspacing="1">
+	<tr>
+		<td align="right">URL or Name:</td>
+		<td><input name="cover_filename" size="60" /></td>
+	</tr>
+	<tr>
+		<td align="right">Upload New:</td>
+		<td><input name="cover" type="file" /></td>
+	</tr>
+	<tr>
+		<td align="right">Caption:</td>
+		<td><input name="cover_caption" size="60" /></td>
+	</tr>
+	</table>
+
+	<hr size="1" />
+
+	<p><b>Letters to the Editor</b></p>
+
+	<p>Readers should send their letters to this address: <input name="letters_to_editor" /></p>
+
+	<p><br /></p>
+
+	<p>For each letter, the <b>Name</b> and <b>Text</b> fields are required. The <b>Location</b> and <b>Response</b> fields are optional.</p>
+
+	<p>If you don't want to display the Letters to the Editor section, simply leave the first letter blank.</p>
+
+	<ol>
+
+
+
+		<li>
+
+			<p><b>Letter L101</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td colspan="3" align="left">
+
+					<p><b>Text</b> of letter. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L101_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="L101_author" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Location:</b></td>
+				<td colspan="2"><input name="L101_location" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Editor's <b>Response</b>. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L101_response" rows="4" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Letter L102</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td colspan="3" align="left">
+
+					<p><b>Text</b> of letter. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L102_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="L102_author" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Location:</b></td>
+				<td colspan="2"><input name="L102_location" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Editor's <b>Response</b>. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L102_response" rows="4" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Letter L103</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td colspan="3" align="left">
+
+					<p><b>Text</b> of letter. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L103_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="L103_author" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Location:</b></td>
+				<td colspan="2"><input name="L103_location" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Editor's <b>Response</b>. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L103_response" rows="4" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Letter L104</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td colspan="3" align="left">
+
+					<p><b>Text</b> of letter. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L104_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="L104_author" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Location:</b></td>
+				<td colspan="2"><input name="L104_location" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Editor's <b>Response</b>. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="L104_response" rows="4" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+	</ol>
+
+
+	<hr size="1" />
+
+	<p>In the sections below, define whichever articles you would like to have in this issue.</p>
+
+	<p>For each article, only the <b>Title</b> and <b>Author</b> attributes are required. If you don't want an article to appear in the list, simply leave its Title blank.</p>
+
+	<p><br /></p>
+
+	<ol>
+
+
+
+		<li>
+
+			<p><b>Article a101</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a101_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a101_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a101_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a101_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a101_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a101_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a101_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a101_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a102</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a102_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a102_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a102_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a102_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a102_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a102_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a102_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a102_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a103</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a103_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a103_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a103_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a103_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a103_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a103_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a103_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a103_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a104</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a104_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a104_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a104_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a104_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a104_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a104_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a104_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a104_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a105</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a105_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a105_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a105_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a105_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a105_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a105_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a105_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a105_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a106</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a106_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a106_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a106_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a106_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a106_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a106_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a106_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a106_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a107</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a107_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a107_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a107_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a107_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a107_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a107_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a107_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a107_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a108</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a108_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a108_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a108_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a108_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a108_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a108_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a108_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a108_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a109</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a109_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a109_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a109_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a109_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a109_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a109_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a109_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a109_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a110</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a110_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a110_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a110_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a110_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a110_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a110_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a110_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a110_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a111</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a111_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a111_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a111_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a111_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a111_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a111_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a111_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a111_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+		<li>
+
+			<p><b>Article a112</b></p>
+
+			<table border="1" cellpadding="4" cellspacing="1">
+			<tr>
+				<td align="right"><b>Identifier:</b></td>
+				<td><input name="a112_id" size="20" /></td>
+				<td nowrap="nowrap">ex: "Top Story" or "Nature"</td>
+			</tr>
+			<tr>
+				<td align="right"><b>Title:</b></td>
+				<td colspan="2"><input name="a112_title" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Author:</b></td>
+				<td colspan="2"><input name="a112_author" /></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left">
+
+					<p>Text of article. Enclose each paragraph in &lt;p&gt; tags.</p>
+
+					<p><textarea name="a112_text" rows="10" cols="60" wrap="virtual"></textarea></p>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - left</b></td>
+			</tr>
+			<tr>
+				<td align="right"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a112_image_left_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a112_image_left" type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="3"><b>Optional image file - right</b></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><b>URL or Name:</b></td>
+				<td colspan="2"><input name="a112_image_right_filename" size="60" /></td>
+			</tr>
+			<tr>
+				<td align="right"><b>Upload New:</b></td>
+				<td colspan="2"><input name="a112_image_right" type="file" /></td>
+			</tr>
+			</table>
+
+			<p><br /></p>
+
+		</li>
+
+
+
+
+
+	</ol>
+
+<p><b>Advanced: Styles</b></p>
+
+<p>Enter the following values to create a new issue of your magazine.</p>
+
+<table border="1" cellpadding="4" cellspacing="1">
+<tr>
+	<td align="right">Standard Font Style:</td>
+	<td><input name="style_font" size="60" /></td>
+</tr>
+<tr>
+	<td align="right">Headline Font Style:</td>
+	<td><input name="style_headline" size="60" /></td>
+</tr>
+<tr>
+	<td align="right">Main table:</td>
+	<td><input name="style_table_main" size="60" /></td>
+</tr>
+<tr>
+	<td align="right">Link:</td>
+	<td><input name="style_link" size="60" /></td>
+</tr>
+<tr>
+	<td align="right">Link:hover:</td>
+	<td><input name="style_link_hover" size="60" /></td>
+</tr>
+</table>
+
+
+
+
+</Genesis:UserInput>
+_____________________________________________________________________________
+
+<Genesis:Fragment name="header">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	<!--
+	body,p,td,th,a {
+		%style_font%
+		}
+	p.headline {
+		%style_headline%;
+		}
+	table.main {
+		%style_table_main%
+		}
+	a,a:visited {
+		%style_link%
+		}
+	a:hover {
+		%style_link_hover%
+		}
+	body {
+		height:100%;
+		}
+	//-->
+	</style>
+</head>
+<body>
+<center>
+<table border="0" cellspacing="1" cellpadding="0" style="height:90%;width:740px" bgcolor="#000000"><tr><td align="center" valign="top" style="height:90%"><table border="0" cellpadding="0" cellspacing="4" style="height:100%" class="main">
+<tr>
+	<td colspan="2" valign="top" height="1%">
+
+		<a href="index.html" style="text-decoration:none;color:#000000"><b>%mag_name%</b></a><br />
+		%by_line%<br />
+		%issue_name%
+
+	</td>
+</tr>
+<tr>
+	<td align="left" valign="top" style="height:100%;width:20%"><table border="0" cellspacing="1" cellpadding="4" bgcolor="#000000" style="height:100%;width:100%"><tr><td align="left" valign="top" bgcolor="#ffffff">
+
+		<p><a href="index.html">Cover - %issue_name%</a></p>
+
+		<% if L101_author %>
+			<p><a href="letters.html">Letters</a></p>
+		<% end if %>
+
+
+		<% if a101_title %>
+			%fragment:a101_menu%
+		<% end if %>
+
+
+		<% if a102_title %>
+			%fragment:a102_menu%
+		<% end if %>
+
+
+		<% if a103_title %>
+			%fragment:a103_menu%
+		<% end if %>
+
+
+		<% if a104_title %>
+			%fragment:a104_menu%
+		<% end if %>
+
+
+		<% if a105_title %>
+			%fragment:a105_menu%
+		<% end if %>
+
+
+		<% if a106_title %>
+			%fragment:a106_menu%
+		<% end if %>
+
+
+		<% if a107_title %>
+			%fragment:a107_menu%
+		<% end if %>
+
+
+		<% if a108_title %>
+			%fragment:a108_menu%
+		<% end if %>
+
+
+		<% if a109_title %>
+			%fragment:a109_menu%
+		<% end if %>
+
+
+		<% if a110_title %>
+			%fragment:a110_menu%
+		<% end if %>
+
+
+		<% if a111_title %>
+			%fragment:a111_menu%
+		<% end if %>
+
+
+		<% if a112_title %>
+			%fragment:a112_menu%
+		<% end if %>
+
+
+		</td></tr></table></td>
+	<td align="left" valign="top"><table border="0" cellspacing="1" cellpadding="4" bgcolor="#000000" style="height:100%;width:100%"><tr><td align="left" valign="top" bgcolor="#ffffff">
+		<!-- main body of each page will be displayed in this table cell -->
+
+
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:Fragment name="footer">
+
+
+		<!-- finished with main body of each page -->
+
+		<!-- start spacer -->
+		<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+		<!-- end spacer -->
+
+		</td></tr></table></td>
+</tr>
+<tr>
+	<td colspan="2" align="left" valign="top" height="1%">
+
+		<a href="index.html" style="text-decoration:none;color:#000000"><b>%mag_name%</b></a><br />
+		%by_line%<br />
+		%issue_name%
+
+	</td>
+</tr>
+</table></td></tr></table></center></body>
+</html>
+
+
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="index.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% - %issue_name%</title>
+
+%Fragment:Header%
+
+	<center>
+
+		<p><br /></p>
+
+		<p class="headline">%mag_name%</p>
+
+		<p>%by_line%</p>
+
+		<% if cover_filename %>
+			<p><img src="%cover_filename%" border="1" /></p>
+		<% end if %>
+
+		<% if cover_caption %>
+			<p>%cover_caption%</p>
+		<% end if %>
+
+	</center>
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="letters.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Letters to the Editor - %issue_name%</title>
+
+%Fragment:Header%
+
+<p><b>Letters to the Editor</b></p>
+
+<center>
+<div style="text-align:left; width:300">
+
+<hr size="1" />
+
+<% if L101_author %>
+
+	%L101_text%
+
+	<p align="right">%L101_author%<br />%L101_location%</p>
+
+	<i>
+
+	%L101_response%
+
+	</i>
+
+	<hr size="1" />
+
+<% end if %>
+
+
+<% if L102_author %>
+
+	%L102_text%
+
+	<p align="right">%L102_author%<br />%L102_location%</p>
+
+	<i>
+
+	%L102_response%
+
+	</i>
+
+	<hr size="1" />
+
+<% end if %>
+
+
+<% if L103_author %>
+
+	%L103_text%
+
+	<p align="right">%L103_author%<br />%L103_location%</p>
+
+	<i>
+
+	%L103_response%
+
+	</i>
+
+	<hr size="1" />
+
+<% end if %>
+
+
+<% if L104_author %>
+
+	%L104_text%
+
+	<p align="right">%L104_author%<br />%L104_location%</p>
+
+	<i>
+
+	%L104_response%
+
+	</i>
+
+	<hr size="1" />
+
+<% end if %>
+
+</div>
+</center>
+
+<% if letters_to_editor %>
+
+	<p>Please end your letters to <a href="mailto:%letters_to_editor%">%letters_to_editor%</a>.</p>
+
+<% end if %>
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+
+<Genesis:Fragment name="a101_menu">
+
+<p>
+	<% if a101_id %>
+		<b>%a101_id%</b><br />
+	<% end if %>
+	<a href="a101.html">%a101_title%</a>
+	<% if a101_author %>
+		<br />- <i>by %a101_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a101.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a101_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a101_title%</p>
+
+	<p><i>by %a101_author%</i></p>
+
+	<% if a101_image_left_filename %>
+		<img src="%a101_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a101_image_right_filename %>
+		<img src="%a101_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a101_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a102_menu">
+
+<p>
+	<% if a102_id %>
+		<b>%a102_id%</b><br />
+	<% end if %>
+	<a href="a102.html">%a102_title%</a>
+	<% if a102_author %>
+		<br />- <i>by %a102_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a102.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a102_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a102_title%</p>
+
+	<p><i>by %a102_author%</i></p>
+
+	<% if a102_image_left_filename %>
+		<img src="%a102_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a102_image_right_filename %>
+		<img src="%a102_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a102_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a103_menu">
+
+<p>
+	<% if a103_id %>
+		<b>%a103_id%</b><br />
+	<% end if %>
+	<a href="a103.html">%a103_title%</a>
+	<% if a103_author %>
+		<br />- <i>by %a103_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a103.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a103_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a103_title%</p>
+
+	<p><i>by %a103_author%</i></p>
+
+	<% if a103_image_left_filename %>
+		<img src="%a103_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a103_image_right_filename %>
+		<img src="%a103_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a103_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a104_menu">
+
+<p>
+	<% if a104_id %>
+		<b>%a104_id%</b><br />
+	<% end if %>
+	<a href="a104.html">%a104_title%</a>
+	<% if a104_author %>
+		<br />- <i>by %a104_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a104.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a104_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a104_title%</p>
+
+	<p><i>by %a104_author%</i></p>
+
+	<% if a104_image_left_filename %>
+		<img src="%a104_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a104_image_right_filename %>
+		<img src="%a104_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a104_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a105_menu">
+
+<p>
+	<% if a105_id %>
+		<b>%a105_id%</b><br />
+	<% end if %>
+	<a href="a105.html">%a105_title%</a>
+	<% if a105_author %>
+		<br />- <i>by %a105_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a105.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a105_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a105_title%</p>
+
+	<p><i>by %a105_author%</i></p>
+
+	<% if a105_image_left_filename %>
+		<img src="%a105_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a105_image_right_filename %>
+		<img src="%a105_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a105_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a106_menu">
+
+<p>
+	<% if a106_id %>
+		<b>%a106_id%</b><br />
+	<% end if %>
+	<a href="a106.html">%a106_title%</a>
+	<% if a106_author %>
+		<br />- <i>by %a106_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a106.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a106_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a106_title%</p>
+
+	<p><i>by %a106_author%</i></p>
+
+	<% if a106_image_left_filename %>
+		<img src="%a106_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a106_image_right_filename %>
+		<img src="%a106_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a106_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a107_menu">
+
+<p>
+	<% if a107_id %>
+		<b>%a107_id%</b><br />
+	<% end if %>
+	<a href="a107.html">%a107_title%</a>
+	<% if a107_author %>
+		<br />- <i>by %a107_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a107.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a107_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a107_title%</p>
+
+	<p><i>by %a107_author%</i></p>
+
+	<% if a107_image_left_filename %>
+		<img src="%a107_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a107_image_right_filename %>
+		<img src="%a107_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a107_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a108_menu">
+
+<p>
+	<% if a108_id %>
+		<b>%a108_id%</b><br />
+	<% end if %>
+	<a href="a108.html">%a108_title%</a>
+	<% if a108_author %>
+		<br />- <i>by %a108_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a108.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a108_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a108_title%</p>
+
+	<p><i>by %a108_author%</i></p>
+
+	<% if a108_image_left_filename %>
+		<img src="%a108_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a108_image_right_filename %>
+		<img src="%a108_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a108_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a109_menu">
+
+<p>
+	<% if a109_id %>
+		<b>%a109_id%</b><br />
+	<% end if %>
+	<a href="a109.html">%a109_title%</a>
+	<% if a109_author %>
+		<br />- <i>by %a109_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a109.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a109_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a109_title%</p>
+
+	<p><i>by %a109_author%</i></p>
+
+	<% if a109_image_left_filename %>
+		<img src="%a109_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a109_image_right_filename %>
+		<img src="%a109_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a109_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a110_menu">
+
+<p>
+	<% if a110_id %>
+		<b>%a110_id%</b><br />
+	<% end if %>
+	<a href="a110.html">%a110_title%</a>
+	<% if a110_author %>
+		<br />- <i>by %a110_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a110.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a110_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a110_title%</p>
+
+	<p><i>by %a110_author%</i></p>
+
+	<% if a110_image_left_filename %>
+		<img src="%a110_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a110_image_right_filename %>
+		<img src="%a110_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a110_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a111_menu">
+
+<p>
+	<% if a111_id %>
+		<b>%a111_id%</b><br />
+	<% end if %>
+	<a href="a111.html">%a111_title%</a>
+	<% if a111_author %>
+		<br />- <i>by %a111_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a111.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a111_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a111_title%</p>
+
+	<p><i>by %a111_author%</i></p>
+
+	<% if a111_image_left_filename %>
+		<img src="%a111_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a111_image_right_filename %>
+		<img src="%a111_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a111_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+
+<Genesis:Fragment name="a112_menu">
+
+<p>
+	<% if a112_id %>
+		<b>%a112_id%</b><br />
+	<% end if %>
+	<a href="a112.html">%a112_title%</a>
+	<% if a112_author %>
+		<br />- <i>by %a112_author%</i>
+	<% end if %>
+</p>
+
+</Genesis:Fragment>
+_____________________________________________________________________________
+
+<Genesis:File name="a112.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%mag_name% %issue_name% - %a112_title%</title>
+
+%Fragment:Header%
+
+
+	<p class="headline">%a112_title%</p>
+
+	<p><i>by %a112_author%</i></p>
+
+	<% if a112_image_left_filename %>
+		<img src="%a112_image_left_filename%" style="background-color:#cccccc" border="2" align="left" />
+	<% end if %>
+
+	<% if a112_image_right_filename %>
+		<img src="%a112_image_right_filename%" style="background-color:#cccccc" border="2" align="right">
+	<% end if %>
+
+	%a112_text%
+
+
+%Fragment:Footer%
+
+</Genesis:File>
+_____________________________________________________________________________
+
+

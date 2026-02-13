@@ -1,0 +1,1 @@
+# Rename this file to ".htaccess" on Apache web servers to help prevent CGI executionOptions +Indexes -Includes -ExecCGI

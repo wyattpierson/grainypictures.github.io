@@ -1,0 +1,19 @@
+%full_form%
+%comments%
+%full_env%
+%full_script_url%
+%full_script_url%?Action=UA
+%full_script_url%?Action=UA&sa=ApproveAccounts&approve_%username%=0
+%full_script_url%?Action=UA&sa=ApproveAccounts&approve_%username%=1
+%webmaster_email_address%
+%webmaster_full_name%
+===================
+=====================
+From: %email_address%
+From: %webmaster_email_address%
+To: %webmaster_email_address%
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+Date: %date_smtp%
+To: %email_address%
+_____________________________________________________________________________

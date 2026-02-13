@@ -1,0 +1,65 @@
+_____________________________________________________________________________
+
+<Genesis:Defaults>
+
+# This section is used to declare default values for use in the next
+# section, Genesis:UserInput.
+
+# These default values will appear *only* on the visitor's first visit to
+# the template form; all subsequent visits will use their previously-entered
+# values.
+
+# To ensure compatibility with the SetDefaults function, declare all
+# default values in this section rather than hardcoding VALUE/CHECKED
+# attributes in the UserInput form elements.
+
+# The name-value pairs are case sensitive for purposes of declaring
+# defaults and generating the form in User Input.  The later replacements
+# in the Genesis:File sections are case insensitive.
+
+	info=I am a nice person, most days.
+
+</Genesis:Defaults>
+_____________________________________________________________________________
+
+<Genesis:UserInput>
+
+# Create an HTML form that will be shown to the user.  Be sure to properly
+# close all HTML tags.  The following names are reserved for use by Genesis;
+# don't create name-value pairs with them: "Action"; "sa"; "Template"; "CWD"
+
+	<p>Your name: <input type="text" name="MyName" /></p>
+
+	<p>Information about you:<br />
+
+	<textarea name="info" rows="6" cols="40" wrap="virtual"></textarea></p>
+
+</Genesis:UserInput>
+_____________________________________________________________________________
+
+<Genesis:File name="index.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Home Page for %MyName%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+
+	<center>
+
+		<h1>Hello, my name is %MyName%.</h1>
+
+		<h2>Welcome to my home page.</h2>
+
+		<p>%info%</p>
+
+	</center>
+
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________

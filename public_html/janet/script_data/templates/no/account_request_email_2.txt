@@ -1,0 +1,47 @@
+To: %webmaster_email_address%
+From: %email_address%
+Emne: Web redigerings konto &oslash;nsket (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+En bruker har forespurt å få en brukerkonto:
+
+Navn: %full_name%
+E-post: %email_address%
+Brukernavn: %username%
+
+Ekstra kommentar:
+
+%comments%
+
+Gå til administrasjonssiden for å godkjenne eller avslå:
+
+%full_script_url%?Action=UA
+
+For å godkjenne direkte klikk på følgende link:
+
+%full_script_url%?Action=UA&sa=ApproveAccounts&approve_%username%=0
+
+For å avslå direkte klikk på følgende link:
+
+%full_script_url%?Action=UA&sa=ApproveAccounts&approve_%username%=1
+
+Hilsen,
+%webmaster_full_name%
+%webmaster_email_address%
+
+_____________________________________________________________________________
+
+Full Parameter List
+===================
+
+%full_form%
+
+Full Environment List
+=====================
+
+%full_env%

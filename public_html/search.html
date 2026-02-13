@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Grainy Pictures, Inc.</title>
+</head>
+
+<body BACKGROUND="images/bg.gif" LINK="#003366" VLINK="#003366">
+
+<center>
+
+<table width="580" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height="67" width="580" valign=top><img vspace="1" WIDTH="1" HEIGHT="1" src="images/pixel.GIF" ALT=""><br>
+<a href="book/index.html"><img align=right WIDTH="162" HEIGHT="60" src="images/spikead.gif" BORDER=0></a><img WIDTH="362" HEIGHT="58" src="images/grainyp.gif" USEMAP="#top" BORDER=0></td>
+</tr>
+</table>
+<br>
+
+<table width="580" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td><center><img width="579" HEIGHT="20" src="images/bar.gif" USEMAP="#bar" BORDER=0></center><br>
+<img vspace="2" src="images/pixel.GIF" ALT=""><br></td>
+</tr>
+<tr>
+<td><form method="GET" action="/cgi-bin/library/searchindex/search.pl">
+                                                   
+<!-- want to mimic "swish -f swishindex -w keywords -m maxresults" -->
+                                                   
+<input type="hidden" name="swishindex" value="/usr/bin/swish/grainy.swish">
+                                                   
+<dd><b>Search for the following keywords:</b><br>
+<dd><input name="keywords" size=50 maxlength=512>
+<p>
+                                                   
+<dd><b>Maximum number of results:</b><br>
+<dd><input name="maxresults" size=5 value=40 maxlength=64>
+<p>
+                                                   
+<dd><input type="submit" value="Search"> <input type="reset" value="Reset">
+<p>
+                                           
+                                                 
+</form>
+</td>
+
+</tr>
+</table>
+<br>
+
+<img vspace="20" src="images/pixel.GIF" ALT=""><br>
+
+<!--#include virtual="footer.txt" -->
+<p>
+
+<center><font face="courier, monaco" color="#555555" size="1">Disclaimer: Do not send scripts!  We won't read them because we don't
+produce films from the script stage.<p>
+
+&copy; 1997 - 1999 Grainy Pictures, Inc.</font>
+
+
+<!-- Begin Client Side Imagemap -->
+<!--#include virtual="barmap.txt" -->
+		
+
+<!--#include virtual="topmap.txt" -->
+		
+</body>
+</html>

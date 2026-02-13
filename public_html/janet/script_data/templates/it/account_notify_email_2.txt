@@ -1,0 +1,35 @@
+To: %webmaster_email_address%
+From: %email_address%
+Subject: Web authoring account created (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+A user has been automatically approved for an authoring account:
+
+Full name: %full_name%
+Email: %email_address%
+Username: %username%
+
+Additional Comments:
+
+%comments%
+
+Regards,
+%webmaster_full_name%
+%webmaster_email_address%
+
+_____________________________________________________________________________
+
+Full Parameter List
+===================
+
+%full_form%
+
+Full Environment List
+=====================
+
+%full_env%

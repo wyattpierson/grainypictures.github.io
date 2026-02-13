@@ -1,0 +1,387 @@
+VERSION 2.1.0.0022
+Русский
+text/html; charset=iso-8859-5
+<p><b>Выполнено:</b> $s1.</p>
+<p><b>Внимание:</b> $s1.</p>
+<p><b>Ошибка:</b> $s1.</p>
+невозможно провести автоматическую регистрацию - не указан сервер почты или программа для отсылки почты
+невозможно прочитать из файла '$s1' - $s2
+Невозможно записать в файл '$s1' - $s2
+невозможно присоединить к файлу '$s1' - $s2
+отправлена информация об учётной записи и начальным паролем к '$s1'
+unable to set binmode on file '$s1' - $s2
+невозможно удалить файл '$s1' - $s2
+невозможно переименовать файл '$s1' на '$s2' - $s3
+создана учётная запись '$s1'
+записано в файл '$s1'
+sent account request to administrator for approval
+домашний каталог пользователя '$s1' уже существует
+удалён файл '$s1'
+переименован файл '$s1' на '$s2'
+невозможно создать каталог '$s1' - $s2
+невозможно открыть каталог '$s1' - $s2
+невозможно удалить каталог '$s1' - $s2
+создан каталог '$s1'
+удалён каталог '$s1'
+unable to access home directory '$s1' - $s2 ($s3)
+каталог '$s1' не существует
+объект '$s1' не каталог
+Genesis disk quota exceeded
+администрирование прекращено
+авторефикация не подтверждена; ваша сесия исчерпала время ожидания
+сессия истекла
+неподходящие имя пользователя или пароль
+зарегистрироваться
+Пожалуйста ввеите Ваше имя пользователя и пароль
+Имя пользователя
+Пароль
+имя пользователя '$s1' зарезервированно
+username cannot be blank
+слишком короткий пароль
+username '$s1' is invalid - $s2
+Environment Variables
+Show "Current Folder" in header
+Perl version is $s1 ($s2).<br />Web server operating system is $s3.<br />Web server software is $s4.
+невозможно сохранить данные в демонстрационном режиме
+Disk quota of $s1 kilobytes.
+Allow access to some templates.
+Войти
+Регистрация нового пользователя
+cannot import file "$s1" with extension "$s2". Your account is only allowed to upload/import Media Files (those with extensions $s3). If you must upload other files, contact the webmaster and request full upload privileges for all file types. Or, request that file extension "$s2" be added to the "Media Files" list
+ваши права непозволяют выполнять такие операции; необходимы '$s1' права
+Редактор шаблонов
+Редактор файлов
+невозможно провести регистрацию - администратор не указал свой e-mail адрес
+Помощь
+Администрированее
+Упаравление пользователями
+Создание, просмотр и удаление учётных записей пользователей. Используется для делегации полномочий.
+Статистика событий
+Остановка регистрации событий
+Установки для остановки регистрации событий, запуска, очистки списка событий - после остановки регистрации событий и после запуска необходимо прекратить и возобновить (если это необходимо) администрирование.
+Очистить статистику событий
+Просмотр всех событий, начиная с самых старых заканчивая новыми.
+Регистрация событий отключена. Для возобновления нажмите кнопку сверху.
+Начать регистрацию событий
+Обзор
+статистика событий очищена
+Сброс
+регистрация событий начата
+Установки каталога
+обновлены установки каталога
+Сохранить данные
+Disk quota of <input name="$s1" size="8" class="numeric" /> kilobytes.
+Freeware Version
+SMTP server '$s1:$s2' did not respond properly to the '$s3' command; receive server response not beginning with 3-digit number; full text: '$s4'
+Автоматическая регистрация пользователей
+SMTP server '$s1:$s2' did not respond properly to the '$s3' command; expected '$s4' response, received '$s5'; full text: '$s6'
+unable to open pipe '$s1' - $s2
+error while sending data to SMTP server; sent only $s1 of $s2 total bytes of data - $s3 - $s4
+error while sending data to SMTP server - $s1 - $s2
+Review a log of server activity.
+The <b>Default Language</b> is the language used to control the login and new user sign-up routines.  When users are logged in to Genesis, the interface language is always set according to their per-user preferences.
+Проверка HTML на w3.org
+Всегда показывать размер дискового пространства
+Показывать замечания и линки
+Показывать размер каталогов
+Ваша поддержка позволит добавить новые возможность, устранить ошибки, добавить удобств.
+Для получения уникального регистрационного ключа, посетите <a href="$s1">$s2</a>.
+Привелегии учётной записи
+Регистрационный ключ
+Описание
+Начальный каталог
+Показывать "установка начального каталога" рядом с формой начального каталога.
+Перейти
+Кликните <a href="$s1">установка начального каталога</a>.
+Идентификация
+Полное имя
+Адрес e-mail
+Установки безопасности
+Старый пароль
+Новый пароль
+Подтверждение нового пароля
+Все возможности, используются.
+Свяжитесь с администратором для изменения этого значения.
+Основные настройки
+После входа показывать:
+Язык интерфейса пользователя:
+Разрешить загрузку сразу $s1 файлов одновременно.
+При просмотре всех файлов, сортировать по:
+Всегда показывать каталоги в начале списка.
+Настройки редактирования текста
+Текстовый редактор может быть настроен в соответствии с вашими пожеланиями и разрешением вашего монитора. Некоторые возможности, такие как наклонный текст и различный шрифт, требуют последних версий броузеров.
+Размер текста
+Высота окна
+Ширина окна
+Загружать все текстовые файлы в режиме ASCII
+Переносить длинные строки
+Запись создана
+Последний вход
+Последний вход с
+Последнее время изменения
+Тип файла
+Размер
+reverse
+Действия
+Корневой каталог
+корневой каталог
+редактировать
+войти
+редактировать запись
+Отмеченные строки
+Create File
+Создать...
+Создать каталог
+Загрузить файл
+Загрузить...
+Смотри так же -
+Загрузка нескольких файлов
+Просмотр картинок
+Обзор/Проверка HTML
+Путь
+Ширина
+Высота
+Команды
+Переименовать
+Копировать
+Удалить
+пикселей
+Заполните ниже форму, и затем нажмите "Построить Веб Сайт".
+Этот шаблон создаст следущие файлы:
+разрешение перезаписи существующего файла
+будет перезаписан уже созданный файл
+Построить Веб Сайт
+невозможно выделить выбор файла шаблона пользователем
+Ваш <a href="$s1">шаблон веб сайта</a> создан.
+Это новый файл. Введите ниже текст:
+Изменить <a href="$s1">$s2</a> как надо:
+С проверкой на серврной части.
+Указание альтернативного имени файла сохранит содержимое оригинала в неприкосновенности (если он был), и заменит содержимое файла с указанным именем (если такой уже существует).
+Посетите  страницу <a href="$s1">Настройки редактора</a> для настройки размеров окна с текстом и т.п.
+<b>Статус:</b> $s1.
+Этот файл будет сохранён отдельно как '$s1'
+file '$s1' has been uploaded in $s2 mode - size $s3
+Вы уверены что хотите удалить '$s1'?
+Да, Я уверен
+Удалить пользователя
+закончены попытки удалить персональную информацию пользователя '$s1' - некоторые этапы не закончились удовлетворительно
+удалена учётная запись '$s1'
+Все файлы в каталоге пользователя '$s1' остались. Удаление необходимо осуществить самостоятельно.
+Новая учётная запись
+Учётная запись:
+Сбросить пароль
+Санкционировать учётную запись
+учётная запись пользователя '$s1' отвергнута
+запретить работу с учётной записью '$s1'
+файл пользователя '$s1' не создан. Возможно учётная запись аннулирована
+создаётся новая учётная запись для пользователя '$s1'
+assigned password <b>$s1</b> to user. Please provide this password to the user
+file '$s1' has been uploaded
+<p>Если Вы активируйте возможность автоматической регистрации пользователей, пользователи смогут регистрироваться автоматичиски со страници входа. Учётные записи будут создаваться по образу учетной записи _default. Убедитесь что:</p><ol><li>учётная запись _default содержит начальный каталог и он определён с параметром %username%, в этом случае не будет использоваться для всех новых пользователей один и тот же каталог<li>,так же учётная запись _default не имеет привелегии использовать CGI ("Разрешить CGI")<li>а также в учётной записи _default указана квота на разрешённое дисковое пространство</ol><p>Вы всегда можете делегировать большие полномочия пользователю если он вам известен.</p><p>Программа разработана для авторизации небольшой группы пользователей; Она не оптимизированна для одновременного использования многими пользователями.</p>
+Разрешить пользователям регистрироваться автоматически
+Ожидать одобрения вебмастера перед активацией учётной записи
+Если отметить, новые запросы на создание учётных записей будут переправлятся по следующему e-mail адресу "$s1" используя SMTP сервер - "$s2" или программу sendmail - "$s3".
+<p>Когда пользователь запрашивает новую учётную запись, программа должна посылать e-mail администратору и новому пользователю. Перед этим вы должны разрешить автоматическую регистрацию, указать:</p><ol><li> Ваш - администратора работающий e-mail адрес. Введите его на странице <a href="$s1"><b>Мои настройки</b></a>.<li>Транспорт для почты, указав "SMTP сервер" (SMTP Server) или программу "Sendmail" (Sendmail Program). Укажите это в <a href="$s2"><b>управлении системными настройками</b></a>.</ol><p>После этого вы можете вернуться на эту страницу и активировать атоматическую регистрацию пользователей.</p>
+Учётные записи зарегестрированы и ждут вашего одобрения.
+Запрос создан
+Утвердить
+Запретить
+Ждать
+Запросы создания учётных записей
+Ни одной учётной записи для одобрения.
+Добавлен новый пароль для пользователя '$s1':
+IP адрес
+Время
+никогда
+Имя файла
+Зарегистрировано Shareware
+Расширенные возможности во время пробного периода. Позволяют много учётных записей, настройки пользователей можно изменять через веб, загружать много файлов и т.д..
+Система авторизации не инициализируется.
+пароль для пользователя '$s1' заблакирован - не может быть изменён
+невозможно распознать формат файла с изображением
+невозможно установить двоичный режим для канала - $s1
+невозможно определить имя хоста '$s1' для IP адреса - $s2 - $s3
+невозможно создать канал - $s1 - $s2
+невозможно соединиться с хостом '$s1:$s2' - $s3 - $s4
+Пробный Shareware
+Использование диска:
+Используется $s1 kb из $s2 kb квоты - $s3 kb свободно
+имя файла нне может быть пустым
+максимально допустимая длина $s1 символов
+пустое место не принято
+соседствующие точки не допускаются
+нельзя видеть скрытые/системные файлы имя которых начинается с точки
+нельзя изменять скрытые/системные файлы имя которых начинается с точки
+содержатся недопустимые символы - $s1
+extension '$s1' is not allowed because it is listed at "Admin Page" =&gt; "Manage System Settings" =&gt; "CGI Types" and your account does not have the "Allow CGI" privilege [<a href="$s2./1098.html" TARGET=_blank>Help</a>]
+extension '$s1' is not listed at "Admin Page" =&gt; "Manage System Settings" =&gt; "Known Types". You must log in as "webmaster" and edit the "Known Types" list before modifying this file type [<a href="$s2./1097.html" TARGET=_blank>Help</a>]
+имя файла '$s1' отсутствует - $s2
+Основное функционирование - один пользователь может редактировать HTML и шаблоны.
+unable to close filehandle for file '$s1' - $s2 ($s3)
+сейчас отсортировано по $s1
+Настройки
+Если вы оставите поля паролей пустыми, пароль будет сгенерирован автоматически и отправлен пользователю по e-mail.
+Возможности
+Режим использования
+Основной каталог
+введённый вами регистрационный код недействителен - пожалуйста свяжитесь с производителем
+Основной адрес
+пароль должен быть больше $s1 символов
+установить новый пароль
+error while writing to file '$s1' - $s2 ($s3)
+user '$s1' already exists on this system; please choose a different username
+автоматическая регистрация новых пользователей выключенв
+пользовательские настройки обновлены
+Use the <a href="$s1"><b>$s2</b></a> interface to fix the problems.
+The following validation error(s) occured while loading your user account settings.
+The following validation error(s) occured while loading system settings.
+You should contact your administrator and ask them to correct the problem.
+<p align="center"><font size="-2">Translated by Vlad</font></p>
+Управление системными настройками
+Общие настройки системы. Включая настройки безопасности.
+Выбор режима лицензирования и/или ввод регистрационного ключа.
+Настройки лицензии
+Позволяет создавать и устанавливать веб страници без использования HTML.
+Позволяет редактировать веб страници с HTML, а так же управлять файлами и каталогами.
+Возможности пользователей
+Возможности администратора
+Позволяет Вам изменять информацию о вашем имени и e-mail; менять пароль; и устанавливать настройки для редактора страниц (HTML).
+Заканчивает вашу сессию авторизации - всегда используйте этот пункт при окончании.
+Выход
+Помощь - она и в Африке помощь. Поможем чем сможем.
+Переименовать файлы
+Оригинальный файл
+Новое имя файла
+Копировать файлы
+Нельзя копировать каталоги - только файлы
+имя файла '$s1' не может быть в начальном каталоге '$s2'
+невозможно получить базовое имя из '$s1'
+Подтвердить удаление
+невозможно удалить
+это пользовательский каталог
+Заметка
+Шаблоны позволяют вам создавать законченные веб сайты, без использования HTML.
+no files or folders selected
+Комментарии
+Создать учётную запись
+Подтвердить создание учётной записи
+Я новый пользователь. <a href="$s1">Зарегистрируйте меня</a>!
+каталог '$s1' не существует. Пожалуйста создайте его сами и разрешите возможность записи
+<p>The <b>$s1</b> settings are used to control how permissions are set on the files and folders that you create with Genesis. It is best to choose <b>$s2</b>. The auto-detect algorithm currently selects option <b>$s3</b>.</p>
+No access to hidden files
+May view hidden files, but not edit
+May view and edit hidden files
+Hidden files are those which begin with a dot, like ".htaccess" or ".htpasswd". The Genesis data files are also considered hidden files, like ".template" and ".is_user_dir".
+Hidden Files
+Access to Template Editor
+<p>The test message you just sent was delivered using system settings different than the ones you have saved.</p><p>To permanently save the new settings, submit the form below:</p>
+Click here to <a href="$s1">send another test message</a>.
+the server indicates that the message was sent. Please check your email and confirm that you have received it
+Test Email
+System Information
+System Settings
+Email Settings
+SMTP Server
+Sendmail Program
+subaction '$s1' not defined
+Bronze
+system setting <b>$s1</b> value '$s2' must be octal number; cannot contain illegal digit '$s3'
+Silver
+updating system setting <b>$s1</b> from '$s2' to '$s3'
+сохранены системные настройки
+Send
+Trace output was:
+Parameter
+New Value
+<p>Enter parameters for the test message.</p><p>You should perform email tests using a variety of <b>To Email</b> addresses, including addresses at different domains. Some mail servers deliver mail only for certain domains; you should test to make sure your mail server does not have this restriction.</p>
+Test Email Message
+To Email
+From Email
+Send Test Email
+<p>The values you enter for <b>SMTP Host</b> and <b>Sendmail Program</b> on this form are used for testing purposes only. They do not affect your master system settings values.</p><p>If you experiment with different SMTP and Sendmail values here, and the test messages are delivered successfully, then you will have a chance to update your system settings with the new values.</p>
+updated email address to $s1
+Click here to <a href="$s1">send a test message</a>. Click here for <a href="$s2">help</a> on configuring email in Genesis.
+The <b>$s1</b> parameter is shared between the system settings and the &lt;$s2&gt; account profile.
+<b>$s1</b> is the Internet server that has been assigned to deliver mail for your email address.
+Miscellaneous
+Default Language
+Images URL
+Password Size Limit
+characters or more
+File Types
+CGI Types
+Known Types
+Media Types
+<p>For each file type, enter a space-separated list of allowed file extensions.</p><p>Genesis users will only be allowed access to a file if its extension is in one of these lists, subject to these additional restrictions:</p><ul><li><p>Genesis users will only be allowed to access CGI-type files if they have the "Allow CGI" privilege.</p></li><li><p>If the Genesis user has had upload privileges restricted to media files only, then any uploaded files must match one of the "Media Types" extensions.</p></li></ul><p>File extensions can be duplicated among the lists. If an extension is present in both CGI Types and another list, it will be treated as a CGI file for purposes of evaluating privileges and setting file permissions. Similarly, if an extension is in Media Types and another list, it will be treated as a media file for evaluating upload privileges.</p><p>The special file extension * (asterisk) can be used to match any file type. Place this special extension in the Known Types list if you would like to be able to access any file. There are security risks associated with this; review <a href="$s1">this help file</a> first.</p><p>The special file extension "null" is used to refer to files without any extension at all.</p><p>The file extensions "tmp", "template" and "is_user_dir" are used by Genesis. These extensions should always be included in the Known Types list to ensure that the script functions properly.</p>
+File Permissions
+Auto-Detect
+None
+Restrictive
+Auto-detects the most secure permissions to use; recommended.
+No permissions set. For Windows or other systems without chmod.
+<p>For systems in which CGI executes under the account owner context (also known as setuid or suexec).</p><p>These restrictive permissions limit authoring privileges to the account owner only.</p>
+CGI Files
+Normal Files
+Folders
+Define whatever custom permissions you would like to use:
+Custom
+Permissive
+<p>For standard systems in which CGI executes under a user account context different than the account owner.</p><p>These permissive settings allow both the system CGI process and the account owner to access files.</p>
+creating account...
+Delete File
+Delete Folder
+Rename Files and Folders
+Copy Files and Folders
+When browsing, display all files and folders
+When browsing, display only files and folders which are accessible
+Edit Text-Based File
+Allow access only to the following features
+Do not allow access to any features
+Allow access to all features
+Allow access to templates in the following folders:
+Do not allow access to any templates
+Allow access to all templates
+Custom: $s1
+$s1 interface
+Allow Change Directory
+User can navigate to subfolders inside his home directory
+User cannot navigate to subfolders
+<p>This setting controls only whether the user can navigate to subfolders inside his home directory.</p><p>Under no circumstances will the user ever be allowed to navigate outside his home directory.</p>
+Квота дискового пространства
+No disk quota - unlimited disk space.
+Scripting Privileges
+Allow CGI and other active script content
+No CGI or active script content allowed
+Upload Privileges
+May upload any file
+May upload only media files
+No upload privileges
+Click here to continue editing the <a href="$s1">$s2</a> template.
+This script provides different levels of access. Your access levels are described below. To change your access levels, contact your administrator.
+The "$s1" account currently has the following settings:
+<p>These settings are used to initialize the <b>$s1</b> and <b>$s2</b> values when new user accounts are created.</p><p>These default settings were identical to your &lt;$s3&gt; account settings, except that they had "/%username%/" at the end, before your changed your settings just now.</p><p>Would you like to update the &lt;$s4&gt; account to match the changes made to your &lt;$s3&gt; account?</p>
+Note that you can edit the &lt;$s1&gt; account at any time by going to "$s2" =&gt; "$s3".
+Current Settings for Default Account
+Proposed New Settings for Default Account
+<p>These are the account settings for the virtual "$s1" account. They will serve as the defaults whenever a new account is created.</p><p>It is best to use the lowest possible privilege levels for the "$s1" account. Advanced privileges can always be granted later, on a case-by-case basis.</p>
+Default Files
+<p>When an account is created, this script will copy all files from the "$s1" folder into the user's home directory.</p><p>The $s2 folder currently contains:</p>
+<p>You can delegate a variety of authoring privileges to each user.  Choose from one of these four standard sets of privileges, or define a custom set of privileges.</p><p>Note that granting the "Allow CGI" privilege will effectively allow the user to do anything, since he will be able to upload his own scripts to perform any authoring functions that aren't exposed through Genesis.</p>
+<p><b>$s1</b> are defined as any file with one of the following extensions:</p><blockquote><p><tt>$s2</tt></p></blockquote><p>This list can be customized on the <a href="$s3">$s4</a> page.</p>
+The templates within "$s1" have not been divided up into subfolders. This must be done first.
+<p>You can use the variable <tt>$s1</tt> anywhere in the folder and URL paths. The variable will be automatically replaced with the username.</p><p>This script appears to have the following path (this information may be helpful in choosing the $s2 setting above):</p>
+Custom Privileges
+No upload privileges
+No CGI or active script content allowed
+Allow CGI and other active script content
+Platinum
+Gold
+Full access to Template Editor and HTML Editor
+Access to Template Editor with ability to upload media files within templates
+Your account has been temporarily disabled.
+<p>Your account has been disabled.</p><p>Your account was created $s1 days ago. This system is set to expire accounts after $s2 days.</p>
+Account Expiration
+Account does not expire
+Account temporarily disabled
+Account expires $s1 days after being created
+This account was created on $s1 ($s2 days ago).

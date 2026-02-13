@@ -1,0 +1,634 @@
+#%VERSION%=1.005
+# Commands.txt file for VServers Systems
+# © 1997 Virtual Servers, LLC.
+# Last Modified by Ben Reser 07/03/97 02:22 PDT
+# Reason for Modification:  Repaired the broken add user stuff
+
+###########################################################
+# Login commands
+wait 30 0 login:
+send $userid\n
+wait 10 50 Password:
+send $password\n
+
+wait 15 0 Terminal type? [xterm]
+send unknown\n
+wait 15 0 } %
+
+# Change the prompt to something easy to recognize, that
+# will also look okay in the output if desired.
+sendback set prompt="Command finished."\n
+waitdiscard 10 2 Command finished.
+
+###########################################################
+# E-mail alias commands
+group E-mail Management
+
+command List All E-mail Aliases
+sendback perl -pe '$_ = "" if substr($_, 0, 1) eq "#" || $_ eq $/ || m/autoreply/' ~/etc/aliases\n
+waitdiscard 30 0 Command finished.
+
+command Add a New E-mail Alias
+input name word New Alias:
+input address string E-mail Address:
+sendback touch ~/etc/aliases\n
+waitdiscard 10 2 Command finished.
+#sendback echo $name:$address >> ~/etc/aliases\n
+#wait 10 2 Command finished.
+sendbackblock %%%
+perl -pi.bak - ~/etc/aliases
+if (!$found) {
+    if (q{$name} =~ /\@/ || q{$name} eq "") {
+        print STDERR "The alias must be non-blank, and can't contain '\@'.\\n";
+        $found = 1;
+    } elsif (q{$address} eq "") {
+        print STDERR "The address must be non-blank.\\n";
+        $found = 1;
+    }
+    ($first, $rest) = split(":");
+    if ($first eq q{$name}) {
+        $_ = q{$name: $address} . $/;
+        print STDERR q{Replaced existing entry for $name.} . $/;
+        $found = 1;
+    } elsif (eof) {
+        s/\\n//; print $_ . $/ if $_ ne "";
+        $_ = q{$name: $address} . $/;
+        print STDERR q{Added $name.} . $/;
+    }
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+sendback vnewaliases\n
+waitdiscard 10 0 Command finished.
+
+command Delete an E-mail Alias
+input alias word Alias to Delete:
+sendbackblock %%%
+perl -pi.bak - ~/etc/aliases
+($first, $rest) = split(":");
+if ($first eq q{$alias} && !m/autoreply/) {
+    $_ = "";
+    print STDERR q{Deleted $alias.} . $/;
+    $found = 1;
+} elsif (eof && !$found) {
+    print STDERR "Couldn't find " . q{$alias} . ".\n";
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+sendback vnewaliases\n
+waitdiscard 10 0 Command finished.
+
+command List Current POP Accounts
+result Current POP Accounts:\n\n
+sendback vlistuser\n
+waitdiscard 30 0 Command finished.
+
+command Add a New POP Account with FTP Access
+input name word Name of New Account:
+input fullName string User's Full Name:
+input passwd1 password Password:
+input passwd2 password Confirm Password:
+input home list :|/usr/home:1|in Web hierarchy:2|in FTP hierarchy:3|Home Directory:
+
+# Next, run vadduser with the specified input
+sendback vadduser -a $name -n "$fullName" -f -h $home\n
+waitdiscard 10 0 Email/FTP password:
+send $passwd1\n
+waitdiscard 10 0 \n
+waitdiscard 10 0 Retype Email/FTP password:
+send $passwd2\n
+waitdiscard 10 0 \n
+wait 10 0 Email/FTP User added successfully.
+waitdiscard 10 0 Command finished.
+
+command Add New POP Account without FTP Access
+input name word Name of New Account:
+input fullName string User's Full Name:
+input passwd1 password Password:
+input passwd2 password Confirm Password:
+input home list :|/usr/home:1|in Web hierarchy:2|in FTP hierarchy:3|Home Directory:
+
+# Next, run vadduser with the specified input
+sendback vadduser -a $name -n "$fullName" -h $home\n
+waitdiscard 10 0 Email/FTP password:
+send $passwd1\n
+waitdiscard 10 0 \n
+waitdiscard 10 0 Retype Email/FTP password:
+send $passwd2\n
+waitdiscard 10 0 \n
+wait 10 0 Email/FTP User added successfully.
+waitdiscard 10 0 Command finished.
+
+command Delete an Existing POP Account
+input name word Name of Account to Delete:
+sendback vrmuser -d $name\n
+waitdiscard 20 0 Command finished.
+
+command Change an Existing POP Password
+input name word POP Account:
+input newpwd1 password New Password:
+input newpwd2 password Confirm Password:
+sendback vpasswd $name\n
+waitdiscard 10 0 New password (8 significant characters):
+send $newpwd1
+sendback \n
+waitdiscard 10 2 Retype new password:
+send $newpwd2
+sendback \n
+wait 10 0 Command finished.
+
+###########################################################
+# Statistics and logs
+group Statistics and Log Analysis
+
+command View Concise Statistics
+sendback getstats -c\n
+waitdiscard 60 0 Command finished.
+
+command View Daily Statistics
+sendback getstats -d\n
+waitdiscard 60 0 Command finished.
+
+command View Full Statistics
+sendback getstats -f\n
+waitdiscard 60 0 Command finished.
+
+command View Domain Statistics
+sendback getstats -dn\n
+waitdiscard 60 0 Command finished.
+
+command View Request Statistics
+sendback getstats -r\n
+waitdiscard 60 0 Command finished.
+
+command View Directory Tree Statistics
+sendback getstats -dt\n
+waitdiscard 60 0 Command finished.
+
+command View Error Statistics
+sendback getstats -e\n
+waitdiscard 60 0 Command finished.
+
+command View All HTTP Statistics
+sendback getstats -a\n
+waitdiscard 60 0 Command finished.
+
+command Delete HTTP Log Files
+sendback vnukelog\n
+waitdiscard 60 0 Command finished.
+
+#command View FTP Statistics
+#sendback xferstats | tr -d "\f"\n
+#waitdiscard 60 0 Command finished.
+
+###########################################################
+# File Management
+group File Management
+
+command List Files
+input src string Path (blank for current):
+sendback ls -l $src\n
+waitdiscard 10 0 Command finished.
+
+command Copy File
+input src string Copy From:
+input dst string Copy To:
+sendbackblock %%%
+perl
+$$return = `cp $src $dst`; 
+if ($$return ne '') { print "File did not copy successfully." 
+} else {
+  print "Copied $src to $dst successfully."
+}
+__END__
+%%%
+waitdiscard 10 0 Command finished.
+
+command Move (Rename) File
+input src string Move From:
+input dst string Move To:
+sendbackblock %%%
+perl
+$$return = `mv $src $dst`; 
+if ($$return ne '') { print "File was not moved (renamed) successfully." 
+} else {
+  print "Moved (renamed) $src to $dst successfully."
+}
+__END__
+%%%
+waitdiscard 10 0 Command finished.
+
+command Touch (Create) File
+input src string File Name:
+sendbackblock %%%
+perl
+$$return = `touch $src`; 
+if ($$return ne '') { print "File was not touched (created) successfully." 
+} else {
+  print "Touched (created) $src successfully."
+}
+__END__
+%%%
+waitdiscard 10 0 Command finished.
+
+command Delete File
+input src string File Name:
+sendbackblock %%%
+perl
+if (!unlink '$src') { print "File was not deleted successfully." 
+} else {
+  print "Deleted $src successfully."
+}
+__END__
+%%%
+waitdiscard 10 0 Command finished.
+
+###########################################################
+# chmod
+group File Permissions
+
+command List Files
+input src string Path (blank for current):
+sendback ls -l $src\n
+waitdiscard 10 0 Command finished.
+
+command Set a Custom Numeric Permission
+input mode word Permission Mode Number:
+input files string File names:
+sendback chmod $mode $files\n
+waitdiscard 30 2 Command finished.
+sendback ls -l $files\n
+waitdiscard 30 0 Command finished.
+
+command Make File(s) Readable by All
+input files string File names:
+sendback chmod a+r $files\n
+waitdiscard 30 2 Command finished.
+sendback ls -l $files\n
+waitdiscard 30 0 Command finished.
+
+command Make File(s) Readable by Owner Only
+input files string File names:
+sendback chmod go-r $files; chmod u+r $files\n
+waitdiscard 30 2 Command finished.
+sendback ls -l $files\n
+waitdiscard 30 0 Command finished.
+
+command Make File(s) Writable by All
+input files string File names:
+sendback chmod a+w $files\n
+waitdiscard 30 2 Command finished.
+sendback ls -l $files\n
+waitdiscard 30 0 Command finished.
+
+command Make File(s) Writable by Owner Only
+input files string File names:
+sendback chmod go-w $files; chmod u+w $files\n
+waitdiscard 30 2 Command finished.
+sendback ls -l $files\n
+waitdiscard 30 0 Command finished.
+
+command Make File(s) Writable by No One
+input files string File names:
+sendback chmod a-w $files\n
+waitdiscard 30 2 Command finished.
+sendback ls -l $files\n
+waitdiscard 30 0 Command finished.
+
+###########################################################
+# Set passwords
+group Passwords
+
+command Change Your Login Password
+input newpwd1 password New Password:
+input newpwd2 password Confirm Password:
+sendbackblock %%%
+perl
+print "Passwords must be at least 8 characters long.\\n" if length(q{$newpwd1}) < 8;
+print "Passwords must not be all lowercase characters.\\n" if q{$newpwd1} =~ /^[a-z]*$/;
+print "Passwords don't match.\\n" if q{$newpwd1} ne q{$newpwd2};
+__END__
+%%%
+waitdiscard 10 1 Command finished.
+sendback passwd\n
+waitdiscard 10 100 Old password:
+send $password
+sendback \n
+waitdiscard 10 100 New password (8 significant characters):
+send $newpwd1
+sendback \n
+waitdiscard 10 100 Retype new password:
+send $newpwd2
+sendback \n
+waitdiscard 10 0 Command finished.
+# The response will be left in the result buffer.
+
+command Change an Existing POP Password
+input name word POP Account:
+input newpwd1 password New Password:
+input newpwd2 password Confirm Password:
+sendback vpasswd $name\n
+waitdiscard 10 0 New password (8 significant characters):
+send $newpwd1
+sendback \n
+waitdiscard 10 2 Retype new password:
+send $newpwd2
+sendback \n
+waitdiscard 10 0 Command finished.
+
+###########################################################
+# Cron files
+group Cron Files (Automation)
+
+command List the Current Cron Commands
+#sendback crontab -l\n
+sendback if (-e ~/etc/cronfile && !(-z ~/etc/cronfile)) perl -pe 'printf("%3d: ", $.)' ~/etc/cronfile\n
+waitdiscard 10 0 Command finished.
+sendback if (!(-e ~/etc/cronfile) || -z ~/etc/cronfile) echo "There are no commands in the cron table."\n
+waitdiscard 10 0 Command finished.
+
+command Add a New Command and Mail the Output
+input hour word Hour, 0-23 or *:
+input minute word Minute, 0-59 or *:
+input weekday word Day of week, 0-7, Sun-Sat, or *:
+input monthday word Day of month, 1-31 or *:
+input month word Month, 1-12 or *:
+input cmd string Command to execute:
+input subject string Subject for output message:
+input recipient string Recipient for output message:
+sendback touch ~/etc/cronfile\n
+waitdiscard 10 2 Command finished.
+sendback echo "$minute $hour $monthday $month $weekday $cmd | /usr/bin/mail -s '$subject' $recipient" >> ~/etc/cronfile\n
+waitdiscard 10 2 Command finished.
+result Added the entry to the end of the cron table.  Installing the table.\n
+sendback crontab ~/etc/cronfile\n
+waitdiscard 10 0 Command finished.
+
+command Add a New Command and Discard the Output
+input hour word Hour, 0-23 or *:
+input minute word Minute, 0-59 or *:
+input weekday word Day of week, 0-7, Sun-Sat, or *:
+input monthday word Day of month, 1-31 or *:
+input month word Month, 1-12 or *:
+input cmd string Command to execute:
+sendback touch ~/etc/cronfile\n
+waitdiscard 10 2 Command finished.
+sendback echo "$minute $hour $monthday $month $weekday $cmd >/dev/null" >> ~/etc/cronfile\n
+waitdiscard 10 2 Command finished.
+result Added the entry to the end of the cron table.  Installing the table.\n
+sendback crontab ~/etc/cronfile\n
+waitdiscard 10 0 Command finished.
+
+command Delete a Cron Command
+input line number 0 32767 Line number to delete:
+sendbackblock %%%
+perl -pi.bak - ~/etc/cronfile
+if ($. == $line) {
+    $_ = "";
+    print STDERR "Line deleted.\\n";
+    $found = 1;
+} elsif (eof && !$found) {
+    print STDERR "Line not found in cron table.\\n";
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+result Installing the table.\n
+sendback crontab ~/etc/cronfile\n
+waitdiscard 10 0 Command finished.
+
+command Delete All Cron Commands
+sendback crontab -r\n
+wait 15 0 Command finished.
+sendback \rm ~/etc/cronfile\n
+wait 5 0 Command finished.
+discard
+result Cron table deleted.
+
+###########################################################
+# Auto-responder commands
+group Auto-Responders
+
+command Install the Auto-Reponder Program
+sendback rm -f ~/usr/bin/autoreply\n
+waitdiscard 10 0 Command finished.
+sendback \cp /usr/home/contrib/autoreply ~/usr/bin/autoreply\n
+waitdiscard 10 0 Command finished.
+sendback chmod 755 ~/usr/bin/autoreply\n
+waitdiscard 10 0 Command finished.
+sendback mkdir ~/usr/etc/replies\n
+waitdiscard 10 0 Command finished.
+sendback chmod 755 ~/usr/etc/replies\n
+wait 10 0 Command finished.
+
+command List Current Auto-Responders
+#sendback perl -pe '$_ = "" if substr($_, 0, 1) eq "#" || $_ eq $/ || !(m/autoreply/)' ~/etc/aliases\n
+sendbackblock %%%
+perl -p - ~/etc/aliases
+if (substr($_, 0, 1) eq "#" || $_ eq $/ || !(m/autoreply/)) {
+    $_ = "";
+} else {
+    $found = 1;
+}
+print "No auto-responders.\\n" if (eof && !$found);
+__END__
+%%%
+waitdiscard 30 0 Command finished.
+
+command Add a New Auto-Responder
+input name word Responder Alias:
+input file word Path to Response File:
+#input subject string Subject:
+input forward word Forward Incoming Messages to:
+input return word Return Address on Response:
+sendback touch ~/etc/aliases\n
+waitdiscard 10 2 Command finished.
+#sendback echo $name:$address >> ~/etc/aliases\n
+#wait 10 2 Command finished.
+sendbackblock %%%
+perl -pi.bak - ~/etc/aliases
+if (!$found) {
+    if (q{$name} =~ /\@/) {
+        print STDERR "The alias can't contain '\@'.\\n";
+        $found = 1;
+    } elsif (!-e q{$file}) {
+        print STDERR "The file specified must exist.\\n";
+        $found = 1;
+    }
+    ($first, $rest) = split(":");
+    if ($first eq q{$name}) {
+        $found = 1;
+        if (!m/autoreply/) {
+            print STDERR "There's a mail alias for " . q{$name} . "; didn't replace.\\n";
+        } else {
+#            $_ = q{$name: $forward, "|/usr/bin/autoreply -m $file -f $return -s \'$subject\' -a $name"} . $/;
+            $_ = q{$name: $forward, "|/usr/bin/autoreply -m $file -f $return -a $name"} . $/;
+            print STDERR q{Replaced existing entry for $name.} . $/;
+        }
+    } elsif (eof) {
+        s/\\n//; print $_ . $/ if $_ ne "";
+#        $_ = q{$name: $forward, "|/usr/bin/autoreply -m $file -f $return -s \'$subject\' -a $name"} . $/;
+        $_ = q{$name: $forward, "|/usr/bin/autoreply -m $file -f $return -a $name"} . $/;
+        print STDERR 'Added $name.' . $/;
+    }
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+sendback vnewaliases\n
+waitdiscard 10 0 Command finished.
+
+command Delete an Auto-Responder
+input alias word Auto-Responder to Delete:
+sendbackblock %%%
+perl -pi.bak - ~/etc/aliases
+($first, $rest) = split(":");
+if ($first eq q{$alias} && m/autoreply/) {
+    $_ = "";
+    print STDERR q{Deleted $alias.} . $/;
+    $found = 1;
+} elsif (eof && !$found) {
+    print STDERR "Couldn't find " . q{$alias} . ".\n";
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+sendback vnewaliases\n
+waitdiscard 10 0 Command finished.
+
+###########################################################
+# MIME type commands
+group Server MIME Types
+
+command List Current MIME Types
+sendbackblock %%%
+perl -p - ~/www/conf/mime.types
+if (substr($_, 0, 1) eq "#" || $_ eq $/) {
+    $_ = "";
+} else {
+    $found = 1;
+}
+print "No MIME types.\\n" if (eof && !$found);
+__END__
+%%%
+waitdiscard 20 0 Command finished.
+
+command Add a New MIME Type
+input name word MIME Type:
+input extensions string File Extensions:
+sendback touch ~/www/conf/mime.types\n
+waitdiscard 10 2 Command finished.
+sendbackblock %%%
+perl -pi.bak - ~/www/conf/mime.types
+if (!$found) {
+    ($first, $rest) = split(/ +/, $_, 2);
+    $spaces = 31 > length(q{$name})? 31 - length(q{$name}) : 1;
+    if ($first eq q{$name}) {
+        $found = 1;
+        $_ = q{$name} . sprintf("%${spaces}s", ' ') . q{$extensions} . $/;
+        print STDERR q{Replaced existing entry for $name.} . $/;
+    } elsif (eof) {
+        s/\\n//; print $_ . $/ if $_ ne "";
+        $_ = q{$name} . sprintf("%${spaces}s", ' ') . q{$extensions} . $/;
+        print STDERR 'Added $name.' . $/;
+    }
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+
+command Delete a MIME Type
+input name word MIME Type to Delete:
+sendbackblock %%%
+perl -pi.bak - ~/www/conf/mime.types
+($first, $rest) = split(/ +/, $_, 2);
+if ($first eq q{$name}) {
+    $_ = "";
+    print STDERR q{Deleted $name.} . $/;
+    $found = 1;
+} elsif (eof && !$found) {
+    print STDERR "Couldn't find " . q{$name} . ".\n";
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+
+###########################################################
+# Image map commands
+group Image Maps
+
+command List Image Maps
+sendbackblock %%%
+perl -p - ~/www/conf/imagemap.conf
+if (substr($_, 0, 1) eq "#" || $_ eq $/) {
+    $_ = "";
+} else {
+    $found = 1;
+}
+print "No image maps.\\n" if (eof && !$found);
+__END__
+%%%
+waitdiscard 10 0 Command finished.
+sendback if (!(-e ~/www/conf/imagemap.conf) || -z ~/www/conf/imagemap.conf) echo "There are no image maps registered."\n
+waitdiscard 10 0 Command finished.
+
+command Install a New Image Map
+input name word New Map Name:
+input path word Path to Map File:
+# make sure it exists
+sendback touch ~/www/conf/imagemap.conf\n
+waitdiscard 10 2 Command finished.
+# make sure it has at least one line, so PERL will see it
+sendback if (-z ~/www/conf/imagemap.conf) echo "#" >> ~/www/conf/imagemap.conf\n
+waitdiscard 10 0 Command finished.
+# add the new line
+sendbackblock %%%
+perl -pi.bak - ~/www/conf/imagemap.conf
+if (!$found) {
+    ($first, $rest) = split(/:/, $_, 2);
+    if ($first eq q{$name}) {
+        $found = 1;
+        $_ = q{$name} . ':' . q{$path} . $/;
+        print STDERR q{Replaced existing entry for $name.} . $/;
+    } elsif (eof) {
+        s/\\n//; print $_ . $/ if $_ ne "";
+        $_ = q{$name} . ':' . q{$path} . $/;
+        print STDERR 'Added $name.' . $/;
+    }
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+
+command Uninstall an Image Map
+input name word Image map name to unregister:
+sendbackblock %%%
+perl -pi.bak - ~/www/conf/imagemap.conf
+($first, $rest) = split(/:/, $_, 2);
+if ($first eq q{$name}) {
+    $_ = "";
+    print STDERR q{Deleted $name.} . $/;
+    $found = 1;
+} elsif (eof && !$found) {
+    print STDERR "Couldn't find " . q{$name} . ".\n";
+}
+__END__
+%%%
+waitdiscard 12 0 Command finished.
+
+###########################################################
+# Miscellaneous commands
+group Miscellaneous
+
+command Read a Manual Page
+input cmd string Page name:
+sendback man -c $cmd\n
+waitdiscard 60 0 Command finished.
+
+command Execute a Shell Command
+input cmd string Command:
+sendback $cmd\n
+waitdiscard 60 0 Command finished.
+

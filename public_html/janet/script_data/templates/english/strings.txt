@@ -1,0 +1,387 @@
+VERSION 2.1.0.0022
+English
+text/html; charset=iso-8859-1
+<p><b>Success:</b> $s1.</p>
+<p><b>Warning:</b> $s1.</p>
+<p><b>Error:</b> $s1.</p>
+unable to accept automatic sign-ups - no mail server or mail program has been configured yet
+could not read from file '$s1' - $s2
+could not write to file '$s1' - $s2
+could not append to file '$s1' - $s2
+sent account information with initial password to '$s1'
+unable to set binmode on file '$s1' - $s2
+could not delete file '$s1' - $s2
+could not rename file '$s1' to '$s2' - $s3
+created new user '$s1'
+wrote to file '$s1'
+sent account request to administrator for approval
+user home folder '$s1' already exists
+deleted file '$s1'
+renamed file '$s1' to '$s2'
+could not create folder '$s1' - $s2
+could not open folder '$s1' - $s2
+could not delete folder '$s1' - $s2
+created folder '$s1'
+deleted folder '$s1'
+unable to access home directory '$s1' - $s2 ($s3)
+folder '$s1' does not exist
+object '$s1' is not a folder
+Genesis disk quota exceeded
+you have been logged out
+authentication token not found; your session may have timed out
+session expired
+invalid username or password
+Sign Up
+Please enter your username and password
+Username
+Password
+username '$s1' is reserved
+username cannot be blank
+passwords do not match
+username '$s1' is invalid - $s2
+Environment Variables
+Show "Current Folder" in header
+Perl version is $s1 ($s2).<br />Web server operating system is $s3.<br />Web server software is $s4.
+unable to save data in demo mode
+Disk quota of $s1 kilobytes.
+Allow access to some templates.
+Login
+New User Sign-Up
+cannot import file "$s1" with extension "$s2". Your account is only allowed to upload/import Media Files (those with extensions $s3). If you must upload other files, contact the webmaster and request full upload privileges for all file types. Or, request that file extension "$s2" be added to the "Media Files" list
+your account does not have sufficient privileges to perform this operation; needs the '$s1' privilege
+Template Editor
+HTML Editor
+unable to accept sign-ups - no administrator email address configured
+Help
+Admin Page
+Manage Users
+Create, review, and delete user accounts. Useful for delegating authoring privileges.
+Event Log
+Stop Logging Process
+The option to stop logging deletes the event log completely - to get it started again, you may need to manually log on to this server.
+Clear Event Log
+Listing all events, from oldest to newest.
+Logging is currently disabled. To turn it on, click the button above.
+Begin Logging
+Overview
+the event log has been cleared
+Reset
+logging has been started
+Folder Settings
+updated Folder Settings
+Save Data
+Disk quota of <input name="$s1" size="8" class="numeric" /> kilobytes.
+Freeware Version
+SMTP server '$s1:$s2' did not respond properly to the '$s3' command; receive server response not beginning with 3-digit number; full text: '$s4'
+Automatic New User Sign-Up
+SMTP server '$s1:$s2' did not respond properly to the '$s3' command; expected '$s4' response, received '$s5'; full text: '$s6'
+unable to open pipe '$s1' - $s2
+error while sending data to SMTP server; sent only $s1 of $s2 total bytes of data - $s3 - $s4
+error while sending data to SMTP server - $s1 - $s2
+Review a log of server activity.
+The <b>Default Language</b> is the language used to control the login and new user sign-up routines.  When users are logged in to Genesis, the interface language is always set according to their per-user preferences.
+Validate HTML
+Always Show Disk Space
+Show Tips and Links
+Show Folder Sizes
+Your support will help get new features added, and will help with bug fixes and performance improvements.
+To make inquiries or to acquire a new registration key, visit <a href="$s1">$s2</a>.
+Account Privileges
+Registration key
+Description
+Current Folder
+Show "customize starting folder" tip below the Current Folder form.
+Go
+Click to <a href="$s1">customize starting folder</a>.
+Identity
+Full Name
+Email Address
+Security Settings
+Old Password
+New Password
+Confirm New
+All features, permanent. You receive the right to remove publicly-viewable copyright.
+Contact the administrator to change these values.
+General Settings
+When first logging in, show this screen:
+User interface language:
+Allow $s1 files to be uploaded at once on multiple upload page.
+When listing all files, sort by:
+Always show folders on top.
+Text Editing Options
+The text editor can be customized to accomodate your screen resolution and preferences. Some features, like wrapped text and scaled fonts, require newer browsers.
+Size of text
+Height of Text Box
+Width of Text Box
+Upload All Text Files in ASCII Mode
+Wrap Long Lines
+Account Created
+Last Login
+Last Login From
+Last Modified Time
+File Type
+Size
+reverse
+Actions
+Parent Directory
+updir
+Edit
+chdir
+Edit Profile
+Checked Items
+Create File
+Create...
+Create Folder
+Upload File
+Upload...
+See also
+Multiple File Upload
+Review Images
+Review/Validate HTML
+Path
+Width
+Height
+Commands
+Rename
+Copy
+Delete
+pixels
+Fill out the form below, and then click "Build Web Site".
+This template creates the following files:
+may overwrite existing file
+will overwrite your existing file
+Build Web Site
+unable to extract UserInput section of template file
+Your <a href="$s1">template web site</a> is complete.
+This is a new file. Input your text below:
+Modify <a href="$s1">$s2</a> as needed:
+Parse server-side include statements.
+Entering an alternate filename will leave the original file untouched, and will place the above text into a file with the alternate name (overwriting the existing contents if the alternate file already exists).
+Visit the <a href="$s1">Text Editing Options</a> screen to control the size of the textarea above.
+<b>Status:</b> $s1.
+this file will be saved as '$s1' instead
+file '$s1' has been uploaded in $s2 mode - size $s3
+Are you sure you want to delete '$s1'?
+Yes, I'm Sure
+Delete User
+finished trying to remove user account '$s1' - some steps did not complete successfully
+removed user account '$s1'
+All files in the user's home folder '$s1' are still present. Deleting files must be done separately.
+New Account
+Account:
+Reset Password
+Approve Accounts
+user account '$s1' has been rejected
+no action will be taken for account '$s1'
+user file '$s1' does not exist. The account may have already been rejected
+creating new account for user '$s1'
+assigned password <b>$s1</b> to user. Please provide this password to the user
+file '$s1' has been uploaded
+<p>Automatic account creation is an option. If you enable it, users will be able to sign up for their own accounts automatically from the login page. Accounts will be created based on the settings of the _default account. If you enable this, make sure:</p><ol><li>that the _default account has its Base Folder and Base URL defined with a %username% parameter, so that everyone isn't sharing the same folder</li><li>that the _default account does not have the "Allow CGI" privilege</li><li>that the _default account has a disk quota in effect</li></ol><p>You can always delegate greater privileges to new users once you've gotten to know them.</p><p>Genesis was designed for authoring by a single person or a small group of people; it has not been optimized for many simultaneous users.</p>
+Allow users to sign up automatically
+Require webmaster approval before account is activated
+If enabled, new account requests and approvals will be routed to email address "$s1" using either SMTP server "$s2" or sendmail program "$s3".
+<p>When users request new accounts, Genesis must send email to the administrator and to the new user. Thus, before you can allow automatic sign-up, you must configure:</p><ol><li>A valid email address for you, the webmaster. Enter it on the <a href="$s1"><b>My Account</b></a> page.</li><li>A mail transport system, either an "SMTP Server" or a "Sendmail Program". Enter them on the <a href="$s2"><b>System Settings</b></a> page.</li></ol><p>Once those settings have been configured, you may return to this page and you will have a chance to enable automatic web-based sign-up for accounts.</p>
+The following accounts have been requested and are awaiting approval.
+Request Created
+Approve
+Deny
+Wait
+Process Account Requests
+There are no accounts awaiting approval.
+Assigning new password for user '$s1':
+IP Address
+Time
+never
+Filename
+Registered Shareware
+Extended functionality for a reasonable trial period. Allows multiple user accounts, user settings updated over web, multiple file upload, etc.
+Authentication system cannot initialize.
+the password for user '$s1' has been locked - it cannot be reset
+unable to parse image file format
+unable to set binmode on socket - $s1
+unable to resolve hostname '$s1' to IP address - $s2 - $s3
+unable to create socket - $s1 - $s2
+unable to connect to host '$s1:$s2' - $s3 - $s4
+Trial Shareware
+Disk Use:
+Using $s1 kb of $s2 kb quota - $s3 kb free
+filename cannot be blank
+maximum allowed length is $s1 characters
+blank spaces are not allowed
+adjacent dots are not allowed
+cannot view hidden/system files whose names begin with a dot
+cannot modify hidden/system files whose names begin with a dot
+contains illegal characters - $s1
+extension '$s1' is not allowed because it is listed at "Admin Page" =&gt; "Manage System Settings" =&gt; "CGI Types" and your account does not have the "Allow CGI" privilege [<a href="$s2./1098.html" TARGET=_blank>Help</a>]
+extension '$s1' is not listed at "Admin Page" =&gt; "Manage System Settings" =&gt; "Known Types". You must log in as "webmaster" and edit the "Known Types" list before modifying this file type [<a href="$s2./1097.html" TARGET=_blank>Help</a>]
+filename '$s1' is invalid - $s2
+Basic functionality - single user HTML and template editing.
+unable to close filehandle for file '$s1' - $s2 ($s3)
+now sorting by $s1
+My Account
+If you leave the password boxes blank, a default password will be created and emailed to the user.
+Features
+License Mode
+Base Folder
+the registration code you entered is not valid - please contact the vendor
+Base URL
+password must be at least $s1 characters long
+set new password
+error while writing to file '$s1' - $s2 ($s3)
+user '$s1' already exists on this system; please choose a different username
+automatic sign-up is disabled
+updated user preferences
+Use the <a href="$s1"><b>$s2</b></a> interface to fix the problems.
+The following validation error(s) occured while loading your user account settings.
+The following validation error(s) occured while loading system settings.
+You should contact your administrator and ask them to correct the problem.
+<!-- translation credits -->
+Manage System Settings
+Control the system-wide settings for Genesis. Includes security settings.
+Select licensing mode and/or enter registration key.
+Update License
+Allows you to create and maintain web pages without using HTML.
+Allows you to edit web pages with HTML, and also manage files and folders.
+Authoring Options
+Admin Options
+Allows you to update name and email settings; reset password; and configure options for the HTML editor.
+Clears your authentication token - always complete this step when you're finished.
+Sign Out
+Frequently asked questions document for this software. Includes links to Discussion Forum, install help, and source code.
+Rename Files
+Original File
+New File Name
+Copy Files
+Cannot copy folders - only files
+file name '$s1' doesn't pattern match to base dir '$s2'
+cannot extract base name from '$s1'
+Confirm Delete
+cannot delete
+is user home directory
+Tip
+Templates allow you to create a complete website, without using HTML.
+no files or folders selected
+Comments
+Create Account
+Request Account
+I'm a new user. <a href="$s1">Sign me up</a>!
+folder '$s1' does not exist. Please create it manually and give it write permissions
+<p>The <b>$s1</b> settings are used to control how permissions are set on the files and folders that you create with Genesis. It is best to choose <b>$s2</b>. The auto-detect algorithm currently selects option <b>$s3</b>.</p>
+No access to hidden files
+May view hidden files, but not edit
+May view and edit hidden files
+Hidden files are those which begin with a dot, like ".htaccess" or ".htpasswd". The Genesis data files are also considered hidden files, like ".template" and ".is_user_dir".
+Hidden Files
+Access to Template Editor
+<p>The test message you just sent was delivered using system settings different than the ones you have saved.</p><p>To permanently save the new settings, submit the form below:</p>
+Click here to <a href="$s1">send another test message</a>.
+the server indicates that the message was sent. Please check your email and confirm that you have received it
+Test Email
+System Information
+System Settings
+Email Settings
+SMTP Server
+Sendmail Program
+subaction '$s1' not defined
+Bronze
+system setting <b>$s1</b> value '$s2' must be octal number; cannot contain illegal digit '$s3'
+Silver
+updating system setting <b>$s1</b> from '$s2' to '$s3'
+saved system settings
+Send
+Trace output was:
+Parameter
+New Value
+<p>Enter parameters for the test message.</p><p>You should perform email tests using a variety of <b>To Email</b> addresses, including addresses at different domains. Some mail servers deliver mail only for certain domains; you should test to make sure your mail server does not have this restriction.</p>
+Test Email Message
+To Email
+From Email
+Send Test Email
+<p>The values you enter for <b>SMTP Host</b> and <b>Sendmail Program</b> on this form are used for testing purposes only. They do not affect your master system settings values.</p><p>If you experiment with different SMTP and Sendmail values here, and the test messages are delivered successfully, then you will have a chance to update your system settings with the new values.</p>
+updated email address to $s1
+Click here to <a href="$s1">send a test message</a>. Click here for <a href="$s2">help</a> on configuring email in Genesis.
+The <b>$s1</b> parameter is shared between the system settings and the &lt;$s2&gt; account profile.
+<b>$s1</b> is the Internet server that has been assigned to deliver mail for your email address.
+Miscellaneous
+Default Language
+Images URL
+Password Size Limit
+characters or more
+File Types
+CGI Types
+Known Types
+Media Types
+<p>For each file type, enter a space-separated list of allowed file extensions.</p><p>Genesis users will only be allowed access to a file if its extension is in one of these lists, subject to these additional restrictions:</p><ul><li><p>Genesis users will only be allowed to access CGI-type files if they have the "Allow CGI" privilege.</p></li><li><p>If the Genesis user has had upload privileges restricted to media files only, then any uploaded files must match one of the "Media Types" extensions.</p></li></ul><p>File extensions can be duplicated among the lists. If an extension is present in both CGI Types and another list, it will be treated as a CGI file for purposes of evaluating privileges and setting file permissions. Similarly, if an extension is in Media Types and another list, it will be treated as a media file for evaluating upload privileges.</p><p>The special file extension * (asterisk) can be used to match any file type. Place this special extension in the Known Types list if you would like to be able to access any file. There are security risks associated with this; review <a href="$s1">this help file</a> first.</p><p>The special file extension "null" is used to refer to files without any extension at all.</p><p>The file extensions "tmp", "template" and "is_user_dir" are used by Genesis. These extensions should always be included in the Known Types list to ensure that the script functions properly.</p>
+File Permissions
+Auto-Detect
+None
+Restrictive
+Auto-detects the most secure permissions to use; recommended.
+No permissions set. For Windows or other systems without chmod.
+<p>For systems in which CGI executes under the account owner context (also known as setuid or suexec).</p><p>These restrictive permissions limit authoring privileges to the account owner only.</p>
+CGI Files
+Normal Files
+Folders
+Define whatever custom permissions you would like to use:
+Custom
+Permissive
+<p>For standard systems in which CGI executes under a user account context different than the account owner.</p><p>These permissive settings allow both the system CGI process and the account owner to access files.</p>
+creating account...
+Delete File
+Delete Folder
+Rename Files and Folders
+Copy Files and Folders
+When browsing, display all files and folders
+When browsing, display only files and folders which are accessible
+Edit Text-Based File
+Allow access only to the following features
+Do not allow access to any features
+Allow access to all features
+Allow access to templates in the following folders:
+Do not allow access to any templates
+Allow access to all templates
+Custom: $s1
+$s1 interface
+Allow Change Directory
+User can navigate to subfolders inside his home directory
+User cannot navigate to subfolders
+<p>This setting controls only whether the user can navigate to subfolders inside his home directory.</p><p>Under no circumstances will the user ever be allowed to navigate outside his home directory.</p>
+Disk Quota
+No disk quota - unlimited disk space.
+Scripting Privileges
+Allow CGI and other active script content
+No CGI or active script content allowed
+Upload Privileges
+May upload any file
+May upload only media files
+No upload privileges
+Click here to continue editing the <a href="$s1">$s2</a> template.
+This script provides different levels of access. Your access levels are described below. To change your access levels, contact your administrator.
+The "$s1" account currently has the following settings:
+<p>These settings are used to initialize the <b>$s1</b> and <b>$s2</b> values when new user accounts are created.</p><p>These default settings were identical to your &lt;$s3&gt; account settings, except that they had "/%username%/" at the end, before your changed your settings just now.</p><p>Would you like to update the &lt;$s4&gt; account to match the changes made to your &lt;$s3&gt; account?</p>
+Note that you can edit the &lt;$s1&gt; account at any time by going to "$s2" =&gt; "$s3".
+Current Settings for Default Account
+Proposed New Settings for Default Account
+<p>These are the account settings for the virtual "$s1" account. They will serve as the defaults whenever a new account is created.</p><p>It is best to use the lowest possible privilege levels for the "$s1" account. Advanced privileges can always be granted later, on a case-by-case basis.</p>
+Default Files
+<p>When an account is created, this script will copy all files from the "$s1" folder into the user's home directory.</p><p>The $s2 folder currently contains:</p>
+<p>You can delegate a variety of authoring privileges to each user.  Choose from one of these four standard sets of privileges, or define a custom set of privileges.</p><p>Note that granting the "Allow CGI" privilege will effectively allow the user to do anything, since he will be able to upload his own scripts to perform any authoring functions that aren't exposed through Genesis.</p>
+<p><b>$s1</b> are defined as any file with one of the following extensions:</p><blockquote><p><tt>$s2</tt></p></blockquote><p>This list can be customized on the <a href="$s3">$s4</a> page.</p>
+The templates within "$s1" have not been divided up into subfolders. This must be done first.
+<p>You can use the variable <tt>$s1</tt> anywhere in the folder and URL paths. The variable will be automatically replaced with the username.</p><p>This script appears to have the following path (this information may be helpful in choosing the $s2 setting above):</p>
+Custom Privileges
+No upload privileges
+No CGI or active script content allowed
+Allow CGI and other active script content
+Platinum
+Gold
+Full access to Template Editor and HTML Editor
+Access to Template Editor with ability to upload media files within templates
+Your account has been temporarily disabled.
+<p>Your account has been disabled.</p><p>Your account was created $s1 days ago. This system is set to expire accounts after $s2 days.</p>
+Account Expiration
+Account does not expire
+Account temporarily disabled
+Account expires $s1 days after being created
+This account was created on $s1 ($s2 days ago).

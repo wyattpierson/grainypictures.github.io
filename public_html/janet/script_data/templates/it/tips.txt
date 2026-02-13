@@ -1,0 +1,14 @@
+To improve speed, disable Disk Quotas and the display of folder size information.
+Make sure to always set your permissions correctly.
+Use multiple custom templates to make creating documents easy.
+For best results, use Internet Explorer 5+ or Netscape 6+.
+Place your templates and settings file within your writable directory for easy editing.
+You can turn off these tips - and lots more - by clicking on the <a href="%admin_url%Action=PR">My Account</a> link.
+Use Genesis to let your visitors upload their own images, sounds, and files.
+To save space, empty your log file after it reaches 100kb.
+If you have been coding for more than 36 hours straight, take a break.
+We are going to have to <i>act</i> if we want to live in a different world.
+Write to your parents and grandparents regularly.
+Need some assistance? Try the <a href="%help file%" target="_blank">Genesis User's Guide</a>.
+Is my HTML okay? Ask <a href="http://www.doctor-html.com/RxHTML/" target="_blank">Dr. HTML</a>!
+Can I do that with HTML? Find out at the <a href="http://www.w3schools.com/html/" target="_blank">w3 HTML Tutorial</a>.

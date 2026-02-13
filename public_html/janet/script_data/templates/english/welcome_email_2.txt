@@ -1,0 +1,25 @@
+To: %email_address%
+From: %webmaster_email_address%
+Subject: Web authoring account created (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+A web authoring account has been created for you at:
+
+%full_script_url%
+
+Use these credentials to access your account:
+
+Username: %username%
+Password: %password%
+
+Please contact me if you need any assistance.
+
+Regards,
+%webmaster_full_name%
+%webmaster_email_address%
+

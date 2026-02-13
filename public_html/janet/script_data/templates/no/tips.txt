@@ -1,0 +1,14 @@
+For å forbedre hastighet kan du slå av diskkvotering og visning av katalogstørrelse.
+Forsikre deg om at rettighetene alltid er riktig satt opp.
+Bruk malene for å lage websider på en enkel måte.
+For best results, use Internet Explorer 5+ or Netscape 6+.
+Plasser maler og instillingsfiler i en katalog du har skrivetilgang til for enkel redigering.
+Du kan slå av disse tipsene pluss mye mer under <a href="%admin_url%Action=PR">Min konto</a>.
+Bruk Genesis for å la besøkende laste opp bilder, lyder og andre filer.
+For å spare på diskbruken bør du slette loggfilen etter den når over 100kb.
+Om du har sittet foran datamaskinen over 36 timer i strekk b&oslash;r du ta en pause.
+Vi er n&oslash;dt til &aring; <i>spille</i> hvis vi vil leve i en anderledes verden.
+Skriv et brev til foreldrene og besteforeldrene dine regelmessig.
+Trenger du hjelp? Prøv <a href="%help file%" target="_blank">Genesis Bruker Guide (på engelsk)</a>.
+Is my HTML okay? Ask <a href="http://www.doctor-html.com/RxHTML/" target="_blank">Dr. HTML</a>!
+Can I do that with HTML? Find out at the <a href="http://www.w3schools.com/html/" target="_blank">w3 HTML Tutorial</a>.

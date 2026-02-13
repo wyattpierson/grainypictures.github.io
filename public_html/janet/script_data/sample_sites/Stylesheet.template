@@ -1,0 +1,1695 @@
+_____________________________________________________________________________
+
+<Genesis:Defaults>
+
+# This section is used to declare default values for use in the next
+# section, Genesis:UserInput.
+
+# These default values will appear *only* on the visitor's first visit to
+# the template form; all subsequent visits will use their previously-entered
+# values.
+
+# To ensure compatibility with the SetDefaults function, declare all
+# default values in this section rather than hardcoding VALUE/CHECKED
+# attributes in the UserInput form elements.
+
+# The name-value pairs are case sensitive for purposes of declaring
+# defaults and generating the form in User Input.  The later replacements
+# in the Genesis:File sections are case insensitive.
+
+	fontfamily=Georgia
+
+	fontsize=16
+
+	bgcolor=DDA0DD
+
+	textcolor=7B68EE
+
+	h1color=8A2BE2
+
+	link=0000FF
+
+	vlink=DC143C
+
+	alink=1E90FF
+
+</Genesis:Defaults>
+_____________________________________________________________________________
+
+<Genesis:UserInput>
+
+# Create an HTML form that will be shown to the user.  Be sure to properly
+# close all HTML tags.  The following names are reserved for use by Genesis;
+# don't create name-value pairs with them: "Action"; "sa"; "Template"; "CWD"
+
+	<p>This template can be used to modify your stylesheet, style.css. This file controls the look and feel of your web pages.</p>
+
+	<p><b>Font Family:</b></p>
+
+	<p>Controls which font to use for displaying text. Some visitors will not be able to take advantage of this feature because they don't have the fonts installed, or their browsers choose to use a different font.</p>
+
+	<blockquote>
+
+		<input type="radio" name="fontfamily" value="Verdana"> <span style="font-family:verdana">Verdana</span><br />
+		<input type="radio" name="fontfamily" value="Courier New"> <span style="font-family:Courier New">Courier New</span><br />
+		<input type="radio" name="fontfamily" value="Georgia"> <span style="font-family:Georgia">Georgia</span><br />
+		<input type="radio" name="fontfamily" value="Times New Roman"> <span style="font-family:Times New Roman">Times New Roman</span><br />
+
+	</blockquote>
+
+	<p><b>Font Size:</b></p>
+
+	<blockquote>
+
+		<input type="radio" name="fontsize" value="8"> <span style="font-size:8pt">8-point</span><br />
+		<input type="radio" name="fontsize" value="10"> <span style="font-size:10pt">10-point</span><br />
+		<input type="radio" name="fontsize" value="12"> <span style="font-size:12pt">12-point</span><br />
+		<input type="radio" name="fontsize" value="14"> <span style="font-size:14pt">14-point</span><br />
+		<input type="radio" name="fontsize" value="16"> <span style="font-size:16pt">16-point</span><br />
+
+	</blockquote>
+
+	<p><b>Colors:</b></p>
+
+	<table border="1" cellpadding="2" cellspacing="0">
+	<tr>
+		<th rowspan=6><br /></th>
+		<th bgcolor="#eeeeee" colspan=8 align="left">Background</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th colspan=7 align="left">Text</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee" colspan=6 align="left">Heading 1</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th colspan=5 align="left">Link</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee" colspan=4 align="left">Active Link</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th colspan="3" align="left">Followed Link</th>
+	</tr>
+
+	<tr>
+		<td bgcolor="#000000" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="000000"></td>
+		<td><input type="radio" name="textcolor" value="000000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="000000"></td>
+		<td><input type="radio" name="link" value="000000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="000000"></td>
+		<td><input type="radio" name="vlink" value="000000"></td>
+		<td bgcolor="#000000" width=60><br /></td>
+		<td><b>black</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#000080" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="000080"></td>
+		<td><input type="radio" name="textcolor" value="000080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="000080"></td>
+		<td><input type="radio" name="link" value="000080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="000080"></td>
+		<td><input type="radio" name="vlink" value="000080"></td>
+		<td bgcolor="#000080" width=60><br /></td>
+		<td><b>navy</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00008B" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="00008B"></td>
+		<td><input type="radio" name="textcolor" value="00008B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="00008B"></td>
+		<td><input type="radio" name="link" value="00008B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="00008B"></td>
+		<td><input type="radio" name="vlink" value="00008B"></td>
+		<td bgcolor="#00008B" width=60><br /></td>
+		<td><b>darkblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#0000CD" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="0000CD"></td>
+		<td><input type="radio" name="textcolor" value="0000CD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="0000CD"></td>
+		<td><input type="radio" name="link" value="0000CD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="0000CD"></td>
+		<td><input type="radio" name="vlink" value="0000CD"></td>
+		<td bgcolor="#0000CD" width=60><br /></td>
+		<td><b>mediumblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#0000FF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="0000FF"></td>
+		<td><input type="radio" name="textcolor" value="0000FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="0000FF"></td>
+		<td><input type="radio" name="link" value="0000FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="0000FF"></td>
+		<td><input type="radio" name="vlink" value="0000FF"></td>
+		<td bgcolor="#0000FF" width=60><br /></td>
+		<td><b>blue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#006400" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="006400"></td>
+		<td><input type="radio" name="textcolor" value="006400"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="006400"></td>
+		<td><input type="radio" name="link" value="006400"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="006400"></td>
+		<td><input type="radio" name="vlink" value="006400"></td>
+		<td bgcolor="#006400" width=60><br /></td>
+		<td><b>darkgreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#008000" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="008000"></td>
+		<td><input type="radio" name="textcolor" value="008000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="008000"></td>
+		<td><input type="radio" name="link" value="008000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="008000"></td>
+		<td><input type="radio" name="vlink" value="008000"></td>
+		<td bgcolor="#008000" width=60><br /></td>
+		<td><b>green</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#008080" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="008080"></td>
+		<td><input type="radio" name="textcolor" value="008080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="008080"></td>
+		<td><input type="radio" name="link" value="008080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="008080"></td>
+		<td><input type="radio" name="vlink" value="008080"></td>
+		<td bgcolor="#008080" width=60><br /></td>
+		<td><b>teal</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#008B8B" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="008B8B"></td>
+		<td><input type="radio" name="textcolor" value="008B8B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="008B8B"></td>
+		<td><input type="radio" name="link" value="008B8B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="008B8B"></td>
+		<td><input type="radio" name="vlink" value="008B8B"></td>
+		<td bgcolor="#008B8B" width=60><br /></td>
+		<td><b>darkcyan</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00BFFF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="00BFFF"></td>
+		<td><input type="radio" name="textcolor" value="00BFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="00BFFF"></td>
+		<td><input type="radio" name="link" value="00BFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="00BFFF"></td>
+		<td><input type="radio" name="vlink" value="00BFFF"></td>
+		<td bgcolor="#00BFFF" width=60><br /></td>
+		<td><b>deepskyblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00CED1" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="00CED1"></td>
+		<td><input type="radio" name="textcolor" value="00CED1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="00CED1"></td>
+		<td><input type="radio" name="link" value="00CED1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="00CED1"></td>
+		<td><input type="radio" name="vlink" value="00CED1"></td>
+		<td bgcolor="#00CED1" width=60><br /></td>
+		<td><b>darkturquoise</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FA9A" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="00FA9A"></td>
+		<td><input type="radio" name="textcolor" value="00FA9A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="00FA9A"></td>
+		<td><input type="radio" name="link" value="00FA9A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="00FA9A"></td>
+		<td><input type="radio" name="vlink" value="00FA9A"></td>
+		<td bgcolor="#00FA9A" width=60><br /></td>
+		<td><b>mediumspringgreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FF00" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="00FF00"></td>
+		<td><input type="radio" name="textcolor" value="00FF00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="00FF00"></td>
+		<td><input type="radio" name="link" value="00FF00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="00FF00"></td>
+		<td><input type="radio" name="vlink" value="00FF00"></td>
+		<td bgcolor="#00FF00" width=60><br /></td>
+		<td><b>lime</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FF7F" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="00FF7F"></td>
+		<td><input type="radio" name="textcolor" value="00FF7F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="00FF7F"></td>
+		<td><input type="radio" name="link" value="00FF7F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="00FF7F"></td>
+		<td><input type="radio" name="vlink" value="00FF7F"></td>
+		<td bgcolor="#00FF7F" width=60><br /></td>
+		<td><b>springgreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="00FFFF"></td>
+		<td><input type="radio" name="textcolor" value="00FFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="00FFFF"></td>
+		<td><input type="radio" name="link" value="00FFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="00FFFF"></td>
+		<td><input type="radio" name="vlink" value="00FFFF"></td>
+		<td bgcolor="#00FFFF" width=60><br /></td>
+		<td><b>cyan</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#191970" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="191970"></td>
+		<td><input type="radio" name="textcolor" value="191970"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="191970"></td>
+		<td><input type="radio" name="link" value="191970"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="191970"></td>
+		<td><input type="radio" name="vlink" value="191970"></td>
+		<td bgcolor="#191970" width=60><br /></td>
+		<td><b>midnightblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#1E90FF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="1E90FF"></td>
+		<td><input type="radio" name="textcolor" value="1E90FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="1E90FF"></td>
+		<td><input type="radio" name="link" value="1E90FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="1E90FF"></td>
+		<td><input type="radio" name="vlink" value="1E90FF"></td>
+		<td bgcolor="#1E90FF" width=60><br /></td>
+		<td><b>dodgerblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#20B2AA" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="20B2AA"></td>
+		<td><input type="radio" name="textcolor" value="20B2AA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="20B2AA"></td>
+		<td><input type="radio" name="link" value="20B2AA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="20B2AA"></td>
+		<td><input type="radio" name="vlink" value="20B2AA"></td>
+		<td bgcolor="#20B2AA" width=60><br /></td>
+		<td><b>lightseagreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#228B22" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="228B22"></td>
+		<td><input type="radio" name="textcolor" value="228B22"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="228B22"></td>
+		<td><input type="radio" name="link" value="228B22"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="228B22"></td>
+		<td><input type="radio" name="vlink" value="228B22"></td>
+		<td bgcolor="#228B22" width=60><br /></td>
+		<td><b>forestgreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#2E8B57" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="2E8B57"></td>
+		<td><input type="radio" name="textcolor" value="2E8B57"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="2E8B57"></td>
+		<td><input type="radio" name="link" value="2E8B57"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="2E8B57"></td>
+		<td><input type="radio" name="vlink" value="2E8B57"></td>
+		<td bgcolor="#2E8B57" width=60><br /></td>
+		<td><b>seagreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#2F4F4F" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="2F4F4F"></td>
+		<td><input type="radio" name="textcolor" value="2F4F4F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="2F4F4F"></td>
+		<td><input type="radio" name="link" value="2F4F4F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="2F4F4F"></td>
+		<td><input type="radio" name="vlink" value="2F4F4F"></td>
+		<td bgcolor="#2F4F4F" width=60><br /></td>
+		<td><b>darkslategray</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#32CD32" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="32CD32"></td>
+		<td><input type="radio" name="textcolor" value="32CD32"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="32CD32"></td>
+		<td><input type="radio" name="link" value="32CD32"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="32CD32"></td>
+		<td><input type="radio" name="vlink" value="32CD32"></td>
+		<td bgcolor="#32CD32" width=60><br /></td>
+		<td><b>limegreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#3CB371" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="3CB371"></td>
+		<td><input type="radio" name="textcolor" value="3CB371"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="3CB371"></td>
+		<td><input type="radio" name="link" value="3CB371"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="3CB371"></td>
+		<td><input type="radio" name="vlink" value="3CB371"></td>
+		<td bgcolor="#3CB371" width=60><br /></td>
+		<td><b>mediumseagreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#40E0D0" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="40E0D0"></td>
+		<td><input type="radio" name="textcolor" value="40E0D0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="40E0D0"></td>
+		<td><input type="radio" name="link" value="40E0D0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="40E0D0"></td>
+		<td><input type="radio" name="vlink" value="40E0D0"></td>
+		<td bgcolor="#40E0D0" width=60><br /></td>
+		<td><b>turquoise</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4169E1" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="4169E1"></td>
+		<td><input type="radio" name="textcolor" value="4169E1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="4169E1"></td>
+		<td><input type="radio" name="link" value="4169E1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="4169E1"></td>
+		<td><input type="radio" name="vlink" value="4169E1"></td>
+		<td bgcolor="#4169E1" width=60><br /></td>
+		<td><b>royalblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4682B4" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="4682B4"></td>
+		<td><input type="radio" name="textcolor" value="4682B4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="4682B4"></td>
+		<td><input type="radio" name="link" value="4682B4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="4682B4"></td>
+		<td><input type="radio" name="vlink" value="4682B4"></td>
+		<td bgcolor="#4682B4" width=60><br /></td>
+		<td><b>steelblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#483D8B" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="483D8B"></td>
+		<td><input type="radio" name="textcolor" value="483D8B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="483D8B"></td>
+		<td><input type="radio" name="link" value="483D8B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="483D8B"></td>
+		<td><input type="radio" name="vlink" value="483D8B"></td>
+		<td bgcolor="#483D8B" width=60><br /></td>
+		<td><b>darkslateblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#48D1CC" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="48D1CC"></td>
+		<td><input type="radio" name="textcolor" value="48D1CC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="48D1CC"></td>
+		<td><input type="radio" name="link" value="48D1CC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="48D1CC"></td>
+		<td><input type="radio" name="vlink" value="48D1CC"></td>
+		<td bgcolor="#48D1CC" width=60><br /></td>
+		<td><b>mediumturquoise</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4B0082" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="4B0082"></td>
+		<td><input type="radio" name="textcolor" value="4B0082"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="4B0082"></td>
+		<td><input type="radio" name="link" value="4B0082"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="4B0082"></td>
+		<td><input type="radio" name="vlink" value="4B0082"></td>
+		<td bgcolor="#4B0082" width=60><br /></td>
+		<td><b>indigo</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#556B2F" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="556B2F"></td>
+		<td><input type="radio" name="textcolor" value="556B2F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="556B2F"></td>
+		<td><input type="radio" name="link" value="556B2F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="556B2F"></td>
+		<td><input type="radio" name="vlink" value="556B2F"></td>
+		<td bgcolor="#556B2F" width=60><br /></td>
+		<td><b>darkolivegreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#5F9EA0" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="5F9EA0"></td>
+		<td><input type="radio" name="textcolor" value="5F9EA0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="5F9EA0"></td>
+		<td><input type="radio" name="link" value="5F9EA0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="5F9EA0"></td>
+		<td><input type="radio" name="vlink" value="5F9EA0"></td>
+		<td bgcolor="#5F9EA0" width=60><br /></td>
+		<td><b>cadetblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#6495ED" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="6495ED"></td>
+		<td><input type="radio" name="textcolor" value="6495ED"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="6495ED"></td>
+		<td><input type="radio" name="link" value="6495ED"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="6495ED"></td>
+		<td><input type="radio" name="vlink" value="6495ED"></td>
+		<td bgcolor="#6495ED" width=60><br /></td>
+		<td><b>cornflowerblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#66CDAA" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="66CDAA"></td>
+		<td><input type="radio" name="textcolor" value="66CDAA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="66CDAA"></td>
+		<td><input type="radio" name="link" value="66CDAA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="66CDAA"></td>
+		<td><input type="radio" name="vlink" value="66CDAA"></td>
+		<td bgcolor="#66CDAA" width=60><br /></td>
+		<td><b>mediumaquamarine</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#696969" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="696969"></td>
+		<td><input type="radio" name="textcolor" value="696969"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="696969"></td>
+		<td><input type="radio" name="link" value="696969"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="696969"></td>
+		<td><input type="radio" name="vlink" value="696969"></td>
+		<td bgcolor="#696969" width=60><br /></td>
+		<td><b>dimgray</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#6A5ACD" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="6A5ACD"></td>
+		<td><input type="radio" name="textcolor" value="6A5ACD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="6A5ACD"></td>
+		<td><input type="radio" name="link" value="6A5ACD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="6A5ACD"></td>
+		<td><input type="radio" name="vlink" value="6A5ACD"></td>
+		<td bgcolor="#6A5ACD" width=60><br /></td>
+		<td><b>slateblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#6B8E23" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="6B8E23"></td>
+		<td><input type="radio" name="textcolor" value="6B8E23"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="6B8E23"></td>
+		<td><input type="radio" name="link" value="6B8E23"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="6B8E23"></td>
+		<td><input type="radio" name="vlink" value="6B8E23"></td>
+		<td bgcolor="#6B8E23" width=60><br /></td>
+		<td><b>olivedrab</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#708090" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="708090"></td>
+		<td><input type="radio" name="textcolor" value="708090"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="708090"></td>
+		<td><input type="radio" name="link" value="708090"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="708090"></td>
+		<td><input type="radio" name="vlink" value="708090"></td>
+		<td bgcolor="#708090" width=60><br /></td>
+		<td><b>slategray</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#778899" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="778899"></td>
+		<td><input type="radio" name="textcolor" value="778899"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="778899"></td>
+		<td><input type="radio" name="link" value="778899"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="778899"></td>
+		<td><input type="radio" name="vlink" value="778899"></td>
+		<td bgcolor="#778899" width=60><br /></td>
+		<td><b>lightslategray</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#7B68EE" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="7B68EE"></td>
+		<td><input type="radio" name="textcolor" value="7B68EE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="7B68EE"></td>
+		<td><input type="radio" name="link" value="7B68EE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="7B68EE"></td>
+		<td><input type="radio" name="vlink" value="7B68EE"></td>
+		<td bgcolor="#7B68EE" width=60><br /></td>
+		<td><b>mediumslateblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#7CFC00" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="7CFC00"></td>
+		<td><input type="radio" name="textcolor" value="7CFC00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="7CFC00"></td>
+		<td><input type="radio" name="link" value="7CFC00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="7CFC00"></td>
+		<td><input type="radio" name="vlink" value="7CFC00"></td>
+		<td bgcolor="#7CFC00" width=60><br /></td>
+		<td><b>lawngreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#7FFF00" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="7FFF00"></td>
+		<td><input type="radio" name="textcolor" value="7FFF00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="7FFF00"></td>
+		<td><input type="radio" name="link" value="7FFF00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="7FFF00"></td>
+		<td><input type="radio" name="vlink" value="7FFF00"></td>
+		<td bgcolor="#7FFF00" width=60><br /></td>
+		<td><b>chartreuse</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#7FFFD4" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="7FFFD4"></td>
+		<td><input type="radio" name="textcolor" value="7FFFD4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="7FFFD4"></td>
+		<td><input type="radio" name="link" value="7FFFD4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="7FFFD4"></td>
+		<td><input type="radio" name="vlink" value="7FFFD4"></td>
+		<td bgcolor="#7FFFD4" width=60><br /></td>
+		<td><b>aquamarine</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#800000" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="800000"></td>
+		<td><input type="radio" name="textcolor" value="800000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="800000"></td>
+		<td><input type="radio" name="link" value="800000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="800000"></td>
+		<td><input type="radio" name="vlink" value="800000"></td>
+		<td bgcolor="#800000" width=60><br /></td>
+		<td><b>maroon</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#800080" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="800080"></td>
+		<td><input type="radio" name="textcolor" value="800080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="800080"></td>
+		<td><input type="radio" name="link" value="800080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="800080"></td>
+		<td><input type="radio" name="vlink" value="800080"></td>
+		<td bgcolor="#800080" width=60><br /></td>
+		<td><b>purple</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#808000" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="808000"></td>
+		<td><input type="radio" name="textcolor" value="808000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="808000"></td>
+		<td><input type="radio" name="link" value="808000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="808000"></td>
+		<td><input type="radio" name="vlink" value="808000"></td>
+		<td bgcolor="#808000" width=60><br /></td>
+		<td><b>olive</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#808080" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="808080"></td>
+		<td><input type="radio" name="textcolor" value="808080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="808080"></td>
+		<td><input type="radio" name="link" value="808080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="808080"></td>
+		<td><input type="radio" name="vlink" value="808080"></td>
+		<td bgcolor="#808080" width=60><br /></td>
+		<td><b>gray</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#87CEEB" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="87CEEB"></td>
+		<td><input type="radio" name="textcolor" value="87CEEB"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="87CEEB"></td>
+		<td><input type="radio" name="link" value="87CEEB"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="87CEEB"></td>
+		<td><input type="radio" name="vlink" value="87CEEB"></td>
+		<td bgcolor="#87CEEB" width=60><br /></td>
+		<td><b>skyblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#87CEFA" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="87CEFA"></td>
+		<td><input type="radio" name="textcolor" value="87CEFA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="87CEFA"></td>
+		<td><input type="radio" name="link" value="87CEFA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="87CEFA"></td>
+		<td><input type="radio" name="vlink" value="87CEFA"></td>
+		<td bgcolor="#87CEFA" width=60><br /></td>
+		<td><b>lightskyblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#8A2BE2" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="8A2BE2"></td>
+		<td><input type="radio" name="textcolor" value="8A2BE2"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="8A2BE2"></td>
+		<td><input type="radio" name="link" value="8A2BE2"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="8A2BE2"></td>
+		<td><input type="radio" name="vlink" value="8A2BE2"></td>
+		<td bgcolor="#8A2BE2" width=60><br /></td>
+		<td><b>blueviolet</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#8B0000" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="8B0000"></td>
+		<td><input type="radio" name="textcolor" value="8B0000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="8B0000"></td>
+		<td><input type="radio" name="link" value="8B0000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="8B0000"></td>
+		<td><input type="radio" name="vlink" value="8B0000"></td>
+		<td bgcolor="#8B0000" width=60><br /></td>
+		<td><b>darkred</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#8B008B" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="8B008B"></td>
+		<td><input type="radio" name="textcolor" value="8B008B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="8B008B"></td>
+		<td><input type="radio" name="link" value="8B008B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="8B008B"></td>
+		<td><input type="radio" name="vlink" value="8B008B"></td>
+		<td bgcolor="#8B008B" width=60><br /></td>
+		<td><b>darkmagenta</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#8B4513" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="8B4513"></td>
+		<td><input type="radio" name="textcolor" value="8B4513"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="8B4513"></td>
+		<td><input type="radio" name="link" value="8B4513"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="8B4513"></td>
+		<td><input type="radio" name="vlink" value="8B4513"></td>
+		<td bgcolor="#8B4513" width=60><br /></td>
+		<td><b>saddlebrown</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#8FBC8F" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="8FBC8F"></td>
+		<td><input type="radio" name="textcolor" value="8FBC8F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="8FBC8F"></td>
+		<td><input type="radio" name="link" value="8FBC8F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="8FBC8F"></td>
+		<td><input type="radio" name="vlink" value="8FBC8F"></td>
+		<td bgcolor="#8FBC8F" width=60><br /></td>
+		<td><b>darkseagreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#90EE90" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="90EE90"></td>
+		<td><input type="radio" name="textcolor" value="90EE90"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="90EE90"></td>
+		<td><input type="radio" name="link" value="90EE90"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="90EE90"></td>
+		<td><input type="radio" name="vlink" value="90EE90"></td>
+		<td bgcolor="#90EE90" width=60><br /></td>
+		<td><b>lightgreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#9370DB" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="9370DB"></td>
+		<td><input type="radio" name="textcolor" value="9370DB"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="9370DB"></td>
+		<td><input type="radio" name="link" value="9370DB"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="9370DB"></td>
+		<td><input type="radio" name="vlink" value="9370DB"></td>
+		<td bgcolor="#9370DB" width=60><br /></td>
+		<td><b>mediumpurple</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#9400D3" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="9400D3"></td>
+		<td><input type="radio" name="textcolor" value="9400D3"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="9400D3"></td>
+		<td><input type="radio" name="link" value="9400D3"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="9400D3"></td>
+		<td><input type="radio" name="vlink" value="9400D3"></td>
+		<td bgcolor="#9400D3" width=60><br /></td>
+		<td><b>darkviolet</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#98FB98" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="98FB98"></td>
+		<td><input type="radio" name="textcolor" value="98FB98"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="98FB98"></td>
+		<td><input type="radio" name="link" value="98FB98"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="98FB98"></td>
+		<td><input type="radio" name="vlink" value="98FB98"></td>
+		<td bgcolor="#98FB98" width=60><br /></td>
+		<td><b>palegreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#9932CC" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="9932CC"></td>
+		<td><input type="radio" name="textcolor" value="9932CC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="9932CC"></td>
+		<td><input type="radio" name="link" value="9932CC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="9932CC"></td>
+		<td><input type="radio" name="vlink" value="9932CC"></td>
+		<td bgcolor="#9932CC" width=60><br /></td>
+		<td><b>darkorchid</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#9ACD32" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="9ACD32"></td>
+		<td><input type="radio" name="textcolor" value="9ACD32"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="9ACD32"></td>
+		<td><input type="radio" name="link" value="9ACD32"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="9ACD32"></td>
+		<td><input type="radio" name="vlink" value="9ACD32"></td>
+		<td bgcolor="#9ACD32" width=60><br /></td>
+		<td><b>yellowgreen</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#A0522D" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="A0522D"></td>
+		<td><input type="radio" name="textcolor" value="A0522D"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="A0522D"></td>
+		<td><input type="radio" name="link" value="A0522D"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="A0522D"></td>
+		<td><input type="radio" name="vlink" value="A0522D"></td>
+		<td bgcolor="#A0522D" width=60><br /></td>
+		<td><b>sienna</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#A52A2A" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="A52A2A"></td>
+		<td><input type="radio" name="textcolor" value="A52A2A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="A52A2A"></td>
+		<td><input type="radio" name="link" value="A52A2A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="A52A2A"></td>
+		<td><input type="radio" name="vlink" value="A52A2A"></td>
+		<td bgcolor="#A52A2A" width=60><br /></td>
+		<td><b>brown</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#A9A9A9" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="A9A9A9"></td>
+		<td><input type="radio" name="textcolor" value="A9A9A9"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="A9A9A9"></td>
+		<td><input type="radio" name="link" value="A9A9A9"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="A9A9A9"></td>
+		<td><input type="radio" name="vlink" value="A9A9A9"></td>
+		<td bgcolor="#A9A9A9" width=60><br /></td>
+		<td><b>darkgray</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#ADFF2F" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="ADFF2F"></td>
+		<td><input type="radio" name="textcolor" value="ADFF2F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="ADFF2F"></td>
+		<td><input type="radio" name="link" value="ADFF2F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="ADFF2F"></td>
+		<td><input type="radio" name="vlink" value="ADFF2F"></td>
+		<td bgcolor="#ADFF2F" width=60><br /></td>
+		<td><b>greenyellow</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#AFEEEE" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="AFEEEE"></td>
+		<td><input type="radio" name="textcolor" value="AFEEEE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="AFEEEE"></td>
+		<td><input type="radio" name="link" value="AFEEEE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="AFEEEE"></td>
+		<td><input type="radio" name="vlink" value="AFEEEE"></td>
+		<td bgcolor="#AFEEEE" width=60><br /></td>
+		<td><b>paleturquoise</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#B0C4DE" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="B0C4DE"></td>
+		<td><input type="radio" name="textcolor" value="B0C4DE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="B0C4DE"></td>
+		<td><input type="radio" name="link" value="B0C4DE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="B0C4DE"></td>
+		<td><input type="radio" name="vlink" value="B0C4DE"></td>
+		<td bgcolor="#B0C4DE" width=60><br /></td>
+		<td><b>lightsteelblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#B0E0E6" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="B0E0E6"></td>
+		<td><input type="radio" name="textcolor" value="B0E0E6"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="B0E0E6"></td>
+		<td><input type="radio" name="link" value="B0E0E6"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="B0E0E6"></td>
+		<td><input type="radio" name="vlink" value="B0E0E6"></td>
+		<td bgcolor="#B0E0E6" width=60><br /></td>
+		<td><b>powderblue</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#B22222" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="B22222"></td>
+		<td><input type="radio" name="textcolor" value="B22222"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="B22222"></td>
+		<td><input type="radio" name="link" value="B22222"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="B22222"></td>
+		<td><input type="radio" name="vlink" value="B22222"></td>
+		<td bgcolor="#B22222" width=60><br /></td>
+		<td><b>firebrick</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#B8860B" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="B8860B"></td>
+		<td><input type="radio" name="textcolor" value="B8860B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="B8860B"></td>
+		<td><input type="radio" name="link" value="B8860B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="B8860B"></td>
+		<td><input type="radio" name="vlink" value="B8860B"></td>
+		<td bgcolor="#B8860B" width=60><br /></td>
+		<td><b>darkgoldenrod</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#BA55D3" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="BA55D3"></td>
+		<td><input type="radio" name="textcolor" value="BA55D3"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="BA55D3"></td>
+		<td><input type="radio" name="link" value="BA55D3"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="BA55D3"></td>
+		<td><input type="radio" name="vlink" value="BA55D3"></td>
+		<td bgcolor="#BA55D3" width=60><br /></td>
+		<td><b>mediumorchid</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#BC8F8F" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="BC8F8F"></td>
+		<td><input type="radio" name="textcolor" value="BC8F8F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="BC8F8F"></td>
+		<td><input type="radio" name="link" value="BC8F8F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="BC8F8F"></td>
+		<td><input type="radio" name="vlink" value="BC8F8F"></td>
+		<td bgcolor="#BC8F8F" width=60><br /></td>
+		<td><b>rosybrown</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#BDB76B" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="BDB76B"></td>
+		<td><input type="radio" name="textcolor" value="BDB76B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="BDB76B"></td>
+		<td><input type="radio" name="link" value="BDB76B"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="BDB76B"></td>
+		<td><input type="radio" name="vlink" value="BDB76B"></td>
+		<td bgcolor="#BDB76B" width=60><br /></td>
+		<td><b>darkkhaki</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#C0C0C0" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="C0C0C0"></td>
+		<td><input type="radio" name="textcolor" value="C0C0C0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="C0C0C0"></td>
+		<td><input type="radio" name="link" value="C0C0C0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="C0C0C0"></td>
+		<td><input type="radio" name="vlink" value="C0C0C0"></td>
+		<td bgcolor="#C0C0C0" width=60><br /></td>
+		<td><b>silver</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#C71585" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="C71585"></td>
+		<td><input type="radio" name="textcolor" value="C71585"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="C71585"></td>
+		<td><input type="radio" name="link" value="C71585"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="C71585"></td>
+		<td><input type="radio" name="vlink" value="C71585"></td>
+		<td bgcolor="#C71585" width=60><br /></td>
+		<td><b>mediumvioletred</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#CD5C5C" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="CD5C5C"></td>
+		<td><input type="radio" name="textcolor" value="CD5C5C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="CD5C5C"></td>
+		<td><input type="radio" name="link" value="CD5C5C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="CD5C5C"></td>
+		<td><input type="radio" name="vlink" value="CD5C5C"></td>
+		<td bgcolor="#CD5C5C" width=60><br /></td>
+		<td><b>indianred</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#CD853F" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="CD853F"></td>
+		<td><input type="radio" name="textcolor" value="CD853F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="CD853F"></td>
+		<td><input type="radio" name="link" value="CD853F"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="CD853F"></td>
+		<td><input type="radio" name="vlink" value="CD853F"></td>
+		<td bgcolor="#CD853F" width=60><br /></td>
+		<td><b>peru</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#D2691E" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="D2691E"></td>
+		<td><input type="radio" name="textcolor" value="D2691E"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="D2691E"></td>
+		<td><input type="radio" name="link" value="D2691E"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="D2691E"></td>
+		<td><input type="radio" name="vlink" value="D2691E"></td>
+		<td bgcolor="#D2691E" width=60><br /></td>
+		<td><b>chocolate</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#D2B48C" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="D2B48C"></td>
+		<td><input type="radio" name="textcolor" value="D2B48C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="D2B48C"></td>
+		<td><input type="radio" name="link" value="D2B48C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="D2B48C"></td>
+		<td><input type="radio" name="vlink" value="D2B48C"></td>
+		<td bgcolor="#D2B48C" width=60><br /></td>
+		<td><b>tan</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#D8BFD8" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="D8BFD8"></td>
+		<td><input type="radio" name="textcolor" value="D8BFD8"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="D8BFD8"></td>
+		<td><input type="radio" name="link" value="D8BFD8"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="D8BFD8"></td>
+		<td><input type="radio" name="vlink" value="D8BFD8"></td>
+		<td bgcolor="#D8BFD8" width=60><br /></td>
+		<td><b>thistle</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DA70D6" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="DA70D6"></td>
+		<td><input type="radio" name="textcolor" value="DA70D6"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="DA70D6"></td>
+		<td><input type="radio" name="link" value="DA70D6"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="DA70D6"></td>
+		<td><input type="radio" name="vlink" value="DA70D6"></td>
+		<td bgcolor="#DA70D6" width=60><br /></td>
+		<td><b>orchid</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DAA520" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="DAA520"></td>
+		<td><input type="radio" name="textcolor" value="DAA520"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="DAA520"></td>
+		<td><input type="radio" name="link" value="DAA520"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="DAA520"></td>
+		<td><input type="radio" name="vlink" value="DAA520"></td>
+		<td bgcolor="#DAA520" width=60><br /></td>
+		<td><b>goldenrod</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DB7093" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="DB7093"></td>
+		<td><input type="radio" name="textcolor" value="DB7093"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="DB7093"></td>
+		<td><input type="radio" name="link" value="DB7093"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="DB7093"></td>
+		<td><input type="radio" name="vlink" value="DB7093"></td>
+		<td bgcolor="#DB7093" width=60><br /></td>
+		<td><b>palevioletred</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DC143C" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="DC143C"></td>
+		<td><input type="radio" name="textcolor" value="DC143C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="DC143C"></td>
+		<td><input type="radio" name="link" value="DC143C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="DC143C"></td>
+		<td><input type="radio" name="vlink" value="DC143C"></td>
+		<td bgcolor="#DC143C" width=60><br /></td>
+		<td><b>crimson</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DCDCDC" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="DCDCDC"></td>
+		<td><input type="radio" name="textcolor" value="DCDCDC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="DCDCDC"></td>
+		<td><input type="radio" name="link" value="DCDCDC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="DCDCDC"></td>
+		<td><input type="radio" name="vlink" value="DCDCDC"></td>
+		<td bgcolor="#DCDCDC" width=60><br /></td>
+		<td><b>gainsboro</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDA0DD" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="DDA0DD"></td>
+		<td><input type="radio" name="textcolor" value="DDA0DD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="DDA0DD"></td>
+		<td><input type="radio" name="link" value="DDA0DD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="DDA0DD"></td>
+		<td><input type="radio" name="vlink" value="DDA0DD"></td>
+		<td bgcolor="#DDA0DD" width=60><br /></td>
+		<td><b>plum</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DEB887" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="DEB887"></td>
+		<td><input type="radio" name="textcolor" value="DEB887"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="DEB887"></td>
+		<td><input type="radio" name="link" value="DEB887"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="DEB887"></td>
+		<td><input type="radio" name="vlink" value="DEB887"></td>
+		<td bgcolor="#DEB887" width=60><br /></td>
+		<td><b>burlywood</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E0FFFF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="E0FFFF"></td>
+		<td><input type="radio" name="textcolor" value="E0FFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="E0FFFF"></td>
+		<td><input type="radio" name="link" value="E0FFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="E0FFFF"></td>
+		<td><input type="radio" name="vlink" value="E0FFFF"></td>
+		<td bgcolor="#E0FFFF" width=60><br /></td>
+		<td><b>lightcyan</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E6E6FA" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="E6E6FA"></td>
+		<td><input type="radio" name="textcolor" value="E6E6FA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="E6E6FA"></td>
+		<td><input type="radio" name="link" value="E6E6FA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="E6E6FA"></td>
+		<td><input type="radio" name="vlink" value="E6E6FA"></td>
+		<td bgcolor="#E6E6FA" width=60><br /></td>
+		<td><b>lavender</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9967A" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="E9967A"></td>
+		<td><input type="radio" name="textcolor" value="E9967A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="E9967A"></td>
+		<td><input type="radio" name="link" value="E9967A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="E9967A"></td>
+		<td><input type="radio" name="vlink" value="E9967A"></td>
+		<td bgcolor="#E9967A" width=60><br /></td>
+		<td><b>darksalmon</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#EE82EE" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="EE82EE"></td>
+		<td><input type="radio" name="textcolor" value="EE82EE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="EE82EE"></td>
+		<td><input type="radio" name="link" value="EE82EE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="EE82EE"></td>
+		<td><input type="radio" name="vlink" value="EE82EE"></td>
+		<td bgcolor="#EE82EE" width=60><br /></td>
+		<td><b>violet</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#EEE8AA" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="EEE8AA"></td>
+		<td><input type="radio" name="textcolor" value="EEE8AA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="EEE8AA"></td>
+		<td><input type="radio" name="link" value="EEE8AA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="EEE8AA"></td>
+		<td><input type="radio" name="vlink" value="EEE8AA"></td>
+		<td bgcolor="#EEE8AA" width=60><br /></td>
+		<td><b>palegoldenrod</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F08080" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F08080"></td>
+		<td><input type="radio" name="textcolor" value="F08080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F08080"></td>
+		<td><input type="radio" name="link" value="F08080"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F08080"></td>
+		<td><input type="radio" name="vlink" value="F08080"></td>
+		<td bgcolor="#F08080" width=60><br /></td>
+		<td><b>lightcoral</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F0E68C" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F0E68C"></td>
+		<td><input type="radio" name="textcolor" value="F0E68C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F0E68C"></td>
+		<td><input type="radio" name="link" value="F0E68C"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F0E68C"></td>
+		<td><input type="radio" name="vlink" value="F0E68C"></td>
+		<td bgcolor="#F0E68C" width=60><br /></td>
+		<td><b>khaki</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F0FFF0" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F0FFF0"></td>
+		<td><input type="radio" name="textcolor" value="F0FFF0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F0FFF0"></td>
+		<td><input type="radio" name="link" value="F0FFF0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F0FFF0"></td>
+		<td><input type="radio" name="vlink" value="F0FFF0"></td>
+		<td bgcolor="#F0FFF0" width=60><br /></td>
+		<td><b>honeydew</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F0FFFF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F0FFFF"></td>
+		<td><input type="radio" name="textcolor" value="F0FFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F0FFFF"></td>
+		<td><input type="radio" name="link" value="F0FFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F0FFFF"></td>
+		<td><input type="radio" name="vlink" value="F0FFFF"></td>
+		<td bgcolor="#F0FFFF" width=60><br /></td>
+		<td><b>azure</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F4A460" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F4A460"></td>
+		<td><input type="radio" name="textcolor" value="F4A460"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F4A460"></td>
+		<td><input type="radio" name="link" value="F4A460"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F4A460"></td>
+		<td><input type="radio" name="vlink" value="F4A460"></td>
+		<td bgcolor="#F4A460" width=60><br /></td>
+		<td><b>sandybrown</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F5DEB3" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F5DEB3"></td>
+		<td><input type="radio" name="textcolor" value="F5DEB3"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F5DEB3"></td>
+		<td><input type="radio" name="link" value="F5DEB3"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F5DEB3"></td>
+		<td><input type="radio" name="vlink" value="F5DEB3"></td>
+		<td bgcolor="#F5DEB3" width=60><br /></td>
+		<td><b>wheat</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F5F5DC" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F5F5DC"></td>
+		<td><input type="radio" name="textcolor" value="F5F5DC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F5F5DC"></td>
+		<td><input type="radio" name="link" value="F5F5DC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F5F5DC"></td>
+		<td><input type="radio" name="vlink" value="F5F5DC"></td>
+		<td bgcolor="#F5F5DC" width=60><br /></td>
+		<td><b>beige</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F5F5F5" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F5F5F5"></td>
+		<td><input type="radio" name="textcolor" value="F5F5F5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F5F5F5"></td>
+		<td><input type="radio" name="link" value="F5F5F5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F5F5F5"></td>
+		<td><input type="radio" name="vlink" value="F5F5F5"></td>
+		<td bgcolor="#F5F5F5" width=60><br /></td>
+		<td><b>whitesmoke</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F5FFFA" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F5FFFA"></td>
+		<td><input type="radio" name="textcolor" value="F5FFFA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F5FFFA"></td>
+		<td><input type="radio" name="link" value="F5FFFA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F5FFFA"></td>
+		<td><input type="radio" name="vlink" value="F5FFFA"></td>
+		<td bgcolor="#F5FFFA" width=60><br /></td>
+		<td><b>mintcream</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F8F8FF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="F8F8FF"></td>
+		<td><input type="radio" name="textcolor" value="F8F8FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="F8F8FF"></td>
+		<td><input type="radio" name="link" value="F8F8FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="F8F8FF"></td>
+		<td><input type="radio" name="vlink" value="F8F8FF"></td>
+		<td bgcolor="#F8F8FF" width=60><br /></td>
+		<td><b>ghostwhite</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FA8072" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FA8072"></td>
+		<td><input type="radio" name="textcolor" value="FA8072"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FA8072"></td>
+		<td><input type="radio" name="link" value="FA8072"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FA8072"></td>
+		<td><input type="radio" name="vlink" value="FA8072"></td>
+		<td bgcolor="#FA8072" width=60><br /></td>
+		<td><b>salmon</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FAEBD7" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FAEBD7"></td>
+		<td><input type="radio" name="textcolor" value="FAEBD7"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FAEBD7"></td>
+		<td><input type="radio" name="link" value="FAEBD7"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FAEBD7"></td>
+		<td><input type="radio" name="vlink" value="FAEBD7"></td>
+		<td bgcolor="#FAEBD7" width=60><br /></td>
+		<td><b>antiquewhite</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FAFAD2" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FAFAD2"></td>
+		<td><input type="radio" name="textcolor" value="FAFAD2"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FAFAD2"></td>
+		<td><input type="radio" name="link" value="FAFAD2"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FAFAD2"></td>
+		<td><input type="radio" name="vlink" value="FAFAD2"></td>
+		<td bgcolor="#FAFAD2" width=60><br /></td>
+		<td><b>lightgoldenrodyellow</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FDF5E6" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FDF5E6"></td>
+		<td><input type="radio" name="textcolor" value="FDF5E6"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FDF5E6"></td>
+		<td><input type="radio" name="link" value="FDF5E6"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FDF5E6"></td>
+		<td><input type="radio" name="vlink" value="FDF5E6"></td>
+		<td bgcolor="#FDF5E6" width=60><br /></td>
+		<td><b>oldlace</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FF0000" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FF0000"></td>
+		<td><input type="radio" name="textcolor" value="FF0000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FF0000"></td>
+		<td><input type="radio" name="link" value="FF0000"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FF0000"></td>
+		<td><input type="radio" name="vlink" value="FF0000"></td>
+		<td bgcolor="#FF0000" width=60><br /></td>
+		<td><b>red</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FF00FF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FF00FF"></td>
+		<td><input type="radio" name="textcolor" value="FF00FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FF00FF"></td>
+		<td><input type="radio" name="link" value="FF00FF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FF00FF"></td>
+		<td><input type="radio" name="vlink" value="FF00FF"></td>
+		<td bgcolor="#FF00FF" width=60><br /></td>
+		<td><b>magenta</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FF1493" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FF1493"></td>
+		<td><input type="radio" name="textcolor" value="FF1493"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FF1493"></td>
+		<td><input type="radio" name="link" value="FF1493"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FF1493"></td>
+		<td><input type="radio" name="vlink" value="FF1493"></td>
+		<td bgcolor="#FF1493" width=60><br /></td>
+		<td><b>deeppink</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FF4500" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FF4500"></td>
+		<td><input type="radio" name="textcolor" value="FF4500"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FF4500"></td>
+		<td><input type="radio" name="link" value="FF4500"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FF4500"></td>
+		<td><input type="radio" name="vlink" value="FF4500"></td>
+		<td bgcolor="#FF4500" width=60><br /></td>
+		<td><b>orangered</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FF69B4" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FF69B4"></td>
+		<td><input type="radio" name="textcolor" value="FF69B4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FF69B4"></td>
+		<td><input type="radio" name="link" value="FF69B4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FF69B4"></td>
+		<td><input type="radio" name="vlink" value="FF69B4"></td>
+		<td bgcolor="#FF69B4" width=60><br /></td>
+		<td><b>hotpink</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FF7F50" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FF7F50"></td>
+		<td><input type="radio" name="textcolor" value="FF7F50"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FF7F50"></td>
+		<td><input type="radio" name="link" value="FF7F50"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FF7F50"></td>
+		<td><input type="radio" name="vlink" value="FF7F50"></td>
+		<td bgcolor="#FF7F50" width=60><br /></td>
+		<td><b>coral</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FF8C00" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FF8C00"></td>
+		<td><input type="radio" name="textcolor" value="FF8C00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FF8C00"></td>
+		<td><input type="radio" name="link" value="FF8C00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FF8C00"></td>
+		<td><input type="radio" name="vlink" value="FF8C00"></td>
+		<td bgcolor="#FF8C00" width=60><br /></td>
+		<td><b>darkorange</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFA07A" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFA07A"></td>
+		<td><input type="radio" name="textcolor" value="FFA07A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFA07A"></td>
+		<td><input type="radio" name="link" value="FFA07A"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFA07A"></td>
+		<td><input type="radio" name="vlink" value="FFA07A"></td>
+		<td bgcolor="#FFA07A" width=60><br /></td>
+		<td><b>lightsalmon</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFA500" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFA500"></td>
+		<td><input type="radio" name="textcolor" value="FFA500"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFA500"></td>
+		<td><input type="radio" name="link" value="FFA500"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFA500"></td>
+		<td><input type="radio" name="vlink" value="FFA500"></td>
+		<td bgcolor="#FFA500" width=60><br /></td>
+		<td><b>orange</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFB6C1" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFB6C1"></td>
+		<td><input type="radio" name="textcolor" value="FFB6C1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFB6C1"></td>
+		<td><input type="radio" name="link" value="FFB6C1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFB6C1"></td>
+		<td><input type="radio" name="vlink" value="FFB6C1"></td>
+		<td bgcolor="#FFB6C1" width=60><br /></td>
+		<td><b>lightpink</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFC0CB" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFC0CB"></td>
+		<td><input type="radio" name="textcolor" value="FFC0CB"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFC0CB"></td>
+		<td><input type="radio" name="link" value="FFC0CB"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFC0CB"></td>
+		<td><input type="radio" name="vlink" value="FFC0CB"></td>
+		<td bgcolor="#FFC0CB" width=60><br /></td>
+		<td><b>pink</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFD700" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFD700"></td>
+		<td><input type="radio" name="textcolor" value="FFD700"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFD700"></td>
+		<td><input type="radio" name="link" value="FFD700"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFD700"></td>
+		<td><input type="radio" name="vlink" value="FFD700"></td>
+		<td bgcolor="#FFD700" width=60><br /></td>
+		<td><b>gold</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFDAB9" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFDAB9"></td>
+		<td><input type="radio" name="textcolor" value="FFDAB9"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFDAB9"></td>
+		<td><input type="radio" name="link" value="FFDAB9"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFDAB9"></td>
+		<td><input type="radio" name="vlink" value="FFDAB9"></td>
+		<td bgcolor="#FFDAB9" width=60><br /></td>
+		<td><b>peachpuff</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFDEAD" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFDEAD"></td>
+		<td><input type="radio" name="textcolor" value="FFDEAD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFDEAD"></td>
+		<td><input type="radio" name="link" value="FFDEAD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFDEAD"></td>
+		<td><input type="radio" name="vlink" value="FFDEAD"></td>
+		<td bgcolor="#FFDEAD" width=60><br /></td>
+		<td><b>navajowhite</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFE4B5" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFE4B5"></td>
+		<td><input type="radio" name="textcolor" value="FFE4B5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFE4B5"></td>
+		<td><input type="radio" name="link" value="FFE4B5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFE4B5"></td>
+		<td><input type="radio" name="vlink" value="FFE4B5"></td>
+		<td bgcolor="#FFE4B5" width=60><br /></td>
+		<td><b>moccasin</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFE4C4" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFE4C4"></td>
+		<td><input type="radio" name="textcolor" value="FFE4C4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFE4C4"></td>
+		<td><input type="radio" name="link" value="FFE4C4"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFE4C4"></td>
+		<td><input type="radio" name="vlink" value="FFE4C4"></td>
+		<td bgcolor="#FFE4C4" width=60><br /></td>
+		<td><b>bisque</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFE4E1" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFE4E1"></td>
+		<td><input type="radio" name="textcolor" value="FFE4E1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFE4E1"></td>
+		<td><input type="radio" name="link" value="FFE4E1"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFE4E1"></td>
+		<td><input type="radio" name="vlink" value="FFE4E1"></td>
+		<td bgcolor="#FFE4E1" width=60><br /></td>
+		<td><b>mistyrose</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFEBCD" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFEBCD"></td>
+		<td><input type="radio" name="textcolor" value="FFEBCD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFEBCD"></td>
+		<td><input type="radio" name="link" value="FFEBCD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFEBCD"></td>
+		<td><input type="radio" name="vlink" value="FFEBCD"></td>
+		<td bgcolor="#FFEBCD" width=60><br /></td>
+		<td><b>blanchedalmond</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFEFD5" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFEFD5"></td>
+		<td><input type="radio" name="textcolor" value="FFEFD5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFEFD5"></td>
+		<td><input type="radio" name="link" value="FFEFD5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFEFD5"></td>
+		<td><input type="radio" name="vlink" value="FFEFD5"></td>
+		<td bgcolor="#FFEFD5" width=60><br /></td>
+		<td><b>papayawhip</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFF0F5" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFF0F5"></td>
+		<td><input type="radio" name="textcolor" value="FFF0F5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFF0F5"></td>
+		<td><input type="radio" name="link" value="FFF0F5"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFF0F5"></td>
+		<td><input type="radio" name="vlink" value="FFF0F5"></td>
+		<td bgcolor="#FFF0F5" width=60><br /></td>
+		<td><b>lavenderblush</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFF5EE" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFF5EE"></td>
+		<td><input type="radio" name="textcolor" value="FFF5EE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFF5EE"></td>
+		<td><input type="radio" name="link" value="FFF5EE"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFF5EE"></td>
+		<td><input type="radio" name="vlink" value="FFF5EE"></td>
+		<td bgcolor="#FFF5EE" width=60><br /></td>
+		<td><b>seashell</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFF8DC" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFF8DC"></td>
+		<td><input type="radio" name="textcolor" value="FFF8DC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFF8DC"></td>
+		<td><input type="radio" name="link" value="FFF8DC"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFF8DC"></td>
+		<td><input type="radio" name="vlink" value="FFF8DC"></td>
+		<td bgcolor="#FFF8DC" width=60><br /></td>
+		<td><b>cornsilk</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFACD" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFFACD"></td>
+		<td><input type="radio" name="textcolor" value="FFFACD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFFACD"></td>
+		<td><input type="radio" name="link" value="FFFACD"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFFACD"></td>
+		<td><input type="radio" name="vlink" value="FFFACD"></td>
+		<td bgcolor="#FFFACD" width=60><br /></td>
+		<td><b>lemonchiffon</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFAF0" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFFAF0"></td>
+		<td><input type="radio" name="textcolor" value="FFFAF0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFFAF0"></td>
+		<td><input type="radio" name="link" value="FFFAF0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFFAF0"></td>
+		<td><input type="radio" name="vlink" value="FFFAF0"></td>
+		<td bgcolor="#FFFAF0" width=60><br /></td>
+		<td><b>floralwhite</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFAFA" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFFAFA"></td>
+		<td><input type="radio" name="textcolor" value="FFFAFA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFFAFA"></td>
+		<td><input type="radio" name="link" value="FFFAFA"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFFAFA"></td>
+		<td><input type="radio" name="vlink" value="FFFAFA"></td>
+		<td bgcolor="#FFFAFA" width=60><br /></td>
+		<td><b>snow</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFF00" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFFF00"></td>
+		<td><input type="radio" name="textcolor" value="FFFF00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFFF00"></td>
+		<td><input type="radio" name="link" value="FFFF00"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFFF00"></td>
+		<td><input type="radio" name="vlink" value="FFFF00"></td>
+		<td bgcolor="#FFFF00" width=60><br /></td>
+		<td><b>yellow</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFE0" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFFFE0"></td>
+		<td><input type="radio" name="textcolor" value="FFFFE0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFFFE0"></td>
+		<td><input type="radio" name="link" value="FFFFE0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFFFE0"></td>
+		<td><input type="radio" name="vlink" value="FFFFE0"></td>
+		<td bgcolor="#FFFFE0" width=60><br /></td>
+		<td><b>lightyellow</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFF0" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFFFF0"></td>
+		<td><input type="radio" name="textcolor" value="FFFFF0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFFFF0"></td>
+		<td><input type="radio" name="link" value="FFFFF0"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFFFF0"></td>
+		<td><input type="radio" name="vlink" value="FFFFF0"></td>
+		<td bgcolor="#FFFFF0" width=60><br /></td>
+		<td><b>ivory</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF" width="40"><br /></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="bgcolor" value="FFFFFF"></td>
+		<td><input type="radio" name="textcolor" value="FFFFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="h1color" value="FFFFFF"></td>
+		<td><input type="radio" name="link" value="FFFFFF"></td>
+		<td bgcolor="#eeeeee"><input type="radio" name="alink" value="FFFFFF"></td>
+		<td><input type="radio" name="vlink" value="FFFFFF"></td>
+		<td bgcolor="#FFFFFF" width=60><br /></td>
+		<td><b>white</b></td>
+	</tr>
+	<tr>
+		<th rowspan=6><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th colspan="3" align="left">Followed Link</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee" colspan=4 align="left">Active Link</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th colspan=5 align="left">Link</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th><br /></th>
+		<th bgcolor="#eeeeee" colspan=6 align="left">Heading 1</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee"><br /></th>
+		<th colspan=7 align="left">Text</th>
+	</tr>
+	<tr>
+		<th bgcolor="#eeeeee" colspan=8 align="left">Background</th>
+	</tr>
+	</table>
+
+	<p><b>Need more font options? More colors?</b> The stylesheet template is just a starting point. If you need more flexibility, use the File Editor to manage style.css directly. To learn more about stylesheet authoring, visit:</p>
+
+	<ul>
+		<li>
+
+			<p><a href="http://www.w3.org/Style/">http://www.w3.org/Style/</a></p>
+
+		</li>
+		<li>
+
+			<p><a href="http://hotwired.lycos.com/webmonkey/authoring/stylesheets/">http://hotwired.lycos.com/webmonkey/authoring/stylesheets/</a></p>
+
+		</li>
+	</ul>
+
+</Genesis:UserInput>
+_____________________________________________________________________________
+
+<Genesis:File name="style_test.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Style Test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<meta name="pragma" content="no-cache" />
+</head>
+<body>
+
+	<p>If you've visited this document before, you'll probably need to refresh or reload your browser to see any changes.</p>
+
+	<hr size="1" />
+
+	<h1>Heading 1 text: Hello, I am style_test.html</h1>
+
+	<p>I exist to preview the styles that you've developed with the Stylesheet Template.</p>
+
+	<hr size="1" />
+
+	<p>I am a basic paragraph.</p>
+
+	<hr size="1" />
+
+	<p><a href="style_test.html">I am a Followed Link</a></p>
+
+	<hr size="1" />
+
+	<p><a href="noproto://proto:99/">I am an Unfollowed Link</a></p>
+
+	<p>(Hold your mouse over the links to see what an Active Link looks like.)</p>
+
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="style.css">
+
+	body {
+		color: #%textcolor%;
+		background-color: #%bgcolor%;
+		}
+	h1 {
+		color: #%h1color%;
+		background-color: #%bgcolor%;
+		}
+	a {
+		color: #%link%;
+		background-color: #%bgcolor%;
+		}
+	a:visited {
+		color: #%vlink%;
+		background-color: #%bgcolor%;
+		}
+	a:hover {
+		color: #%alink%;
+		background-color: #%bgcolor%;
+		}
+	body,th,td,p {
+		font-family: %fontfamily%;
+		font-size: %fontsize%pt;
+		}
+
+</Genesis:File>
+_____________________________________________________________________________

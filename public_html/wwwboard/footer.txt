@@ -1,0 +1,46 @@
+<center>
+<a href="http://www.grainypictures.com/john/index.html">John Pierson</a> &#149; <a href="http://www.grainypictures.com/book">The Book</a> &#149; <a href="http://www.grainypictures.com/splitscreen2/index.html">Split Screen</a> &#149; <a href="http://www.gra
+inypictures.com/wwwboard/index.html">WWWBoard</a><p>
+
+<font size="-1"><a href="http://www.grainypictures.com">Home</a> &#149; 
+<a href="http://www.grainypictures.com/recommend/index.html">We Recommend</a> &#149; 
+<a href="http://www.grainypictures.com/links.html">Links</a> &#149; 
+<a href="http://www.grainypictures.com/faq/index.html">FAQ</a> &#149; 
+<a href="http://www.grainypictures.com/search.html">Search</a> &#149; 
+<a href="http://www.grainypictures.com/contact.html">Contact Us</a> &#149; 
+<a href="http://www.grainypictures.com/credits.html">Credits</a><p>
+
+</font>
+
+<map name="bar">
+			<area shape="rect" coords="435, 0, 580, 20"
+				href="http://www.grainypictures.com/contact.html">
+			<area shape="rect" coords="291, 0, 434, 20"
+				href="http://www.grainypictures.com/links.html">
+			<area shape="rect" coords="145, 0, 290, 20"
+				href="http://www.grainypictures.com/recommend/index.html">
+			<area shape="rect" coords="0, 0, 144, 20"
+				href="http://www.grainypictures.com/faq/index.html">
+</map>
+
+
+<map name="top">
+			<area shape="rect" coords="50, 0, 362, 38"
+				href="http://www.grainypictures.com">
+			<area shape="rect" coords="0, 0, 49, 48"
+				href="http://www.grainypictures.com">
+			<area shape="rect" coords="226, 42, 288, 56"
+				href="http://www.grainypictures.com/wwwboard">
+			<area shape="rect" coords="167, 42, 221, 56"
+				href="http://www.grainypictures.com/search.html">
+			<area shape="rect" coords="122, 42, 162, 56"
+				href="http://www.grainypictures.com/links.html">
+</map>
+
+		
+
+</td>
+</tr>
+</table>
+
+</center>

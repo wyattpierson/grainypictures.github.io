@@ -1,0 +1,47 @@
+To: %webmaster_email_address%
+From: %email_address%
+Onderwerp: Web autorisatie account aangevraagd (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+Een gebruiker heeft een aanvraag gedaan voor een autorisatie account:
+
+Volledige naam: %full_name%
+Email: %email_address%
+Gebruikersnaam: %username%
+
+Extra Opmerkingen:
+
+%comments%
+
+Bezoek de admin pagina om aanvragen goed te keuren of te weigeren:
+
+%full_script_url%?Action=UA
+
+Ga hier naartoe om deze aanvraag direct goed te keuren:
+
+%full_script_url%?Action=UA&sa=ApproveAccounts&approve_%username%=0
+
+Ga hier naartoe om deze aanvraag direct af te keuren:
+
+%full_script_url%?Action=UA&sa=ApproveAccounts&approve_%username%=1
+
+Groeten,
+%webmaster_full_name%
+%webmaster_email_address%
+
+_____________________________________________________________________________
+
+Full Parameter List
+===================
+
+%full_form%
+
+Full Environment List
+=====================
+
+%full_env%

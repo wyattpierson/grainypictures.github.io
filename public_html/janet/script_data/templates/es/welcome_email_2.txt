@@ -1,0 +1,24 @@
+To: %email_address%
+From: %webmaster_email_address%
+Subject: Autor de Web da cuenta de se quejaba (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+una cuenta creadora de Web se ha quejado para ti a:
+
+%full_script_url%
+
+Use estas credenciales para acceder su cuenta:
+
+Username: %username%
+Clave: %password%
+
+Por favor, me haga contacto con si necesita cualquiera asistencia.
+
+Memorias,
+%webmaster_full_name%
+%webmaster_email_address%

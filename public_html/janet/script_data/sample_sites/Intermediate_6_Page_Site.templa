@@ -1,0 +1,794 @@
+_____________________________________________________________________________
+
+<Genesis:UserInput>
+
+# Create an HTML form that will be shown to the user.  Be sure to properly
+# close all HTML tags.  The following names are reserved for use by Genesis;
+# don't create name-value pairs with them: "Action"; "sa"; "Template"; "CWD"
+
+<p><b>Intermediate 6 Page Site</b></p>
+
+This form will allow you to create a 6 page website.<br>
+Simply fill out the form and the program will create your site for you.<br>
+You can return and edit your site at any time.<br>
+Fill out the form below, and then click "Build Web Site".
+
+<ul>
+  <li><font size="2">Leave the Menu Link Name blank to remove the page from the
+    menu</font></li>
+  <li><font size="2">You do not have to use all 6 pages</font></li>
+  <li><font size="2">You do not have to use Paragraph Title</font></li>
+  <li><font size="2">You do not have to use every Paragraph</font></li>
+  <li><font size="2">Although recommended, you do not have to use Page Title</font></li>
+</ul>
+
+<input type="hidden" name="tw" value="620">
+<input type="hidden" name="emlink" value="Email">
+
+<table border="0" cellpadding="0" cellspacing="0" width="450">
+      <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><b>Site Information</b></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Web Site Title</td>
+        <td><input name="st" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Email Address</td>
+        <td><input name="shared_email" size="20"></td>
+      </tr>
+
+<!---  Start of 1st page  --->
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><hr></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><b>Page Information</b></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top"><font color="#0000FF"><b>Page #1</b></font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Menu Link Name&nbsp; </td>
+        <td><input name="m1" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Background</td>
+        <td><input name="p1bg" size="35"><font size="2">(url or file
+          name)</font></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Title&nbsp; </td>
+        <td><input name="p1" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph Title</td>
+        <td><input name="pt1a" size="20"> Align <select name="pta1a">
+            <option value="left">Left
+            <option value="center">Center
+            <option value="right">Right
+          </select></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph</td>
+        <td><textarea rows="4" name="pr1a" cols="40" wrap="virtual"></textarea></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph Title</td>
+      <td><input name="pt1b" size="20"> Align <select size="1" name="pta1b">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph</td>
+      <td><textarea rows="4" name="pr1b" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="450">
+    <tr>
+      <td nowrap="nowrap" valign="top">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph Title</td>
+      <td><input name="pt1c" size="20"> Align <select size="1" name="pta1c">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph</td>
+      <td><textarea rows="4" name="pr1c" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+
+  <!---  End of 1st Page  --->
+
+  <!---  Start of 2nd Page  --->
+
+   <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><hr></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top"><font color="#0000FF"><b>Page #2</b></font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Menu Link Name&nbsp; </td>
+        <td><input name="m2" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Background</td>
+        <td><input name="p2bg" size="35"><font size="2">(url or file
+          name)</font></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Title&nbsp; </td>
+        <td><input name="p2" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph Title</td>
+        <td><input name="pt2a" size="20"> Align <select size="1" name="pta2a">
+            <option>Left</option>
+            <option>Center</option>
+            <option>Right</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph</td>
+        <td><textarea rows="4" name="pr2a" cols="40" wrap="virtual"></textarea></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph Title</td>
+      <td><input name="pt2b" size="20"> Align <select size="1" name="pta2b">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph</td>
+      <td><textarea rows="4" name="pr2b" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="450">
+    <tr>
+      <td nowrap="nowrap" valign="top">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph Title</td>
+      <td><input name="pt2c" size="20"> Align <select size="1" name="pta2c">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph</td>
+      <td><textarea rows="4" name="pr2c" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+
+
+ <!---  End of 2nd Page --->
+
+
+ <!---  Start of 3rd Page --->
+
+
+   <tr>
+        <td nowrap="nowrap" valign="top"></td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><hr></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top"><font color="#0000FF"><b>Page #3</b></font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Menu Link Name&nbsp; </td>
+        <td><input name="m3" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Background</td>
+        <td><input name="p3bg" size="35"><font size="2">(url or file
+          name)</font></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Title&nbsp; </td>
+        <td><input name="p3" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph Title</td>
+        <td><input name="pt3a" size="20"> Align <select size="1" name="pta3a">
+            <option>Left</option>
+            <option>Center</option>
+            <option>Right</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph</td>
+        <td><textarea rows="4" name="pr3a" cols="40" wrap="virtual"></textarea></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph Title</td>
+      <td><input name="pt3b" size="20"> Align <select size="1" name="pta3b">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph</td>
+      <td><textarea rows="4" name="pr3b" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="450">
+    <tr>
+      <td nowrap="nowrap" valign="top">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph Title</td>
+      <td><input name="pt3c" size="20"> Align <select size="1" name="pta3c">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph</td>
+      <td><textarea rows="4" name="pr3c" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+
+
+    <!---  End of 3rd Page --->
+
+    <!---  Start of 4th Page  --->
+
+    <tr>
+        <td nowrap="nowrap" valign="top"></td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><hr></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top"><font color="#0000FF"><b>Page #4</b></font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Menu Link Name&nbsp; </td>
+        <td><input name="m4" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Background</td>
+        <td><input name="p4bg" size="35"><font size="2">(url or file
+          name)</font></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Title&nbsp; </td>
+        <td><input name="p4" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph Title</td>
+        <td><input name="pt4a" size="20"> Align <select size="1" name="pta4a">
+            <option>Left</option>
+            <option>Center</option>
+            <option>Right</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph</td>
+        <td><textarea rows="4" name="pr4a" cols="40" wrap="virtual"></textarea></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph Title</td>
+      <td><input name="pt4b" size="20"> Align <select size="1" name="pta4b">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph</td>
+      <td><textarea rows="4" name="pr4b" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="450">
+    <tr>
+      <td nowrap="nowrap" valign="top">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph Title</td>
+      <td><input name="pt4c" size="20"> Align <select size="1" name="pta4c">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph</td>
+      <td><textarea rows="4" name="pr4c" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+
+
+
+    <!---  End of 4th Page  --->
+
+
+
+   <!---  Start of 5th Page  --->
+
+
+   <tr>
+        <td nowrap="nowrap" valign="top"></td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><hr></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top"><font color="#0000FF"><b>Page #5</b></font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Menu Link Name&nbsp; </td>
+        <td><input name="m5" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Background</td>
+        <td><input name="p5bg" size="35"><font size="2">(url or file
+          name)</font></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Title&nbsp; </td>
+        <td><input name="p5" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph Title</td>
+        <td><input name="pt5a" size="20"> Align <select size="1" name="pta5a">
+            <option>Left</option>
+            <option>Center</option>
+            <option>Right</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph</td>
+        <td><textarea rows="4" name="pr5a" cols="40" wrap="virtual"></textarea></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph Title</td>
+      <td><input name="pt5b" size="20"> Align <select size="1" name="pta5b">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph</td>
+      <td><textarea rows="4" name="pr5b" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="450">
+    <tr>
+      <td nowrap="nowrap" valign="top">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph Title</td>
+      <td><input name="pt5c" size="20"> Align <select size="1" name="pta5c">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph</td>
+      <td><textarea rows="4" name="pr5c" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+
+
+   <!---  End of 5th Page  --->
+
+
+
+   <!---  Start of 6th Page  --->
+
+   <tr>
+        <td nowrap="nowrap" valign="top"></td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top" colspan="2"><hr></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+   <tr>
+        <td nowrap="nowrap" valign="top"><font color="#0000FF"><b>Page #6</b></font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Menu Link Name&nbsp; </td>
+        <td><input name="m6" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Background</td>
+        <td><input name="p6bg" size="35"><font size="2">(url or file
+          name)</font></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">Page Title&nbsp; </td>
+        <td><input name="p6" size="20"></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph Title</td>
+        <td><input name="pt6a" size="20"> Align <select size="1" name="pta6a">
+            <option>Left</option>
+            <option>Center</option>
+            <option>Right</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">1st Paragraph</td>
+        <td><textarea rows="4" name="pr6a" cols="40" wrap="virtual"></textarea></td>
+        </tr>
+      <tr>
+        <td nowrap="nowrap" valign="top">&nbsp;</td>
+        <td></td>
+      </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph Title</td>
+      <td><input name="pt6b" size="20"> Align <select size="1" name="pta6b">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">2nd Paragraph</td>
+      <td><textarea rows="4" name="pr6b" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="450">
+    <tr>
+      <td nowrap="nowrap" valign="top">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph Title</td>
+      <td><input name="pt6c" size="20"> Align <select size="1" name="pta6c">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="top">3rd Paragraph</td>
+      <td><textarea rows="4" name="pr6c" cols="40" wrap="virtual"></textarea></td>
+    </tr>
+
+
+   <!---  End of 6th Page  --->
+
+
+  </table>
+
+
+
+</Genesis:UserInput>
+_____________________________________________________________________________
+
+<Genesis:File name="index.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%st%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body background="%p1bg%">
+<div align="left">
+  <table border="0" cellpadding="5" cellspacing="0" width="%tw%">
+    <tr>
+      <td colspan="2" align="center">
+        <h1>%st%</h1>
+        <h2>%p1%</h2>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" nowrap>
+        <a href="index.html">%m1%</a><br>
+        <a href="page2.html">%m2%</a><br>
+        <a href="page3.html">%m3%</a><br>
+        <a href="page4.html">%m4%</a><br>
+        <a href="page5.html">%m5%</a><br>
+        <a href="page6.html">%m6%</a><br>
+</td>
+      <td valign="top">
+        <p align="%pta1a%"><b>%pt1a%</b></p>
+        %pr1a%
+        <p align="%pta1b%"><b>%pt1b%</b></p>
+        %pr1b%
+        <p align="%pta1c%"><b>%pt1c%</b></p>
+        %pr1c%<br>
+        <p align="center"><a href="mailto:%shared_email%">%emlink%</a></p></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="page2.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%st% - %m2%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body background="%p2bg%">
+<div align="left">
+  <table border="0" cellpadding="5" cellspacing="0" width="%tw%">
+    <tr>
+      <td colspan="2" align="center">
+        <h1>%st%</h1>
+        <h2>%p2%</h2>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" nowrap>
+        <a href="index.html">%m1%</a><br>
+        <a href="page2.html">%m2%</a><br>
+        <a href="page3.html">%m3%</a><br>
+        <a href="page4.html">%m4%</a><br>
+        <a href="page5.html">%m5%</a><br>
+        <a href="page6.html">%m6%</a><br>
+      </td>
+      <td valign="top">
+        <p align="%pta2a%"><b>%pt2a%</b></p>
+        %pr2a%
+        <p align="%pta2b%"><b>%pt2b%</b></p>
+        %pr2b%
+        <p align="%pta2c%"><b>%pt2c%</b></p>
+        %pr2c%<br>
+        <p align="center"><a href="mailto:%shared_email%">%emlink%</a></p></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="page3.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%st% - %m3%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body background="%p3bg%">
+<div align="left">
+  <table border="0" cellpadding="5" cellspacing="0" width="%tw%">
+    <tr>
+      <td colspan="2" align="center">
+        <h1>%st%</h1>
+        <h2>%p3%</h2>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" nowrap>
+        <a href="index.html">%m1%</a><br>
+        <a href="page2.html">%m2%</a><br>
+        <a href="page3.html">%m3%</a><br>
+        <a href="page4.html">%m4%</a><br>
+        <a href="page5.html">%m5%</a><br>
+        <a href="page6.html">%m6%</a><br>
+</td>
+      <td valign="top">
+        <p align="%pta3a%"><b>%pt3a%</b></p>
+        %pr3a%
+        <p align="%pta3b%"><b>%pt3b%</b></p>
+        %pr3b%
+        <p align="%pta3c%"><b>%pt3c%</b></p>
+        %pr3c%<br>
+        <p align="center"><a href="mailto:%shared_email%">%emlink%</a></p></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="page4.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%st% - %m4%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body background="%p4bg%">
+<div align="left">
+  <table border="0" cellpadding="5" cellspacing="0" width="%tw%">
+    <tr>
+      <td colspan="2" align="center">
+        <h1>%st%</h1>
+        <h2>%p4%</h2>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" nowrap>
+        <a href="index.html">%m1%</a><br>
+        <a href="page2.html">%m2%</a><br>
+        <a href="page3.html">%m3%</a><br>
+        <a href="page4.html">%m4%</a><br>
+        <a href="page5.html">%m5%</a><br>
+        <a href="page6.html">%m6%</a><br>
+</td>
+      <td valign="top">
+        <p align="%pta4a%"><b>%pt4a%</b></p>
+        %pr4a%
+        <p align="%pta4b%"><b>%pt4b%</b></p>
+        %pr4b%
+        <p align="%pta4c%"><b>%pt4c%</b></p>
+        %pr4c%<br>
+        <p align="center"><a href="mailto:%shared_email%">%emlink%</a></p></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="page5.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%st% - %m5%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body background="%p5bg%">
+<div align="left">
+  <table border="0" cellpadding="5" cellspacing="0" width="%tw%">
+    <tr>
+      <td colspan="2" align="center">
+        <h1>%st%</h1>
+        <h2>%p5%</h2>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" nowrap>
+        <a href="index.html">%m1%</a><br>
+        <a href="page2.html">%m2%</a><br>
+        <a href="page3.html">%m3%</a><br>
+        <a href="page4.html">%m4%</a><br>
+        <a href="page5.html">%m5%</a><br>
+        <a href="page6.html">%m6%</a><br>
+</td>
+      <td valign="top">
+        <p align="%pta5a%"><b>%pt5a%</b></p>
+        %pr5a%
+        <p align="%pta5b%"><b>%pt5b%</b></p>
+        %pr5b%
+        <p align="%pta5c%"><b>%pt5c%</b></p>
+        %pr5c%<br>
+        <p align="center"><a href="mailto:%shared_email%">%emlink%</a></p></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="page6.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>%st% - %m6%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body background="%p6bg%">
+<div align="left">
+  <table border="0" cellpadding="5" cellspacing="0" width="%tw%">
+    <tr>
+      <td colspan="2" align="center">
+        <h1>%st%</h1>
+        <h2>%p6%</h2>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" nowrap>
+        <a href="index.html">%m1%</a><br>
+        <a href="page2.html">%m2%</a><br>
+        <a href="page3.html">%m3%</a><br>
+        <a href="page4.html">%m4%</a><br>
+        <a href="page5.html">%m5%</a><br>
+        <a href="page6.html">%m6%</a><br>
+</td>
+      <td valign="top">
+        <p align="%pta6a%"><b>%pt6a%</b></p>
+        %pr6a%
+        <p align="%pta6b%"><b>%pt6b%</b></p>
+        %pr6b%
+        <p align="%pta6c%"><b>%pt6c%</b></p>
+        %pr6c%<br>
+        <p align="center"><a href="mailto:%shared_email%">%emlink%</a></p></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________

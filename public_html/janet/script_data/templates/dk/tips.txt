@@ -1,0 +1,14 @@
+For at forbedre hastigheden kan du sl&aring; diskkvotering og visning af katalogst&oslash;rrelse fra.
+Du skal sikre dig at rettighederne altid er korrekt sat op.
+Brug Templates for at lave websider på en enkel må&aring;e.
+For best results, use Internet Explorer 5+ or Netscape 6+.
+Plac&eacute;r templates og indstillingsfiler i et katalog som du har skriveadgang til for enkel redigering.
+Du kan sl&aring; disse tips fra plus meget mere under <a href="%admin_url%Action=PR">Min konto</a>.
+Brug Genesis til at f&aring; bes&oslash;gende til at uploade billed-, lyd- og andre filer.
+For at spare p&aring; diskpladsen b&oslash;r du slette logfilen n&aring;r den er over 100kb.
+Hvis du har siddet foran PC'en over 36 timer i tr&aelig;k b&oslash;r du tage en pause.
+Vi er n&oslash;dt til at <i>reagerer</i> hvis vi vil leve i en bedre verden.
+Skriv et brev til dine for&aelig;ldre og bedstefor&aelig;ldre regelm&aelig;ssigt.
+Har du brug for hjl&aelig;p? Pr&oslash;v <a href="%help file%" target="_blank">Genesis Bruger Guide (p&aring; engelsk)</a>.
+Er min HTML-koden korrekt? Sp&oslash;rg <a href="http://www.doctor-html.com/RxHTML/" target="_blank">Dr. HTML</a>!
+Kan jeg g&oslash;re dette med HTML? Find ud af det p&aring; <a href="http://www.w3schools.com/html/" target="_blank">w3 HTML Tutorial</a>.

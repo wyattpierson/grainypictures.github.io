@@ -1,0 +1,966 @@
+
+Extracted function comments
+Sun Mar 31 05:10:58 2002
+
+
+
+=item Assert
+
+Usage:
+	&Assert( conditional );
+
+Prints a large bold warning message if the "conditional" is false.
+
+=cut
+
+
+=item BuildTemplate
+
+Usage:
+	&BuildTemplate();
+
+Prompts the user for all of the template data.
+
+=cut
+
+
+=item Challenge
+
+my ($is_auth, $private_token, $auth_username, $is_cookies_aware, $html_out) = $obj->Challenge( \%FORM, $b_logout );
+
+# the $html_out only appears if $is_auth == 0.  It should be printed to the user inside the normal template system
+
+=cut
+
+
+=item CheckFreeSpace
+
+Usage:
+	$b_is_allowed = &CheckFreeSpace( $del_size );
+
+Accepts length in bytes of a file.  Compares it to the amount of free space.  Returns whether if that would kick it over the limit.
+
+=cut
+
+
+=item CheckName
+
+Usage:
+	($err, $is_cgi) = &CheckName( $file, $rq_write );
+	next Err if ($err);
+
+=cut
+
+
+=item CreateUser
+
+Usage:
+	&CreateUser();
+
+Used by administrator to create a new account.
+
+=cut
+
+
+=item DeleteUser
+
+Usage:
+	my $err = $auth->DeleteUser($username);
+
+Removes user $username from the WebAuth system by deleting his $username.txt file and removing his record from the .webauth_passwd file.
+
+=cut
+
+
+=item FolderSize
+
+Usage:
+	($err, $bytes) = &FolderSize( $folder_name, $b_verbose );
+	next Err if ($err);
+
+Uses global hash %dir_size for efficiency (when "show folders sizes" + "show disk space" are both enabled, saves system from having to calculate sizes twice).
+
+=cut
+
+
+=item FormatDateTime
+
+
+
+=cut
+
+
+=item FormatNumber
+
+Usage:
+	my $num_str = &FormatNumber( $expression, $decimal_places, $include_leading_digit, $use_parens_for_negative, $group_digits, $euro_style );
+
+Arguments
+
+$expression
+	Required. Expression to be formatted.
+
+$decimal_places
+	Optional. Numeric value indicating how many places to the right of the decimal are displayed.
+	Note: truncates $expression to $decimal_places, does not round.
+
+$include_leading_digit
+	Optional. Boolean that indicates whether or not a leading zero is displayed for fractional values.
+
+$use_parens_for_negative
+	Optional. Boolean that indicates whether or not to place negative values within parentheses.
+	Style is used for outbound formatting only; inbound parsing always uses "-" for dec (Perl's internal format)
+
+$group_digits
+	Optional. Boolean that indicates whether or not numbers are grouped using the comma.
+
+$euro_style
+	Optional. If 1, then "." separates thousands and "," separates decimal.  i.e. "800.234,24" instead of "800,234.24".
+	Style is used for outbound formatting only; inbound parsing always uses "." for dec (Perl's internal format)
+
+Prototyped to match Microsoft's FormatNumber function for vbscript/jscript, with the limitation of not knowing about default settings.
+
+Microsoft specification at http://msdn.microsoft.com/scripting/vbscript/doc/vsfctFormatNumber.htm or from http://msdn.microsoft.com/scripting/.
+
+Error handling:
+	if $expression is not numeric, is treated as 0
+
+=cut
+
+
+=item GetFiles
+
+Usage:
+	my @Files = &GetFiles( $folder, $pattern );
+
+Returns all files from $folder (recursively searched) that fit $pattern.
+
+=cut
+
+
+=item Give_Password
+
+Usage:
+	&Give_Password();
+
+Used to assign a new password to a user.
+
+=cut
+
+
+=item InventPassword
+
+Usage:
+	my $passwd = $auth->InventPassword();
+
+Returns an 8-character random password, consisting of 6 consonants followed by 2 numbers.
+
+=cut
+
+
+=item LoadDefaults
+
+Usage:
+	&LoadDefaults( \%STATE );
+
+Loads a hash of all the default per-user settings.
+
+=cut
+
+
+=item LoadUserPrefs
+
+Usage:
+	($err, $warnings) = &LoadUserPrefs( $username, \%hash );
+	next Err if ($err);
+	print $warnings;
+
+Reads in preferences for user $username, and exports them using the by-reference %hash.
+
+=cut
+
+
+=item Mask
+
+Usage:
+	&Mask( $absolute_file_name, $b_is_cgi );
+
+Applies Unix chmod permissions to the file.  If the file is a CGI-type file, applies executable permissions.  The checks for whether the user is allowed to modify CGI-type files must be applied earlier; this subroutine is trusting.
+
+=cut
+
+
+=item NixPath
+
+Usage:
+	$path = &NixPath($path);
+
+Returns the $path in Unix format, with all folder delimiters set to forward slashes.
+
+=cut
+
+
+=item ParseTemplate
+
+Usage:
+	my $text = &ParseTemplate( 'tips.html', 'templates/german', \%replace, \%cache, \%visited );
+
+Similar to PrintTemplate, but now *always* returns the parsed text as a return value.  To immediately print the return value, simply call as:
+
+	print &ParseTemplate(...);
+
+See "admin_help.html" for extensive documentation on this function, its limitations, its failure scenarios, etc.
+
+=cut
+
+
+=item ReadFile
+
+Usage:
+	my ($err, $text) = &ReadFile( $file );
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		}
+
+=cut
+
+
+=item Report
+
+Usage:
+	&Report($str);
+
+General-purpose routine for printing status.  Prints status to screen and also logs to a text file.
+
+=cut
+
+
+=item ReportFreeSpace
+
+Usage:
+	$err = &ReportFreeSpace();
+	next Err if ($err);
+
+Prints the amount of space used, and the amount remaining.
+
+=cut
+
+
+=item SaveTemplate
+
+Usage:
+	&SaveTemplate();
+
+Saves all template data to the file system.
+
+=cut
+
+
+=item SaveUserPrefs
+
+Usage:
+	my ($err, $warn_msg) = &SaveUserPrefs( $username, \%overrides, $is_login );
+
+=cut
+
+
+=item Save_Password
+
+Usage:
+	&Save_Password( $username, $old, $new, $confirm_new, $b_validate );
+
+This subroutine is used to update a user's password.  If the $b_validate flag is set, then $old must be equal to the user's current password.
+
+=cut
+
+
+=item Save_Preferences
+
+Usage:
+	&Save_Preferences( $username, $b_is_login );
+
+Saves the user settings (assumes that user has submitted a form and new settings are present in %FORM).  If $b_is_login is true, then the LastLogin times are updated.
+
+=cut
+
+
+=item SendMailEx
+
+Usage:
+
+	my ($err, $trace) = &SendMailEx(
+		'to' => 'user@host.com',
+		'to name' => 'Bob User',      # *
+		'from' => 'me@host.com',
+		'from name' => 'Sally User',  # *
+		'subject' => 'Hi Sally',      # *
+		'message' => $message,
+		'host' => 'mail.foo.com',     # *
+		'port' => 25,                 # *
+		);
+
+	# * optional field
+
+	if ($err) {
+		print "<p>Error - $err</p>";
+		}
+	else {
+		print "<p>Sent mail okay.</p>";
+		}
+
+	print "<p>Here is the trace:</p>\n\n";
+	print "<XMP>\n$trace\n</XMP>\n";
+
+=cut
+
+
+=item SetDefaults
+
+Usage:
+	my $text = &SetDefaults( $html, \%params );
+
+Takes $html, which is an HTML fragment including FORM elements, and sets all default attributes to match %params.
+
+Requires strict format:
+
+	<input type=radio name="name" value="value">
+	<input type=checkbox name="name" value="value">
+	<input name="foo">
+	<SELECT name="name".*?><option value="value"><option value="value"></SELECT>
+	<input type="hidden" name="name">
+
+=cut
+
+
+=item SetPassword
+
+Usage:
+	my $err = $auth->SetPassword( $username, $password );
+
+Assigns password $password to $username.  Returns a non-null error message if there is a file-system error during the operation.
+
+Caller needs to confirm that this subroutine is only called by users with the appropriate privileges to reset passwords.
+
+=cut
+
+
+=item ShowSettings
+
+Usage:
+	&ShowSettings($username, $is_self, $is_new_user);
+
+This function is used to display and edit personal account settings.
+
+Non-webmaster users can edit their own settings.
+
+Webmaster users can edit their own settings or other's settings.  This screen is also used when creating a new user account.
+
+=cut
+
+
+=item StartHTML
+
+Usage:
+	$err = &StartHTML($warnings);
+	next Err if ($err);
+
+Prints the header controls for the top of each page of the admin section, including navigation links, tips, and Current Folder form.
+
+=cut
+
+
+=item SwitchSort
+
+Switch sort method.
+
+=cut
+
+
+=item ValidatePassword
+
+Usage:
+	my ($err, $is_valid) = $auth->ValidatePassword( $username, $password );
+
+Returns Boolean $is_valid if $password is the correct password for $username.  Returns non-null $err if there is a file-system error while attempting to validate the password.
+
+=cut
+
+
+=item WebForm
+
+Usage:
+	my %FORM = ();
+	my %upload_files = ();
+	my $temp_dir = 'd:/temp';
+	my $err = '';
+	Err: {
+		$err = &standard_binmode();
+		next Err if ($err);
+
+		$err = &WebForm( \%FORM, \%upload_files, $temp_dir );
+		next Err if ($err);
+
+		foreach (sort keys %FORM) {
+			print "<p>Param $_: $FORM{$_}.</p>\n";
+			}
+
+		foreach (keys %upload_files) {
+			print "<p>Upload file: $_</p>\n";
+			print "<UL>\n";
+
+			my $p_data = $upload_files{$_};
+			foreach (sort keys %$p_data) {
+				print "<LI>File data: $_: $$p_data{$_}\n";
+				}
+
+			print "</UL>\n";
+			}
+
+		last Err;
+		}
+	continue {
+		print "<p><b>Error:</b> $err.</p>\n";
+		}
+
+Reads CGI name-value pairs from environment variables and/or standard input.  Returns a hash by reference.
+
+=cut
+
+
+=item WriteFile
+
+Usage:
+	my $err = &WriteFile( $file, $text );
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		}
+
+=cut
+
+
+=item anon_create_account
+
+Usage:
+	$err = &anon_create_account();
+	next Err if ($err);
+
+Handles the HTML form for asking visitor's about their personal information; validates data and creates accounts; sends email to visitor email address or administrator for approval.
+
+=cut
+
+
+=item author_privilege_check
+
+Usage:
+	$err = &author_privilege_check( 'priv1', 'priv2' );
+
+Returns an error message if the user is not currently in a state where authoring is allowed.  The error may be that a folder access error has occured, or that the user has insufficient privileges to perform the task.
+
+=cut
+
+
+=item bmpsize
+
+Usage:
+	my ($err, $x, $y, $filesize) = &bmpsize( $file );
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		exit;
+		}
+	print "X: $x; Y: $y; Filesize: $filesize\n";
+
+Returns the dimensions and byte size of a BMP image.
+
+Based on Image::Size.
+
+=cut
+
+
+=item clean_path
+
+shall we map ' ' to %20?
+
+Usage:
+	$clean_path = &clean_path( $path );
+
+
+Function for stripping garbage from web page paths. It will collapse "." and
+".." paths, collapse stacked /// slashes, and strip pound links.
+
+Examples:
+
+	"/foo/../bar/index.htm" => "/bar/index.htm"
+	"/test.htm#top" => "/test.htm"
+	"/../foo/bar" => "/foo/bar"
+	"////top//level/../no_this/./file" => "/top/no_this/file"
+
+This is used to cleanse links discovered in user input or in web pages that
+crawler visits. It is also used to clean forbidden paths in the robots.txt
+files (by cleaning both the original URL and the exclusion paths with the
+same function, we minimize risk of hitting an exluded path.)
+
+Updated 2002-02-28
+
+=cut
+
+
+=item create_folder
+
+Usage:
+	&create_folder( $folder );
+
+=cut
+
+
+=item flush_tokens
+
+Usage:
+	$err = $auth->flush_tokens();
+	$err = $auth->flush_tokens( $username_pattern );
+
+=cut
+
+
+=item force_CRLF
+
+Usage:
+	&force_CRLF(\$scalar);
+
+=cut
+
+
+=item form_BulkUpload
+
+Usage:
+	$err = &form_BulkUpload(\%upload_files);
+	next Err if ($err);
+
+Allows multi-file uploads.
+
+=cut
+
+
+=item form_HTML_Review
+
+Usage:
+	&form_HTML_Review();
+
+=cut
+
+
+=item form_ImageReview
+
+Usage:
+	&form_ImageReview();
+
+Displays the size of all images in the current folder.
+
+=cut
+
+
+=item fs_path
+
+Usage:
+	my $path = &fs_path($path);
+
+Reduces a file pathname to its most simple, consistent form.  For example:
+
+	"a/b.txt" = &fs_path("a/c/../b.txt");
+
+Will trim leading and trailing whitespace; will strip anything after a "#" sign; will collapse // to / except at the very start of the path, to support UNC paths.
+
+=cut
+
+
+=item general_privilege_check
+
+Usage:
+	$err = &general_privilege_check( 'priv1', 'priv2' );
+
+Returns an error message if the user is not currently in a state where this operation is allowed.
+
+=cut
+
+
+=item gifsize
+
+Usage:
+	my ($err, $x, $y, $filesize) = &gifsize( $file );
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		exit;
+		}
+	print "X: $x; Y: $y; Filesize: $filesize\n";
+
+Returns the dimensions and byte size of a GIF image.
+
+Based on Image::Size.
+
+=cut
+
+
+=item html_encode
+
+Usage:
+	my $html_str = html_encode($str);
+
+Formats string consistent with embedding in an HTML document.  Escapes the
+""><& characters.
+
+=cut
+
+
+=item http_import
+
+Usage:
+	$err = &http_import(\%upload_files);
+	next Err if ($err);
+
+Allows multi-file uploads.
+
+=cut
+
+
+=item image_size
+
+Usage:
+	my ($err, $x, $y, $filesize) = &image_size( $file );
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		exit;
+		}
+	print "X: $x; Y: $y; Filesize: $filesize\n";
+
+Returns the dimensions and byte size of a JPEG, GIF, or BMP image.
+
+Based on Image::Size.
+
+=cut
+
+
+=item leansock
+
+($$$$$)
+
+Usage:
+	($err_msg,$PF,$SS) = &leansock($host,$port,\*GLOBFILE,$PF,$SS);
+
+Attempts to create and connect an unbuffered socket to $host:$port, referenced by *GLOBFILE.
+
+Optional parameter $sock_cache_val contains cached values of getprotobyname('tcp') and PF_INET() and SOCK_STREAM().  If present, the system will forgo calling 'use Socket'.
+
+Does not call getservbyname() because protocol is not generally know.  Expects explicit port; if you want to be psycho and ask an api for the port number, do so on your own before calling.
+
+During benchmarks on Win2000 2x550MHz, basic Perl loop w/ 10^4 iterations of simple string assignment executed in about 2.39 seconds.  With 1 iteration, took 1.65 seconds.  With a call to "use Socket" followed by 10^4 iterations, took 2.88 seconds.  Suggests that basic Perl interpreter initialization cost of 1.65 seconds with additional 0.49 second when "use Socket" called (+33%).  For systems where initial read from text data file is pre-requisite anyway, may pay off to keep a short-term cache of static return values for Socket functions.
+
+=cut
+
+
+=item logout
+
+Usage:
+	$auth->logout();
+	exit;
+
+Clears user's cookies and tokens.  Presents the login page.
+
+=cut
+
+
+=item parse_url_ex
+
+Usage:
+	($err, $clean_url, $host, $port, $path) = &parse_url_ex( $url );
+	next Err if ($err);
+
+=cut
+
+
+=item pstr
+
+Usage:
+	my $string = &pstr(100, $!, $^E);
+
+This is the Parse String function.  The first argument is the line number from strings.txt from which to pull the template string.  All remaining strings in the argument list are substituted as $s1, $s2, $s3, etc., in the template string.
+
+=cut
+
+
+=item query_env
+
+Usage:
+	my $value = &query_env('value', 'default');
+
+Queries the %ENV hash for value 'value'.  If $ENV{'value'} is not defined, returns 'default' or '' if no second parameter is set.
+
+The return value $value is untainted for compatibility with -T.
+
+=cut
+
+
+=item read_tokens
+
+Reads the hash %Tokens out of file $auth_file.
+
+Usage:
+	my $err = $auth->read_tokens( \%Tokens );
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		}
+
+=cut
+
+
+=item save_system_settings
+
+Usage:
+	$err = &save_system_settings();
+
+Saves the global hash %security.
+
+=cut
+
+
+=item sendmail_socket
+
+Attempts to send an email message through the specified SMTP gateway.
+
+Returns $err_msg if something goes wrong.  Returns $trace of all socket activity regardless.
+
+=cut
+
+
+=item ui_Admin
+
+Usage:
+	&ui_Admin();
+
+Prints the main screen, available to users under the "Main" link.  This screen just prints out some text about what options the user has available.
+
+=cut
+
+
+=item ui_Confirmed
+
+Usage:
+	&ui_Confirmed($object);
+
+=cut
+
+
+=item ui_Copy
+
+Usage:
+	&ui_Copy();
+
+Handles all multi-file copy operations.
+
+=cut
+
+
+=item ui_Delete
+
+Usage:
+	&ui_Delete();
+
+Handles single and multi-item deletions, including interactive prompt and confirmation.
+
+=cut
+
+
+=item ui_Delete_FolderContents
+
+Usage:
+	&ui_Delete_FolderContents();
+
+=cut
+
+
+=item ui_Edit
+
+Usage:
+	($err, $b_done) = &Edit( $file );
+	next Err if ($err);
+	last Err if ($b_done);
+
+Creates an HTML form displaying the contents of $file for editing.
+
+=cut
+
+
+=item ui_ListFiles
+
+Usage:
+	$err = &ui_ListFiles();
+	next Err if ($err);
+
+Prints out all the files and subfoldes in the current folder.  Entry point to the HTML editor.
+
+=cut
+
+
+=item ui_ListTemplates
+
+Usage:
+	&ui_ListTemplates();
+
+Entract point to the template system.
+
+=cut
+
+
+=item ui_ManageLog
+
+Manages admin options related to the log - viewing it, resetting it, and deleting.
+
+=cut
+
+
+=item ui_ManageUsers
+
+Usage:
+	&ui_ManageUsers()
+
+Main subroutine for use by administrator to add/edit/delete user accounts.
+
+=cut
+
+
+=item ui_MyFolderConfig
+
+Usage:
+	$err = &ui_MyFolderConfig();
+	next Err if ($err);
+
+Displays the "Base URL" and "Base Folder" settings for the currently-logged-in user.  For administrators, allows them to update the settings.
+
+=cut
+
+
+=item ui_Rename
+
+Usage:
+	&ui_Rename();
+
+Renames a set of files.  Handles the preview, prompting for new files names, the rename operation itself, and the reporting of results.
+
+=cut
+
+
+=item ui_SystemSettings
+
+Usage:
+	&ui_SystemSettings();
+
+Handles all administrator interaction with viewing and modifying system settings.
+
+=cut
+
+
+=item ui_UpdateLicense
+
+Usage:
+	&ui_UpdateLicense();
+
+Handles all administrator activity surrounding viewing and modifying the license mode and the registration key.
+
+=cut
+
+
+=item ui_Upload
+
+Usage:
+	&ui_Upload( \%upload_files );
+
+=cut
+
+
+=item ui_configure_authoring
+
+Usage:
+	&ui_configure_authoring(\%TMP);
+
+Prints the "Folder Settings" options for whatever user is represented in %TMP.
+
+This form is read-only by default (with the message "write to your administrator for more privileges").  In order to be read-only, the following must be true:
+
+	1. the currently-logged in user must be the administrator
+	2. the administrator must personally have the privilege 'allow_folder_change'
+	3. this account %TMP must also have the privilege 'allow_folder_change'
+
+=cut
+
+
+=item url_encode
+
+Usage:
+	my $str_url = url_encode($str);
+
+Formats strings consistent with RFC 1945 by rewriting metacharacters in their
+%HH format.
+
+=cut
+
+
+=item user_shell
+
+Usage:
+	&user_shell();
+
+Calls the correct main subroutine for the user, based on this $STATE{'shell'} value.
+
+=cut
+
+
+=item validate_system_settings
+
+Usage:
+	&validate_system_settings( $b_verbose );
+
+This subroutine walks through the global %security hash and tweaks all the settings to make sure they are valid.  If the $b_verbose flag is set, then this subroutine will print "<p><b>Warning:</b> $err.</p>" messages about any settings that is has to tweak significantly.
+
+=cut
+
+
+=item web_auth_new
+
+Usage:
+	my $auth = &web_auth_new();
+
+Creates a WebAuth object.
+
+=cut
+
+
+=item where_tf
+
+Usage:
+	my ($err, $path_to_script, $path_to_folder, $path_to_base, $url_to_script, $url_to_folder, $url_to_base) = &where_tf();
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		}
+
+Attempts to parse the location of this CGI script, in terms of the absolute file system path and the absolute URL path.  Draws data from $0 and %ENV.
+
+To make formatting easier later on, removes trailing slashes on returned folders.
+
+Bugs:
+	treats all URL's as "http://" - doesn't account for https:// possibility or others
+
+updated 2002-03-19; checks against ./
+
+=cut
+
+
+=item write_tokens
+
+Usage:
+	my $err = $auth->write_tokens( \%Tokens );
+	if ($err) {
+		print "<p><b>Error:</b> $err.</p>\n";
+		}
+
+Saves the %Tokens hash to file $auth_file.
+
+=cut
+

@@ -1,0 +1,387 @@
+VERSION 2.1.0.0022
+Nederlands
+text/html; charset=iso-8859-1
+<p><b>Succes:</b> $s1.</p>
+<p><b>Waarschuwing:</b> $s1.</p>
+<p><b>Foutmelding:</b> $s1.</p>
+niet in staat om automatische aanmelding te accepteren - er is nog geen mailserver of mailprogramma geconfigureerd
+kon niet lezen van bestand '$s1' - $s2
+kon niet schrijven naar bestand '$s1' - $s2
+kon niet toevoegen aan bestand '$s1' - $s2
+accountinformatie met initieel wachtwoord verzonden naar '$s1'
+Niet mogelijk om binmode op bestand '$s1' te zetten - $s2
+kon bestand '$s1' niet verwijderen - $s2
+kon bestand '$s1'niet hernoemen naar '$s2' - $s3
+nieuwe gebruiker '$s1' gecreëerd
+schrijven naar bestand '$s1'
+accountaanvraag verzonden naar de beheerder
+persoonlijke gebruikersmap '$s1' bestaat reeds
+verwijder bestand '$s1'
+bestand '$s1' hernoemd naar '$s2'
+kon map '$s1' niet creëren - $s2
+kon map '$s1' niet openen - $s2
+kon map '$s1' niet verwijderen - $s2
+map '$s1' gecreëerd
+verwijder map '$s1'
+unable to access home directory '$s1' - $s2 ($s3)
+map '$s1' bestaat niet
+object '$s1' is geen map
+Genesis disk quota exceeded
+u bent nu uitgelogd
+Authenticatie token niet gevonden; je sessie kan een time out hebben gehad
+sessie vervallen
+ongeldige gebruikersnaam of wachtwoord
+Aanmelden
+Vul aub uw gebruikersnaam en wachtwoord in
+Gebruikersnaam
+Wachtwoord
+gebruikersnaam '$s1' is gereserveerd
+username cannot be blank
+wachtwoord komt niet overeen
+username '$s1' is invalid - $s2
+Environment Variables
+Show "Current Folder" in header
+Perl version is $s1 ($s2).<br />Web server operating system is $s3.<br />Web server software is $s4.
+niet in staat om data te bewaren in demo modus
+Disk quota of $s1 kilobytes.
+Allow access to some templates.
+Log in
+Nieuwe Gebruiker Aanmelden
+cannot import file "$s1" with extension "$s2". Your account is only allowed to upload/import Media Files (those with extensions $s3). If you must upload other files, contact the webmaster and request full upload privileges for all file types. Or, request that file extension "$s2" be added to the "Media Files" list
+uw account heeft niet voldoende privileges om deze bewerking uit te voeren; vereist het '$s1' privilege
+Sjabloon Editor
+HTML Editor
+niet in staat om aanmeldingen te accepteren - er is geen emailadres van de beheerder geconfigureerd
+Help
+Admin Pagina
+Gebruikersbeheer
+Creëer, herzie, en delete gebruikersaccounts. Handig voor het delegeren van autorisatie privileges.
+Gebeurtenissen Log
+Stop Logproces
+De optie om het loggen te stoppen, verwijderd de complete gebeurtenissenlog - om het weer op te starten, kan het zijn dat je handmatig moet inloggen op deze server.
+Schoon Gebeurtenissen Logbestand
+Toon alle gebeurtenissen, van oud naar nieuw.
+Loggen staat op dit moment uit. Klik op bovenstaande knop om dit aan te zetten.
+Begin bijhouden van Logbestanden
+Overzicht
+het gebeurtenissen logbestand is leeggemaakt
+Reset
+loggen is gestart
+Mapinstellingen
+Mapinstellingen aangepast
+Bewaar Data
+Disk quota of <input name="$s1" size="8" class="numeric" /> kilobytes.
+Freeware Versie
+SMTP server '$s1:$s2' did not respond properly to the '$s3' command; receive server response not beginning with 3-digit number; full text: '$s4'
+Automatische Nieuwe Gebruiker Aanmelden
+SMTP server '$s1:$s2' did not respond properly to the '$s3' command; expected '$s4' response, received '$s5'; full text: '$s6'
+niet in staat om pijp '$s1' te openen - $s2
+fout bij het versturen van data naar de SMTP server; slechts $s1 van $s2 totaal aantal bytes verzonden - $s3 - $s4
+fout bij het versturen van data naar de SMTP server - $s1 - $s2
+Bekijk een logbestand of serveractiviteit.
+De standaardtaal is de taal die gebruikt wordt om het inloggen en aanmelden van nieuwe gebruikers te tonen. Zodra gebruikers ingelogd zijn in Genesis, wordt de taal ingesteld volgens hun voorkeuren.
+Valideer HTML
+Toon Altijd Schijfruimte
+Toon Tips en Links
+Toon Mapgrootte
+Uw steun zorgt er voor dat er nieuwe mogelijkheden worden toegevoegd, en zorgt voor het opsporen van bugs en verbetering van de performance.
+Voor inlichtingen of om een nieuwe registratiecode te verkrijgen, bezoek <a href="$s1">$s2</a>.
+Account Privileges
+Registratiecode
+Beschrijving
+Huidige Map
+Toon "aanpassen beginmap" tip onder het Huidige Map-formulier.
+Ga
+Klik om <a href="$s1">de startmap aan te passen</a>.
+Identiteit
+Volledige Naam
+E-mail Adres
+Beveiligingsinstellingen
+Oud wachtwoord
+Nieuw Wachtwoord
+Bevestig Nieuw
+Alle mogelijkheden, permanent. U heeft de mogelijkheid om openbaar zichtbare teksten te verwijderen.
+Neem contact op met de beheerder om deze waarden te wijzigen.
+Hoofdinstellingen
+Toon dit scherm bij de eerste keer inloggen:
+Taal van Gebruikersinterface:
+Sta toe om $s1 bestanden tegelijkertijd te uploaden op de meervoudige upload pagina.
+Bij het tonen van alle bestanden, sorteer op:
+Toon mappen altijd bovenaan.
+Tekstbewerkingsopties
+De tekstbewerker kan aangepast worden naar uw schermresolutie en voorkeuren. Sommige eigenschappen, zoals tekstterugloop en schaalbare lettertypen, werken alleen met nieuwere browsers.
+Tekstgrootte
+Hoogte van Tekstvak
+Breedte van Tekstvak
+Upload Alle Tekstbestanden in ASCII Modus
+Tekstterugloop
+Account Aangemaakt
+Laatste Login
+Laatste Login Vanaf
+Laatste Aanpassing
+Bestandstype
+Aantal Kb's
+omgekeerd
+Actie
+Bovenliggende Map
+updir
+Bewerken
+chdir
+Bewerk Profiel
+Aangevinkte Items
+Creëer Bestand
+Creëer...
+Creëer Map
+Upload Bestand
+Upload...
+Zie ook
+Meervoudige Bestandsupload
+Bekijk Afbeeldingen
+Bekijk/Valideer HTML
+Pad
+Breedte
+Hoogte
+Commando's
+Hernoem
+Kopieër
+Verwijder
+pixels
+Vul onderstaand formulier in, en klik op "Creëer Website".
+Dit sjabloon creëert de volgende bestanden:
+kan bestaande bestand overschrijven
+zal uw bestaande bestand overschrijven
+Creëer Website
+niet in staat om UserInput sectie uit het sjabloonbestand te halen
+Uw <a href="$s1">sjabloon website</a> is gereed.
+Dit is een nieuw bestand. Geef hieronder uw tekst in:
+Pas <a href="$s1">$s2</a> naar behoefte aan:
+Invoegen van server-side include uitdrukkingen.
+Door een alternatieve bestandsnaam in te geven blijft het originele bestand onveranderd, en zal de bovenstaande tekst in een bestand met de alternatieve naam worden gezet (het overschrijft de bestaande inhoud van het alternatieve bestand indien aanwezig).
+Bezoek het <a href="$s1">Tekstbewerkingsopties</a> scherm om de grootte van het tekstvak hierboven aan te passen.
+<b>Status:</b> $s1.
+dit bestand wordt nu bewaard als '$s1'
+file '$s1' has been uploaded in $s2 mode - size $s3
+Weet u zeker dat u '$s1' wilt verwijderen?
+Ja, Ik Weet Het Zeker
+Verwijder Gebruiker
+klaar met poging tot verwijderen van gebruikersaccount '$s1' - sommige stappen zijn niet volledig afgehandeld
+gebruikersaccount '$s1' verwijderd
+Alle bestanden van de gebruiker in de persoonlijke map '$s1' zijn nog steeds aanwezig. Bestanden verwijderen dient afzonderlijk te gebeuren.
+Nieuw Account
+Account:
+Reset Wachtwoord
+Accounts Goedkeuren
+gebruikersaccount '$s1' is geweigerd
+er zal geen actie worden ondernomen voor '$s1'
+gebruikersbestand '$s1' bestaat niet. Het account kan reeds geweigerd zijn
+creëer nieuw account voor gebruiker '$s1'
+wachtwoord <b>$s1</b> toegekend aan gebruiker. Geef dit wachtwoord aan de gebruiker
+file '$s1' has been uploaded
+<p>Het automatische aanmaken van een account is een optie. Wanneer u dit mogelijk maakt, kunnen gebruikers zich automatisch aanmelden voor een eigen account op de inlogpagina. Deze accounts worden gemaakt op basis van de instellingen van het _default account. Wanneer u dit aanzet, zorg er dan voor:</p><ol><li>dat het _default account een Basis Folder en een Basis URL hebben met een %username% parameter, zodat iedereen niet dezelfde folder deelt</li><li>dat het _default account niet het "Permiteer CGI" privilege heeft</li><li>dat het _default account een disk quota ingesteld heeft staan</li></ol><p>U kunt altijd hogere privileges uitreiken aan nieuwe gebruikers wanneer u ze kent.</p><p>Genesis is ontworpen om een enkele gebruiker of een kleine groep gebruikers te autorizeren; het is niet geoptimalizeerd voor meerdere gebruikers tegelijkertijd.</p>
+Permiteer automatische aanmelding van gebruikers
+Goedkeuring van webmaster is nodig voordat het account wordt geactiveerd
+Indien aangezet, worden nieuwe aanvragen en goedkeuring voor accounts doorgestuurd naar emailadres "$s1" door ofwel SMTP server "$s2" of sendmail programma "$s3".
+<p>Wanneer gebruikers nieuwe accounts aanvragen, moet Genesis een email sturen naar de beheerder en de nieuwe gebruiker. Voordat u dus het automatisch aanmelden kunt gebruiken, moet u het volgende configureren:</p><ol><li>Een geldig emailadres voor u, de beheerder. Geef dit in op de <a href="$s1"><b>Mijn Account</b></a> pagina.</li><li>Een mailtransportsysteem, ofwel een "SMTP Server" of een "Sendmail Programma". Geef deze in op de <a href="$s2"><b>Systeem Instellingen</b></a> pagina.</li></ol><p>Zodra deze instellingen geconfigureerd zijn, kunt u terugkeren naar deze pagina en krijgt u de mogelijkheid om automatische webbased aanmelden van accounts aan te zetten.</p>
+De volgende accounts zijn aangevraagd en wachten op goedkeuring.
+Aanvraag Gecreëerd
+Toestaan
+Weigeren
+Wacht
+Verwerk Accountaanvragen
+Er zijn geen accounts die wachten op goedkeuring.
+Wijs nieuw wachtwoord toe aan gebruiker '$s1':
+IP Adres
+Tijd
+nooit
+Bestandsnaam
+Geregistreerde Shareware
+Uitgebreide functionaliteit voor een redelijke probeer periode. Staat meerdere gebruikersaccounts toe, gebruikersinstellingen aanpassing via het web, meervoudige bestandsupload, etc.
+Autenticatiesysteem kan niet initialiseren.
+het wachtwoord voor gebruiker '$s1' is gelocked - het kan niet gereset worden
+niet in staat om afbeeldingsbestandsformaat toe te voegen
+niet in staat om binmode op socket te zetten - $s1
+niet mogelijk om hostname '$s1' naar IP adres te herleiden - $s2 - $s3
+kan geen socket creëeren - $s1 - $s2
+niet in staat om contact te leggen met host '$s1:$s2' - $s3 - $s4
+Trial Shareware
+Schijf Gebruik:
+Gebruik $s1 kb van $s2 kb quota - $s3 kb vrij
+bestandsnaam mag niet leeg zijn
+maximaal toegestane lengte is $s1 karakters
+spaties zijn niet toegestaan
+opeenvolgende puntjes zijn niet toegestaan
+kan geen verborgen/systeembestanden bekijken die met een punt beginnen
+kan geen verborgen/systeembestanden aanpassen die met een punt beginnen
+bevat illegale karakters - $s1
+extensie '$s1' is niet toegestaan aangezien het op de lijst staat op "Admin Pagina" =&gt; "Beheer Systeeminstellingen" =&gt; "CGI Types" en uw account niet het "Permiteer CGI" privilege heeft [<a href="$s2./1098.html" TARGET=_blank>Help</a>]
+extensie '$s1' staat niet op de lijst op "Admin Pagina" =&gt; "Beheer Systeeminstellingen" =&gt; "Bekende Types". U moet inloggen als "webmaster" en de "Bekende Types" lijst aanpassen voordat u dit type bestand aanpast [<a href="$s2./1097.html" TARGET=_blank>Help</a>]
+bestandsnaam '$s1' is ongeldig - $s2
+Basis functionaliteit - enkele gebruiker HTML en sjabloonbewerking.
+unable to close filehandle for file '$s1' - $s2 ($s3)
+sorteer nu op $s1
+Mijn Account
+Wanneer u de wachtwoordvelden leeg laat, wordt er een standaard wachtwoord gecreëerd en naar de gebruiker gezonden.
+Mogelijkheden
+Licentie Keuze
+Basismap
+de registratiecode die u heeft ingegeven is ongeldig - neem contact op met de verkoper
+Basis URL
+wachtwoord moet tenminste $s1 karakters lang zijn
+geef nieuw wachtwoord
+error while writing to file '$s1' - $s2 ($s3)
+user '$s1' already exists on this system; please choose a different username
+automatisch aanmelden staat niet aan
+gebruikersvoorkeuren aangepast
+Use the <a href="$s1"><b>$s2</b></a> interface to fix the problems.
+The following validation error(s) occured while loading your user account settings.
+The following validation error(s) occured while loading system settings.
+You should contact your administrator and ask them to correct the problem.
+<p align="center"><font size="-2">Translation by Maarten Reumer and Richard van Rucphen</font></p>
+Beheer Systeeminstellingen
+Beheer de systeemwijde instellingen voor Genesis. Bevatten ook beveiligingsinstellingen.
+Selecteer licentiemodus en/of vul registratiecode in.
+Vernieuw licentie
+Stel u in staat om webpagina's te maken en onderhouden zonder gebruik te maken van HTML.
+Stelt u in staat om webpagina's met HTML te bewerken, en bestanden en mappen te beheren.
+Autorisatie Opties
+Admin Opties
+Stelt u in staat om naam- en emailinstellingen bij te werken; wachtwoord te resetten; en opties in te stellen voor de HTML editor.
+Verwijdert uw authentication token - deze stap altijd voltooien wanneer u klaar bent.
+Log Uit
+Veelgestelde vragen-document voor deze software. Bevat ook links naar het Discussieforum, installatiehulp, en broncode.
+Hernoem Bestanden
+Origineel Bestand
+Nieuw Bestandsnaam
+Kopieër Bestanden
+Kan geen mappen kopiëren - alleen bestanden
+bestandsnaam '$s1' komt niet overeen met basismap '$s2'
+kan de basisnaam niet uit '$s1' halen
+Bevestig Verwijdering
+kan niet verwijderen
+is persoonlijke gebruikersmap
+Tip
+Sjablonen stellen u in staat om een complete website te bouwen, zonder gebruik te maken van HTML.
+no files or folders selected
+Opmerkingen
+Creëer Account
+Aanvraag Account
+Ik ben hier nieuw. <a href="$s1">Schrijf mij in</a>!
+map '$s1' bestaat niet. Creëer het handmatig en geef het schrijfrechten
+<p>The <b>$s1</b> settings are used to control how permissions are set on the files and folders that you create with Genesis. It is best to choose <b>$s2</b>. The auto-detect algorithm currently selects option <b>$s3</b>.</p>
+No access to hidden files
+May view hidden files, but not edit
+May view and edit hidden files
+Hidden files are those which begin with a dot, like ".htaccess" or ".htpasswd". The Genesis data files are also considered hidden files, like ".template" and ".is_user_dir".
+Hidden Files
+Access to Template Editor
+<p>The test message you just sent was delivered using system settings different than the ones you have saved.</p><p>To permanently save the new settings, submit the form below:</p>
+Click here to <a href="$s1">send another test message</a>.
+the server indicates that the message was sent. Please check your email and confirm that you have received it
+Test Email
+System Information
+System Settings
+Email Settings
+SMTP Server
+Sendmail Program
+subaction '$s1' not defined
+Bronze
+system setting <b>$s1</b> value '$s2' must be octal number; cannot contain illegal digit '$s3'
+Silver
+updating system setting <b>$s1</b> from '$s2' to '$s3'
+saved system settings
+Send
+Trace output was:
+Parameter
+New Value
+<p>Enter parameters for the test message.</p><p>You should perform email tests using a variety of <b>To Email</b> addresses, including addresses at different domains. Some mail servers deliver mail only for certain domains; you should test to make sure your mail server does not have this restriction.</p>
+Test Email Message
+To Email
+From Email
+Send Test Email
+<p>The values you enter for <b>SMTP Host</b> and <b>Sendmail Program</b> on this form are used for testing purposes only. They do not affect your master system settings values.</p><p>If you experiment with different SMTP and Sendmail values here, and the test messages are delivered successfully, then you will have a chance to update your system settings with the new values.</p>
+updated email address to $s1
+Click here to <a href="$s1">send a test message</a>. Click here for <a href="$s2">help</a> on configuring email in Genesis.
+The <b>$s1</b> parameter is shared between the system settings and the &lt;$s2&gt; account profile.
+<b>$s1</b> is the Internet server that has been assigned to deliver mail for your email address.
+Miscellaneous
+Default Language
+Images URL
+Password Size Limit
+characters or more
+File Types
+CGI Types
+Known Types
+Media Types
+<p>For each file type, enter a space-separated list of allowed file extensions.</p><p>Genesis users will only be allowed access to a file if its extension is in one of these lists, subject to these additional restrictions:</p><ul><li><p>Genesis users will only be allowed to access CGI-type files if they have the "Allow CGI" privilege.</p></li><li><p>If the Genesis user has had upload privileges restricted to media files only, then any uploaded files must match one of the "Media Types" extensions.</p></li></ul><p>File extensions can be duplicated among the lists. If an extension is present in both CGI Types and another list, it will be treated as a CGI file for purposes of evaluating privileges and setting file permissions. Similarly, if an extension is in Media Types and another list, it will be treated as a media file for evaluating upload privileges.</p><p>The special file extension * (asterisk) can be used to match any file type. Place this special extension in the Known Types list if you would like to be able to access any file. There are security risks associated with this; review <a href="$s1">this help file</a> first.</p><p>The special file extension "null" is used to refer to files without any extension at all.</p><p>The file extensions "tmp", "template" and "is_user_dir" are used by Genesis. These extensions should always be included in the Known Types list to ensure that the script functions properly.</p>
+File Permissions
+Auto-Detect
+None
+Restrictive
+Auto-detects the most secure permissions to use; recommended.
+No permissions set. For Windows or other systems without chmod.
+<p>For systems in which CGI executes under the account owner context (also known as setuid or suexec).</p><p>These restrictive permissions limit authoring privileges to the account owner only.</p>
+CGI Files
+Normal Files
+Folders
+Define whatever custom permissions you would like to use:
+Custom
+Permissive
+<p>For standard systems in which CGI executes under a user account context different than the account owner.</p><p>These permissive settings allow both the system CGI process and the account owner to access files.</p>
+creating account...
+Delete File
+Delete Folder
+Rename Files and Folders
+Copy Files and Folders
+When browsing, display all files and folders
+When browsing, display only files and folders which are accessible
+Edit Text-Based File
+Allow access only to the following features
+Do not allow access to any features
+Allow access to all features
+Allow access to templates in the following folders:
+Do not allow access to any templates
+Allow access to all templates
+Custom: $s1
+$s1 interface
+Allow Change Directory
+User can navigate to subfolders inside his home directory
+User cannot navigate to subfolders
+<p>This setting controls only whether the user can navigate to subfolders inside his home directory.</p><p>Under no circumstances will the user ever be allowed to navigate outside his home directory.</p>
+Disk Quota
+No disk quota - unlimited disk space.
+Scripting Privileges
+Allow CGI and other active script content
+No CGI or active script content allowed
+Upload Privileges
+May upload any file
+May upload only media files
+No upload privileges
+Click here to continue editing the <a href="$s1">$s2</a> template.
+This script provides different levels of access. Your access levels are described below. To change your access levels, contact your administrator.
+The "$s1" account currently has the following settings:
+<p>These settings are used to initialize the <b>$s1</b> and <b>$s2</b> values when new user accounts are created.</p><p>These default settings were identical to your &lt;$s3&gt; account settings, except that they had "/%username%/" at the end, before your changed your settings just now.</p><p>Would you like to update the &lt;$s4&gt; account to match the changes made to your &lt;$s3&gt; account?</p>
+Note that you can edit the &lt;$s1&gt; account at any time by going to "$s2" =&gt; "$s3".
+Current Settings for Default Account
+Proposed New Settings for Default Account
+<p>These are the account settings for the virtual "$s1" account. They will serve as the defaults whenever a new account is created.</p><p>It is best to use the lowest possible privilege levels for the "$s1" account. Advanced privileges can always be granted later, on a case-by-case basis.</p>
+Default Files
+<p>When an account is created, this script will copy all files from the "$s1" folder into the user's home directory.</p><p>The $s2 folder currently contains:</p>
+<p>You can delegate a variety of authoring privileges to each user.  Choose from one of these four standard sets of privileges, or define a custom set of privileges.</p><p>Note that granting the "Allow CGI" privilege will effectively allow the user to do anything, since he will be able to upload his own scripts to perform any authoring functions that aren't exposed through Genesis.</p>
+<p><b>$s1</b> are defined as any file with one of the following extensions:</p><blockquote><p><tt>$s2</tt></p></blockquote><p>This list can be customized on the <a href="$s3">$s4</a> page.</p>
+The templates within "$s1" have not been divided up into subfolders. This must be done first.
+<p>You can use the variable <tt>$s1</tt> anywhere in the folder and URL paths. The variable will be automatically replaced with the username.</p><p>This script appears to have the following path (this information may be helpful in choosing the $s2 setting above):</p>
+Custom Privileges
+No upload privileges
+No CGI or active script content allowed
+Allow CGI and other active script content
+Platinum
+Gold
+Full access to Template Editor and HTML Editor
+Access to Template Editor with ability to upload media files within templates
+Your account has been temporarily disabled.
+<p>Your account has been disabled.</p><p>Your account was created $s1 days ago. This system is set to expire accounts after $s2 days.</p>
+Account Expiration
+Account does not expire
+Account temporarily disabled
+Account expires $s1 days after being created
+This account was created on $s1 ($s2 days ago).

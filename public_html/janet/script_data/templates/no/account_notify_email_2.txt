@@ -1,0 +1,35 @@
+To: %webmaster_email_address%
+From: %email_address%
+Emne: Web redigerings konto opprettet (%username%)
+Date: %date_smtp%
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+En bruker har automatisk blitt godkjent for brukerkonto:
+
+Navn: %full_name%
+E-post: %email_address%
+Brukernavn: %username%
+
+Ekstra kommentar:
+
+%comments%
+
+Hilsen,
+%webmaster_full_name%
+%webmaster_email_address%
+
+_____________________________________________________________________________
+
+Full Parameter List
+===================
+
+%full_form%
+
+Full Environment List
+=====================
+
+%full_env%

@@ -1,0 +1,387 @@
+VERSION 2.1.0.0022
+Norwegian
+text/html; charset=iso-8859-1
+<p><b>Suksess:</b> $s1.</p>
+<p><b>Advarsel:</b> $s1.</p>
+<p><b>Feil:</b> $s1.</p>
+kan ikke akseptere automatiske innmeldinger - ingen mailserver eller program er konfigurert ennå
+kunne ikke lese fra fila '$s1' - $s2
+kunne ikke skrive til fila '$s1' - $s2
+kunne ikke legge til fila '$s1' - $s2
+sent konto opplysninger med passord til '$s1'
+kan ikke sette binmode p&aring; fila '$s1' - $s2
+kunne ikke slette fila '$s1' - $s2
+kunne ikke gi nytt navn til fila '$s1' to '$s2' - $s3
+opprettet ny bruker '$s1'
+skrev til fil '$s1'
+sent account request to administrator for approval
+bruker hjemmekatalog '$s1' eksisterer allerede
+slettet fil '$s1'
+endret filnavn på '$s1' til '$s2'
+kunne ikke opprette katalog '$s1' - $s2
+kunne ikke åpne katalog '$s1' - $s2
+kunne ikke slette katalogen '$s1' - $s2
+opprettet katalogen '$s1'
+slettet katalogen '$s1'
+unable to access home directory '$s1' - $s2 ($s3)
+katalog '$s1' eksisterer ikke
+objektet '$s1' er ikke en katalog
+Genesis disk quota exceeded
+du har blitt utlogget
+finner ikke autentiserings bevis; sesjonen din kan ha timet ut
+sesjon utgått
+ugyldig brukernavn eller passord
+Oppretting
+Skriv inn ditt brukernavn og passord
+Brukernavn
+Passord
+brukernavn '$s1' er reservert
+username cannot be blank
+passordene er ikke like
+username '$s1' is invalid - $s2
+Environment Variables
+Show "Current Folder" in header
+Perl version is $s1 ($s2).<br />Web server operating system is $s3.<br />Web server software is $s4.
+kan ikke lagre data i demomodus
+Disk quota of $s1 kilobytes.
+Allow access to some templates.
+Logg inn
+Ny bruker innmelding
+cannot import file "$s1" with extension "$s2". Your account is only allowed to upload/import Media Files (those with extensions $s3). If you must upload other files, contact the webmaster and request full upload privileges for all file types. Or, request that file extension "$s2" be added to the "Media Files" list
+brukerkontoen din har ikke tilstrekkelige rettigheter får å utføre dette; du trenger '$s1' rettighet
+Mal redigering
+HTML redigering
+kan ikke akseptere innmeldinger - ingen administrator e-postadresse er konfigurert
+Hjelp
+Admin side
+Administrer brukere
+Opprett, se p&aring;, og slett brukerkontoer. Brukes for &aring; gi redigeringsrettigheter.
+Hendelseslogg
+Stopp logging
+Valget for &aring; stoppe logging sletter hendelsesloggen  - for &aring; starte den igjen kan det hende du manuelt m&aring; logge deg p&aring; mot serveren.
+Slett hendelses logg
+Lister opp alle hendelse, fra gamle til nye.
+Logging er for &oslash;yeblikket avsl&aring;tt. Trykk p&aring; knappen over for &aring; aktivere.
+Start logging
+Oversikt
+hendelsesloggen er slettet
+Tilbakestill
+logging er startet
+Kataloginstillinger
+oppdatert kataloginstillinger
+Lagre
+Disk quota of <input name="$s1" size="8" class="numeric" /> kilobytes.
+Freeware Versjon
+SMTP server '$s1:$s2' svarte ikke korrekt p&aring; '$s3' kommandoen; svar var ikke en string med 3 tall; full tekst: '$s4'
+Automatisk bruker oppretting
+SMTP server '$s1:$s2' svarte ikke korrekt p&aring; '$s3' kommandoen; forventet '$s4' som svar, mottok '$s5'; full tekst: '$s6'
+kunne ikke &aring;pne pipe '$s1' - $s2
+feil ved sending av data til SMTP server; sent kun $s1 av totalt $s2 bytes - $s3 - $s4
+feil ved sending av data til SMTP server - $s1 - $s2
+Se p&aring; server aktivitet.
+The <b>Default Language</b> is the language used to control the login and new user sign-up routines.  When users are logged in to Genesis, the interface language is always set according to their per-user preferences.
+Sjekk HTML
+Vis alltid diskforbruk
+Vis tips og linker
+Vis katalogst&oslash;rrelser
+Din st&oslash;tte f&oslash;rer til fremtidige forbedringer av scriptene, og vil hjelpe til fiksing av script-feil og ytelsesforbedringer.
+For &aring; f&aring; en registrernigsn&oslash;kkel, g&aring; til <a href="$s1">$s2</a>.
+Kontorettigheter
+Registrerings n&oslash;kkel
+Beskrivelse
+Gjeldende katalog
+Vis "sette oppstartskatalog" under "Gjeldende katalog".
+G&aring; til
+Klikk her for &aring; sette <a href="$s1">oppstartskatalog</a>.
+Identitet
+Navn
+E-post Adresse
+Sikkerhetsinstillinger
+Gammelt passord
+Nytt passord
+Bekreft ny
+Alle oppsjoner, permanent. Du f&aring;r rettighet til &aring; fjerne copyright advarsler fra web-sidene.
+Kontakt administrator om du trenger &aring; endre noen av disse instillingene.
+Generelle instillinger
+Vis denne siden ved innlogging:
+Bruker spr&aring;k:
+Tillat $s1 filer &aring; bli lastet opp samtidig med gruppe opplasting .
+Sorter filer etter:
+Vis alltid kataloger &oslash;verst.
+Tekstredigerings instillinger
+Tekstredigeringen kan settes opp for &aring; passe til din skjermoppl&oslash;sning. Enkelte funksjoner som automatisk linjebryting og skalert tekst kan v&aelig;re at ikke fungerer p&aring; eldre browsere.
+Tekstst&oslash;rrelse
+H&oslash;yde p&aring; tekstboksen
+Bredde p&aring; tekstboksen
+Last opp alle tekstfiler i ASCII Modus
+Automatisk linjeskift
+Konto opprettet
+Siste innlogging
+Sist logget inn fra
+Sist modifisert
+Filtype
+St&oslash;rrelse
+omvendt
+Funksjoner
+Forrige katalog
+opp
+Rediger
+g&aring; til
+Rediger profil
+Utf&oslash;r
+Create File
+Opprett...
+Opprett katalog
+Filopplastning
+Opplastning...
+Se ogs&aring;
+Flerfil-opplastning
+Se igjennom bilder
+Se igjennom HTML
+Bane
+Bredde
+H&oslash;yde:
+Kommando
+Gi nytt navn
+Kopier
+Slett
+punkter
+Fyll ut skjemaet nedenfor og klikk "Generer web-omr&aring;de".
+Denne malen oppretter f&oslash;lgende filer:
+kan overskrive eksisterende fil
+vil overskrive en eksisterende fil
+Generer web-omr&aring;de
+kan ikke finne UserInput seksjon i mal fil
+Your <a href="$s1">mal for web-omr&aring;de er</a> er ferdig.
+Dette er en ny fil. Skriv inn din tekst:
+Endre <a href="$s1">$s2</a> etter behov:
+Parse server-side include statements.
+Ved &aring; skrive inn et alternativt filnavn vil den originale filen forbli ur&oslash;rt og teksten vil bli lagret i den alternative filen (obs. Denne handlingen vil overskrive eventuelt allerede eksisterende fil med samme navn).
+G&aring; til <a href="$s1">tekstredigerings instillinger</a> (endre st&oslash;rrelse p&aring; tekstboksen ovenfor).
+<b>Status:</b> $s1.
+fila vil bli lagret som '$s1' isteden
+file '$s1' has been uploaded in $s2 mode - size $s3
+Er du sikker p&aring; at du vil slette '$s1'?
+Ja, jeg er sikker
+Slett bruker
+fullf&oslsh;rt fors&oslash;k p&aring; &aring; slette '$s1' - det oppstod feil
+slettet brukerkonto '$s1'
+Alle filene til brukerens katalog '$s1' er fremdeles der. Sletting av filene m&aring; gj&oslash;res separat.
+Ny konto
+Konto:
+Tilbakestill passord
+Godkjenn kontoer
+brukerkonto '$s1' har blitt avsl&aring;tt
+ingenting vil bli gjort med brukeren '$s1'
+brukerfila '$s1' eksisterer ikke. Kontoen kan v&aelig;re avsl&aring;tt
+oppretter ny konto for bruker '$s1'
+assigned password <b>$s1</b> to user. Please provide this password to the user
+file '$s1' has been uploaded
+<p>Automatisk brukeroppretting er en opsjon. Om du aktiverer dette, kan brukere dermed opprette konto via innloggings siden. Kontoer vil bli opprettet etter _default kontoen. Om du aktiverer dette, sjekk:</p><ol><li>at _default kontoen har innstillt "grunnkatalog" og "grunn URL" definert med en %username% parameter, slik at ikke alle bruker samme katalog</li><li>at _default kontoen ikke har "Godkjenn CGI" rettigheter</li><li>at _default kontoen har satt opp diskkvote</li></ol><p>Du kan alltids gi brukere fler rettigheter n&aring;r du blir bedre kjent med dem.</p><p>Genesis er designet for redigereing av en person eller en liten gruppe av personer; den er ikke optimalisert for mange samtidige brukere.</p>
+Tillat brukere &aring; opprette konto automatisk
+Forlang webmaster godkjenning f&oslash;r konto blir opprettet
+Om aktivert blir en e-post sent med foresp&oslash;rsel til "$s1" med enten SMTP server "$s2" eller sendmail program "$s3".
+<p>N&aring;r brukere foresp&oslash;r ny konto m&aring; Genesis sende en e-post til administrator og den nye brukeren. F&oslash;r du kan bruke automatisk brukeroppretting m&aring; du sette opp f&oslash;lgende:</p><ol><li>En e-postadresse for webmaster. Dette m&aring; settes opp under <a href="$s1"><b>Min konto</b></a>.</li><li>Et mailtransport system, enten en "SMTP Server" eller et "Sendmail Program". Dette m&aring; settes opp under <a href="$s2"><b>Systeminstillinger</b></a>.</li></ol><p>N&aring;r dette er satt opp kan du komme tilbake til denne siden for &aring; sette opp automatisk oppretting av kontoer.</p>
+F&oslash;lgende kontoer har blitt forespurt og venter p&aring; godkjenning.
+Foresp&oslash;rsel opprettet
+Godkjenn
+Avsl&aring;
+Vent
+Fullf&oslash;r godkjenninger
+Ingen kontoer avventer godkjenning.
+Gi nytt passord til bruker '$s1':
+IP Adresse
+Tid
+aldri
+Filnavn
+Registrert Shareware
+Ekstra funksjonalitet i en begrenset periode. Flerbruker oppsett, brukerinstillinger blir oppdatert via Internet, flerfil opplastning, mm.
+Kunne ikke initialisere autentiseringssystem.
+passordet for brukeren '$s1' har blitt l&aring;st - det kan ikke resettes
+kunne ikke finne bilde-filformatet
+kunne ikke sette binmode p&aring; socket - $s1
+kunne ikke finne IP-adressen til '$s1' - $s2 - $s3
+kunne ikke opprette socket - $s1 - $s2
+kunne ikke kobble til mot verten '$s1:$s2' - $s3 - $s4
+Demo shareware
+Brukt diskplass:
+Bruker $s1 kb av $s2 kb grense - $s3 kb ledig
+filnavn kan ikke være tomt
+maksimal filnavnlengde er $s1 characters
+mellomrom er ikke lovlig
+tilst&oslash;tende punktum er ikke lovlig
+kan ikke se skjulte/systemfiler som begynner filnavnet med punktum
+kan ikke redigere skjulte/systemfiler som begynner filnavnet med punktum
+inneholder ulovlige tegn - $s1
+Filending '$s1' er ikke tillatt fordi den er listet under "Admin side" =&gt; "Administrer system instillinger" =&gt; "CGI typer" og din konto har ikke CGI tilgang (Tillat CGI) [<a href="$s2./1098.html" TARGET=_blank>Help</a>]
+Filending '$s1' er ikke oppf&oslash;rt p&aring;  "Admin side" =&gt; "Administrer system instillinger" =&gt; "Kjente filtyper". Du m&aring; logge inn som  "webmaster" og redigere "kjente filtyper" f&oslash;r du kan redigere denne filtypen [<a href="$s2./1097.html" TARGET=_blank>Hjelp</a>]
+filnavnet '$s1' er ugyldig - $s2
+Grunnleggende funksjonalitet - enbruker HTML- og malredigering.
+unable to close filehandle for file '$s1' - $s2 ($s3)
+sorterer etter $s1
+Min konto
+Om du lar passordboksene st&aring; blanke vil du motta et generert passord p&aring; e-post.
+Egenskaper
+Lisensmodus
+Grunnkatalog
+registrasjonskoden du tastet er ikke godkjent - kontakt leverand&oslash;ren
+Grunn URL
+passord m&aring; v&aelig;re minst $s1 tegn langt
+sett nytt passord
+error while writing to file '$s1' - $s2 ($s3)
+user '$s1' already exists on this system; please choose a different username
+automatisk innmelding er avslått
+oppdatert bruker instillinger
+Use the <a href="$s1"><b>$s2</b></a> interface to fix the problems.
+The following validation error(s) occured while loading your user account settings.
+The following validation error(s) occured while loading system settings.
+You should contact your administrator and ask them to correct the problem.
+<p align="center"><small>Translation provided by Andreas Gunleikskaas and Thomas Melbye.</small></p>
+Administrer system innstillinger
+Endre systeminstillinger for Genesis. Inkluderer sikkerhetsinstillinger.
+Velg lisensieringsmetode og/eller registrer med registreringsn&oslash;kkel.
+Oppdater lisens
+Lar deg opprette og vedlikeholde web-sider uten bruk av HTML.
+Lar deg redigere web-sider ved bruk av HTML, ogs&aring; behandle filer og kataloger.
+Redigeringsmuligheter
+Administrative Alternativer
+Lar deg oppdatere navne- og e-postinstillinger; nullstill passord; og endre oppsjoner for HTML redigering.
+Sletter autorisasjonsbaviset ditt - klikk alltid her n&aring;r du er ferdig.
+Logg ut
+FAQ/OSS Ofte Stilte Sp&oslash;rsm&aring;l om denne programvaren. Inkludere linker til diskusjons forum, installerings hjelp, og kildekode.
+Gi nytt navn til fil
+Orginal fil
+Nytt filnavn
+Kopier filer
+Kan ikke kopiere kataloger - bare filer
+filnavnet '$s1' passer ikke til grunnkatalogen '$s2'
+kan ikke finne grunn navn fra '$s1'
+Bekreft slett
+kan ikke slette
+er bruker-hjemmekatalog
+Tips
+Maler lar deg kunne lage hele web-omr&aring;der uten &aring; bruke HTML.
+no files or folders selected
+Kommentar
+Opprett konto
+Bestill konto
+Jeg er en ny bruker. <a href="$s1">Opprett ny konto</a>!
+katalogen '$s1' eksisterer ikke. Opprett den og gi den skriverettigheter
+<p>The <b>$s1</b> settings are used to control how permissions are set on the files and folders that you create with Genesis. It is best to choose <b>$s2</b>. The auto-detect algorithm currently selects option <b>$s3</b>.</p>
+No access to hidden files
+May view hidden files, but not edit
+May view and edit hidden files
+Hidden files are those which begin with a dot, like ".htaccess" or ".htpasswd". The Genesis data files are also considered hidden files, like ".template" and ".is_user_dir".
+Hidden Files
+Access to Template Editor
+<p>The test message you just sent was delivered using system settings different than the ones you have saved.</p><p>To permanently save the new settings, submit the form below:</p>
+Click here to <a href="$s1">send another test message</a>.
+the server indicates that the message was sent. Please check your email and confirm that you have received it
+Test Email
+System Information
+System Settings
+Email Settings
+SMTP Server
+Sendmail Program
+subaction '$s1' not defined
+Bronze
+system setting <b>$s1</b> value '$s2' must be octal number; cannot contain illegal digit '$s3'
+Silver
+updating system setting <b>$s1</b> from '$s2' to '$s3'
+saved system settings
+Send
+Trace output was:
+Parameter
+New Value
+<p>Enter parameters for the test message.</p><p>You should perform email tests using a variety of <b>To Email</b> addresses, including addresses at different domains. Some mail servers deliver mail only for certain domains; you should test to make sure your mail server does not have this restriction.</p>
+Test Email Message
+To Email
+From Email
+Send Test Email
+<p>The values you enter for <b>SMTP Host</b> and <b>Sendmail Program</b> on this form are used for testing purposes only. They do not affect your master system settings values.</p><p>If you experiment with different SMTP and Sendmail values here, and the test messages are delivered successfully, then you will have a chance to update your system settings with the new values.</p>
+updated email address to $s1
+Click here to <a href="$s1">send a test message</a>. Click here for <a href="$s2">help</a> on configuring email in Genesis.
+The <b>$s1</b> parameter is shared between the system settings and the &lt;$s2&gt; account profile.
+<b>$s1</b> is the Internet server that has been assigned to deliver mail for your email address.
+Miscellaneous
+Default Language
+Images URL
+Password Size Limit
+characters or more
+File Types
+CGI Types
+Known Types
+Media Types
+<p>For each file type, enter a space-separated list of allowed file extensions.</p><p>Genesis users will only be allowed access to a file if its extension is in one of these lists, subject to these additional restrictions:</p><ul><li><p>Genesis users will only be allowed to access CGI-type files if they have the "Allow CGI" privilege.</p></li><li><p>If the Genesis user has had upload privileges restricted to media files only, then any uploaded files must match one of the "Media Types" extensions.</p></li></ul><p>File extensions can be duplicated among the lists. If an extension is present in both CGI Types and another list, it will be treated as a CGI file for purposes of evaluating privileges and setting file permissions. Similarly, if an extension is in Media Types and another list, it will be treated as a media file for evaluating upload privileges.</p><p>The special file extension * (asterisk) can be used to match any file type. Place this special extension in the Known Types list if you would like to be able to access any file. There are security risks associated with this; review <a href="$s1">this help file</a> first.</p><p>The special file extension "null" is used to refer to files without any extension at all.</p><p>The file extensions "tmp", "template" and "is_user_dir" are used by Genesis. These extensions should always be included in the Known Types list to ensure that the script functions properly.</p>
+File Permissions
+Auto-Detect
+None
+Restrictive
+Auto-detects the most secure permissions to use; recommended.
+No permissions set. For Windows or other systems without chmod.
+<p>For systems in which CGI executes under the account owner context (also known as setuid or suexec).</p><p>These restrictive permissions limit authoring privileges to the account owner only.</p>
+CGI Files
+Normal Files
+Folders
+Define whatever custom permissions you would like to use:
+Custom
+Permissive
+<p>For standard systems in which CGI executes under a user account context different than the account owner.</p><p>These permissive settings allow both the system CGI process and the account owner to access files.</p>
+creating account...
+Delete File
+Delete Folder
+Rename Files and Folders
+Copy Files and Folders
+When browsing, display all files and folders
+When browsing, display only files and folders which are accessible
+Edit Text-Based File
+Allow access only to the following features
+Do not allow access to any features
+Allow access to all features
+Allow access to templates in the following folders:
+Do not allow access to any templates
+Allow access to all templates
+Custom: $s1
+$s1 interface
+Allow Change Directory
+User can navigate to subfolders inside his home directory
+User cannot navigate to subfolders
+<p>This setting controls only whether the user can navigate to subfolders inside his home directory.</p><p>Under no circumstances will the user ever be allowed to navigate outside his home directory.</p>
+Disk Quota
+No disk quota - unlimited disk space.
+Scripting Privileges
+Allow CGI and other active script content
+No CGI or active script content allowed
+Upload Privileges
+May upload any file
+May upload only media files
+No upload privileges
+Click here to continue editing the <a href="$s1">$s2</a> template.
+This script provides different levels of access. Your access levels are described below. To change your access levels, contact your administrator.
+The "$s1" account currently has the following settings:
+<p>These settings are used to initialize the <b>$s1</b> and <b>$s2</b> values when new user accounts are created.</p><p>These default settings were identical to your &lt;$s3&gt; account settings, except that they had "/%username%/" at the end, before your changed your settings just now.</p><p>Would you like to update the &lt;$s4&gt; account to match the changes made to your &lt;$s3&gt; account?</p>
+Note that you can edit the &lt;$s1&gt; account at any time by going to "$s2" =&gt; "$s3".
+Current Settings for Default Account
+Proposed New Settings for Default Account
+<p>These are the account settings for the virtual "$s1" account. They will serve as the defaults whenever a new account is created.</p><p>It is best to use the lowest possible privilege levels for the "$s1" account. Advanced privileges can always be granted later, on a case-by-case basis.</p>
+Default Files
+<p>When an account is created, this script will copy all files from the "$s1" folder into the user's home directory.</p><p>The $s2 folder currently contains:</p>
+<p>You can delegate a variety of authoring privileges to each user.  Choose from one of these four standard sets of privileges, or define a custom set of privileges.</p><p>Note that granting the "Allow CGI" privilege will effectively allow the user to do anything, since he will be able to upload his own scripts to perform any authoring functions that aren't exposed through Genesis.</p>
+<p><b>$s1</b> are defined as any file with one of the following extensions:</p><blockquote><p><tt>$s2</tt></p></blockquote><p>This list can be customized on the <a href="$s3">$s4</a> page.</p>
+The templates within "$s1" have not been divided up into subfolders. This must be done first.
+<p>You can use the variable <tt>$s1</tt> anywhere in the folder and URL paths. The variable will be automatically replaced with the username.</p><p>This script appears to have the following path (this information may be helpful in choosing the $s2 setting above):</p>
+Custom Privileges
+No upload privileges
+No CGI or active script content allowed
+Allow CGI and other active script content
+Platinum
+Gold
+Full access to Template Editor and HTML Editor
+Access to Template Editor with ability to upload media files within templates
+Your account has been temporarily disabled.
+<p>Your account has been disabled.</p><p>Your account was created $s1 days ago. This system is set to expire accounts after $s2 days.</p>
+Account Expiration
+Account does not expire
+Account temporarily disabled
+Account expires $s1 days after being created
+This account was created on $s1 ($s2 days ago).

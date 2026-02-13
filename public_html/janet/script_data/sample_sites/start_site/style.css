@@ -1,0 +1,20 @@
+body {
+	background-color: #dda0dd;
+	color: #7b68ee;
+	}
+h1 {
+	color: #8a2be2;
+	}
+a {
+	color: #0000ff;
+	}
+a:visited {
+	color: #00008b;
+	}
+a:hover {
+	color: #1e90ff;
+	}
+body,th,td,p {
+	font-family: georgia;
+	font-size: 16pt;
+	}

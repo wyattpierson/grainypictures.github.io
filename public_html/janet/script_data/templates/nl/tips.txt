@@ -1,0 +1,14 @@
+Zet SChijf Quota en Mapgrootte uit om de snelheid te bevorderen.
+Zorg er altijd voor dat u uw permissies juist zet.
+Gebruik meerdere zelfgemaakte sjablonen om eenvoudig documenten te creëren.
+For best results, use Internet Explorer 5+ or Netscape 6+.
+Plaats uw sjablonen en bestand met instellingen binnen uw schrijfbare map voor eenvoudige bewerking.
+U kunt deze tips - en nog veel meer - uitzetten door op <a href="%admin_url%Action=PR">Mijn Account</a> link te klikken.
+Gebruik Genesis om uw bezoekers hun eigen afbeeldingen, geluiden en bestanden te laten uploaden.
+Leeg uw logbestand wanneer het 100kb bevat om ruimte te besparen.
+Wanneer u meer dan 36 uur achtereen aan het programmeren bent geweest, neem dan een pauze.
+We moeten iets <i>doen</i> als we in een andere wereld willen wonen.
+Schrijf je ouders en grootouders regelmatig.
+Hulp nodig? Probeer de <a href="%help file%" target="_blank">Genesis Gebruikershandleiding</a>.
+Is mijn HTML in orde? Vraag het <a href="http://www.doctor-html.com/RxHTML/" target="_blank">Dr. HTML</a>!
+Kan ik dat doen met HTML? Vind het uit in de <a href="http://www.w3schools.com/html/" target="_blank">w3 HTML Tutorial</a>.
