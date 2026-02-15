@@ -1,0 +1,5 @@
+# Jekyll configuration
+source: public_html
+exclude:
+  - README.md
+  - convert_to_jekyll.pl
