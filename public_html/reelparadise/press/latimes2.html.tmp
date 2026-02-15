@@ -1,0 +1,155 @@
+---
+---
+<!-- Reel Paradise -->
+<!-- December 13, 2004 -->
+
+<html>
+<head>
+<title>Reel Paradise</title>
+
+<link rel="stylesheet" type="text/css" href="../reel.css" media="screen">
+
+<SCRIPT SRC="../menu1.js">
+</script>
+</head>
+
+<body BGCOLOR="#666666" TOPMARGIN=0 MARGINHEIGHT=0>
+
+<center>
+
+<table width="792" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width="6" BACKGROUND="../images/blur.gif"><br></td>
+<td width="780">
+<a href="../main.html"><img src="../images/head.jpg" BORDER=0></a><br>
+
+<table width="780" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width="474" valign=top><a href="../synopsis.html" onMouseOver = "imgOn('synopsis')" onMouseOut = "imgOff('synopsis')"><img name="synopsis" src="../images/menu/synopsis.gif" BORDER=0></a><a href="../director.html" onMouseOver = "imgOn('ds')" onMouseOut = "imgOff('ds')"><img name="ds" src="../images/menu/ds.gif" BORDER=0></a><a href="../press/index.html" onMouseOver = "imgOn('press')" onMouseOut = "imgOff('press')"><img name="press" src="../images/menu/press.gif" BORDER=0></a><a href="../photos.html" onMouseOver = "imgOn('photos')" onMouseOut = "imgOff('photos')"><img name="photos" src="../images/menu/photos.gif" BORDER=0></a><a href="../clips.html" onMouseOver = "imgOn('clips')" onMouseOut = "imgOff('clips')"><img name="clips" src="../images/menu/clips.gif" BORDER=0></a><a href="../cast.html" onMouseOver = "imgOn('cast')" onMouseOut = "imgOff('cast')"><img name="cast" src="../images/menu/cast.gif" BORDER=0></a><br>
+<a href="../bios.html" onMouseOver = "imgOn('bios')" onMouseOut = "imgOff('bios')"><img name="bios" src="../images/menu/bios.gif" BORDER=0></a><a href="../qa.html" onMouseOver = "imgOn('qa')" onMouseOut = "imgOff('qa')"><img name="qa" src="../images/menu/qa.gif" BORDER=0></a><a href="../free.html" onMouseOver = "imgOn('free')" onMouseOut = "imgOff('free')"><img name="free" src="../images/menu/free.gif" BORDER=0></a><a href="../credits.html" onMouseOver = "imgOn('pc')" onMouseOut = "imgOff('pc')"><img name="pc" src="../images/menu/pc.gif" BORDER=0></a><a href="../contact.html" onMouseOver = "imgOn('contact')" onMouseOut = "imgOff('contact')"><img name="contact" src="../images/menu/contact.gif" BORDER=0></a><a href="/main.html" onMouseOver = "imgOn('home')" onMouseOut = "imgOff('home')"><img name="home" src="/images/menu/home.gif" BORDER=0></a></td>
+<td width="306" valign=top><img src="../images/picbottom.jpg"></a></td>
+</tr>
+</table>
+
+{% include fest.html %}
+
+
+<table bgcolor="#FFFFFF" width="780" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width="9"><br></td>
+<td width="530" class=presstable>
+<img src="images/latimes.gif"><p>
+
+
+
+
+<font class="head">Taking popcorn fare to paradise</font><p>
+
+It's like moviegoing is new again when a producer shows free films in Fiji.
+<p>
+
+By Merrill Balassone, Times Staff Writer
+<p>
+
+Whether it was a projectionist drunk on homemade grog or faulty wiring that made equipment go up in smoke, independent film producer John Pierson was in for a challenge when he took over a rickety 288-seat movie theater on Fiji's remote island of Taveuni.
+<p>
+
+At first, the New York transplant was comforted by the locals who reassured him with their oft-repeated slogan - "no worries." That is, until he deciphered the code.
+<p>
+
+
+"What it really meant was, 'This isn't going to work, but just don't worry about it,' " Pierson said. Pierson first came across the 180 Meridian Cinema in 2000, while searching for the world's most remote theater for an episode of his Independent Film Channel documentary show, "Split Screen." (The 180 Meridian Cinema is 5,000 miles from Hollywood.)
+<p>
+
+Word of mouth, known on the island as "coconut wireless," that Pierson would be holding a free screening drew a throng of Fijians, many of whom make the equivalent of about $20 a month and rarely splurge on movies. The film? The Three Stooges' short "Some More of Samoa," in which natives try to boil Curly for dinner. The audience reacted with exuberant laughter verging on pandemonium.
+<p>
+
+"It was an out-of-body experience," Pierson said.
+<p>
+
+Pierson said he decided right then and there that he'd return to Taveuni and bring more movies with him. The documentary "Reel Paradise," which opens Friday in Los Angeles, tells that tale.
+<p>
+
+A player in the independent film industry in the late 1980s, working with filmmakers such as Spike Lee, Michael Moore and Kevin Smith, Pierson recalled that in the years before his Fiji visit he'd become jaded about independent films. They were becoming less defined as a genre and more and more featured big-name Hollywood casts.
+<p>
+
+Fiji seemed like the perfect place to recharge and gain some perspective.
+<p>
+
+Pierson convinced his wife and business partner, Janet, and their teenage children, Georgia and Wyatt, to join him on a yearlong retreat to the remote island. Pierson relied on contributions from Smith, "South Park's" Matt Stone and Haxan Films, producers of the "Blair Witch Project," to help him finance free screenings for a year.
+<p>
+
+Soon, audiences at 180 Meridian, where shutters let the island breeze through and paintings of Mickey Mouse and Bugs Bunny grace the faade, were howling with laughter at "Jackass: The Movie" and caught up in the action of "The Scorpion King."
+<p>
+
+"It seems like these movies are commercial fodder and beneath you, but if you saw them with that audience at the Meridian it would change your mind," Pierson said. "We always hear that Hollywood is shoving these movies down our throats, but people really do enjoy them. It showed me that entertainment value really does matter in movies."
+<p>
+
+It was a lesson Pierson learned the hard way. Against the better judgment of his son, Wyatt, Pierson decided to screen "Apocalypse Now Redux." It put the people who didn't leave the theater to sleep.
+<p>
+
+Documentary filmmaker Steve James, best known for "Hoop Dreams," arrived for the last month of the Piersons' stay. He captured family spats and the Piersons' clashes with island culture as the elder Pierson promoted a "10 movies in 10 days" marathon. He also documents John Pierson coming down with dengue fever and the second burglary of the family's plantation home, with nearly $10,000 worth of electronics stolen.
+<p>
+
+While the natural beauty and friendliness of the natives amazed the Piersons, their lifestyle was a far cry from home in Garrison, N.Y. Wyatt and Georgia attended a Catholic school in Taveuni with all-native classmates and in one interview, Wyatt told of his struggle to find how best to transport a cane knife on the bus for his agriculture class.
+<p>
+
+"I didn't know how to fit it in my backpack without cutting up all my notebooks," he said, putting his hands nearly two feet apart to demonstrate the length of the blade.
+<p>
+
+For James, who spent years collecting footage for "Hoop Dreams," filming the Piersons for only a month was a challenge. He felt free to portray the family, though, and shows blowout arguments about curfews and sex, hickeys and even clashes with their Australian landlord.
+<p>
+
+"They're a combative bunch," James said. "Everyone gets their two cents in, and I like that."
+<p>
+
+James worked with three crew members and only one camera to capture each member of the Pierson family as well as the Fijians, shooting nearly every day for 14 hours. In one scene, Janet is captivated by watching the women grill fish and chicken over open fires, and some men gathered nearby are speaking excitedly.
+<p>
+
+Back in the studio with the audio translated, James, who thought he had been eavesdropping on a slice of island life, was disappointed to learn that the men had been telling jokes, some obscene, and making fun of James and his crew.
+<p>
+
+Although the Piersons met resistance from Catholic priests on the island who accused them of ruining attempts to instill individualism and discourage handouts among the Fijians, the family hopes to return soon. They are batting around the idea of a "filmmaker timeshare," in which filmmakers would take turns showing films in the theater during the summer.
+<p>
+
+For cinephiles like John and Janet Pierson, and James, the surround-sound experience of Fijians utterly lost and enveloped in the movie experience has been unmatched.
+<p>
+
+"It's like a drug," James said. "It doesn't matter as much what you're watching, it's just the experience of watching it there. You really feel like you're closest to the experience of audiences a long time ago, who would watch a train come into the station on the screen and duck to get out of the way."
+
+<p>
+
+
+
+
+<a class=press href="index.html">More Press...</a></b></font>
+<br>
+<br></td>
+
+<td width="10"><img width="10" src="../images/dot.gif"></td>
+
+<td width="222" valign=top>{% include sidebar.html %}
+</td>
+
+<td width="9"><br></td>
+</tr>
+</table>
+
+<table width=780 border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="http://www.wellspring.com" TARGET="_new"><img src="/images/wellspringb.gif" BORDER=0></a><a href="http://www.viewaskew.com" TARGET="_new"><img src="/images/vab.gif" BORDER=0></a><a href="http://www.grainypictures.com" TARGET="_new"><img src="/images/grainyb.gif" BORDER=0></a><a href="http://www.wellspring.com" TARGET="_new"><img src="/images/wellcopy.gif" BORDER=0></a><br>
+<a href="../main.html" onMouseOver = "imgOn('rp')" onMouseOut = "imgOff('rp')"><img name="rp" src="../images/menu1/rp.gif" BORDER=0></a><a href="../main.html" onMouseOver = "imgOn('mhome')" onMouseOut = "imgOff('mhome')"><img name=mhome src="../images/menu1/home.gif" BORDER=0></a><a href="../synopsis.html" onMouseOver = "imgOn('msynopsis')" onMouseOut = "imgOff('msynopsis')"><img name="msynopsis" src="../images/menu1/synopsis.gif" BORDER=0></a><a href="../director.html" onMouseOver = "imgOn('mds')" onMouseOut = "imgOff('mds')"><img name="mds" src="../images/menu1/ds.gif" BORDER=0></a><a href="../press/index.html" onMouseOver = "imgOn('mpress')" onMouseOut = "imgOff('mpress')"><img name="mpress" src="../images/menu1/press.gif" BORDER=0></a><a href="../photos.html" onMouseOver = "imgOn('mphotos')" onMouseOut = "imgOff('mphotos')"><img name="mphotos" src="../images/menu1/photos.gif" BORDER=0></a><a href="../clips.html" onMouseOver = "imgOn('mclips')" onMouseOut = "imgOff('mclips')"><img name="mclips" src="../images/menu1/clips.gif" BORDER=0></a><a href="../cast.html" onMouseOver = "imgOn('mcast')" onMouseOut = "imgOff('mcast')"><img name="mcast" src="../images/menu1/cast.gif" BORDER=0></a><a href="../bios.html" onMouseOver = "imgOn('mbios')" onMouseOut = "imgOff('mbios')"><img name="mbios" src="../images/menu1/bios.gif" BORDER=0></a><a href="../qa.html" onMouseOver = "imgOn('mqa')" onMouseOut = "imgOff('mqa')"><img name="mqa" src="../images/menu1/qa.gif" BORDER=0></a><a href="../free.html" onMouseOver = "imgOn('mfree')" onMouseOut = "imgOff('mfree')"><img name="mfree" src="../images/menu1/free.gif" BORDER=0></a><a href="../credits.html" onMouseOver = "imgOn('mcredits')" onMouseOut = "imgOff('mcredits')"><img name="mcredits" src="../images/menu1/credits.gif" BORDER=0></a><a href="../contact.html" onMouseOver = "imgOn('mcontact')" onMouseOut = "imgOff('mcontact')"><img name="mcontact" src="../images/menu1/contact.gif" BORDER=0></a></td>
+</tr>
+</table>
+
+</td>
+<td width="6" BACKGROUND="../images/blur1.gif"><br></td>
+</tr>
+</table>
+
+</center>
+
+</body>
+</html>
+
+
