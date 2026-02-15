@@ -126,6 +126,33 @@ unless (-f $config_file) {
     print "  _config.yml already exists, skipping\n";
 }
 
+print "\n=== PHASE 4: Converting all files to UTF-8 ===\n";
+my $encoding_fixes = 0;
+foreach my $html_file (@html_files) {
+    # Check encoding
+    my $encoding = `file -b --mime-encoding "$html_file"`;
+    chomp($encoding);
+    
+    if ($encoding ne 'utf-8' && $encoding ne 'us-ascii') {
+        print "  Converting $html_file (detected as $encoding)\n";
+        
+        # Try WINDOWS-1252 first (most common), with TRANSLIT for safety
+        my $result = system("iconv -c -f WINDOWS-1252 -t UTF-8//TRANSLIT '$html_file' > '$html_file.tmp' 2>/dev/null && mv '$html_file.tmp' '$html_file'");
+        
+        if ($result != 0) {
+            # If that fails, try ISO-8859-1
+            $result = system("iconv -c -f ISO-8859-1 -t UTF-8//TRANSLIT '$html_file' > '$html_file.tmp' 2>/dev/null && mv '$html_file.tmp' '$html_file'");
+        }
+        
+        if ($result == 0) {
+            $encoding_fixes++;
+        } else {
+            print "    WARNING: Failed to convert $html_file\n";
+        }
+    }
+}
+
 print "\n=== CONVERSION COMPLETE ===\n";
 print "Total HTML files processed: " . scalar(@html_files) . "\n";
 print "Include files moved: " . scalar(keys %moved_includes) . "\n";
+print "Files converted to UTF-8: $encoding_fixes\n";
