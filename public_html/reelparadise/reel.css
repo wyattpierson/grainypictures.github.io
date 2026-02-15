@@ -1,0 +1,338 @@
+.captions { font-size: 11px; font-family: Arial, Verdana, sans-serif }
+
+.dottytop {
+	margin : 0px;
+	text-align: center;
+	padding : 5px;
+	background : #CCCCCC;
+	border : 1px dotted #444;
+	}
+
+.dottybottom {
+	margin : 0px;
+	text-align: center;
+	padding : 5px;
+	background : #FFFFFF;
+	border-top : 1px dotted #444;
+	}
+	
+.dottya {
+	margin : 0px;
+	padding : 10px;
+	background : #FFFFFF;
+	border-top : 1px dotted #444;
+	border-right : 1px dotted #444;
+	border-left : 1px dotted #444;
+	border-bottom : 1px dotted #444;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 11px;
+	color : #000;
+	}
+	
+.dotty {
+	margin : 0px;
+	padding : 10px;
+	background : #FFFFFF;
+	border-right : 1px dotted #444;
+	border-left : 1px dotted #444;
+	border-bottom : 1px dotted #444;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 11px;
+	color : #000;
+	}
+	
+.runfortheborder {
+	margin : 0px;
+	padding : 10px;
+	background : #DDDDDD;
+	vertical-align:top;
+	border-right : 1px solid #444;
+	border-left : 1px solid #444;
+	border-top : 1px solid #444;
+	border-bottom : 1px solid #444;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 11px;
+	color : #000;
+	}
+
+.presstable {
+	margin : 0px;
+	padding : 0px;
+	background : #FFFFFF;
+	vertical-align:top;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 15px;
+	letter-spacing: 0px;
+	color : #000;
+	}
+	
+.whitetable {
+	margin : 0px;
+	padding : 0px;
+	background : #FFFFFF;
+	vertical-align:top;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #000;
+	}
+	
+
+.stash {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	color : #666;
+	border-style : none;
+	}
+	
+	
+td.main {
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+	
+td.side {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+
+td.photo {
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 13px;
+	color : #FFF;
+	border-style : none;
+	background : transparent;
+	}
+	
+.small {
+	font : 9px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 11px;
+	color : #FFF;
+	border-style : none;
+	background : transparent;
+	}
+	
+.smallblack {
+	font : 9px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 11px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+
+.press {
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 13px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+.head {
+	font : 36px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 38px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+	
+.black10 {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 11px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+
+.black12 {
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+.black14 {
+	font : 14px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 16px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+.black16 {
+	font : 16px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 18px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+.credits {
+	font : 18px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 20px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+	
+.creditsmall {
+	font : 14px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 20px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+	
+	
+.supersmall {
+	font : 9px helvetica, arial, geneva, sans-serif;
+	line-height : 10px;
+	color : #FFF;
+	border-style : none;
+	background : transparent;
+	}
+
+a.press:link {
+	font : 18px helvetica, arial, geneva, sans-serif;
+	line-height : 20px;
+	color : #660000;
+	background : transparent;
+	font-weight: bold;
+	}
+
+a.press:visited {
+	font : 18px helvetica, arial, geneva, sans-serif;
+	line-height : 20px;
+	color : #660000;
+	background : transparent;
+	font-weight: bold;
+	}
+
+a.press:hover {
+	font : 18px helvetica, arial, geneva, sans-serif;
+	line-height : 20px;
+	color : #660000;
+	background : transparent;
+	text-decoration : underline;
+	font-weight: bold;
+	}
+
+a.press:active {
+	font : 18px helvetica, arial, geneva, sans-serif;
+	line-height : 20px;
+	color : #660000;
+	background : transparent;
+	font-weight: bold;
+	text-decoration : underline;
+	}
+	
+a.clips:link {
+	font : 12px helvetica, arial, geneva, sans-serif;
+	color : #006600;
+	background : transparent;
+
+	}
+
+a.clips:visited {
+	font : 12px helvetica, arial, geneva, sans-serif;
+	color : #006600;
+	background : transparent;
+
+	}
+
+a.clips:hover {
+	font : 12px helvetica, arial, geneva, sans-serif;
+	color : #339933;
+	background : transparent;
+	text-decoration : underline;
+	}
+
+a.clips:active {
+	font : 12px helvetica, arial, geneva, sans-serif;
+	color : #339933;
+	background : transparent;
+	text-decoration : underline;
+	}
+	
+a.clipshead:link {
+	font : 14px helvetica, arial, geneva, sans-serif;
+	color : #000000;
+	background : transparent;
+	text-decoration : none;
+	font-weight: bold;
+	}
+
+a.clipshead:visited {
+	font : 14px helvetica, arial, geneva, sans-serif;
+	color : #000000;
+	background : transparent;
+	text-decoration : none;
+	font-weight: bold;
+	}
+
+a.clipshead:hover {
+	font : 14px helvetica, arial, geneva, sans-serif;
+	color : #000000;
+	background : transparent;
+	text-decoration : underline;
+		font-weight: bold;
+	}
+
+a.clipshead:active {
+	font : 14px helvetica, arial, geneva, sans-serif;
+	color : #000000;
+	background : transparent;
+	text-decoration : underline;
+	font-weight: bold;
+	}
+	
+	
+a.onwhite:link {
+	color : #006600;
+	background : transparent;
+	text-decoration:none;
+	}
+
+a.onwhite:visited {
+	color : #006600;
+	background : transparent;
+	text-decoration:none;
+	}
+
+a.onwhite:hover {
+	color : #339933;
+	background : transparent;
+	text-decoration : underline;
+	}
+
+a.onwhite:active {
+	color : #339933;
+	background : transparent;
+	text-decoration : underline;
+	}
+	
+	
+a.onblack:visited {
+	color : #CC0000;
+	background : transparent;
+	}
+
+a.onblack:hover {
+	color : #000000;
+	background : transparent;
+	text-decoration : underline;
+	}
+
+a.onblack:active {
+	color : #CC0000;
+	background : transparent;
+	text-decoration : underline;
+	}
