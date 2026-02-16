@@ -1,0 +1,261 @@
+_____________________________________________________________________________
+
+<Genesis:Defaults>
+
+# This section is used to declare default values for use in the next
+# section, Genesis:UserInput.
+
+# These default values will appear *only* on the visitor's first visit to
+# the template form; all subsequent visits will use their previously-entered
+# values.
+
+# To ensure compatibility with the SetDefaults function, declare all
+# default values in this section rather than hardcoding VALUE/CHECKED
+# attributes in the UserInput form elements.
+
+# The name-value pairs are case sensitive for purposes of declaring
+# defaults and generating the form in User Input.  The later replacements
+# in the Genesis:File sections are case insensitive.
+
+	faeries3=All old people are lame, no matter what they believe.
+
+	q3=Because it is spiritual and free and majestic and stuff.
+
+	q4=I collect sea-shells and pretty stones.
+
+</Genesis:Defaults>
+_____________________________________________________________________________
+
+<Genesis:UserInput>
+
+# Create an HTML form that will be shown to the user.  Be sure to properly
+# close all HTML tags.  The following names are reserved for use by Genesis;
+# don't create name-value pairs with them: "Action"; "sa"; "Template"; "CWD"
+
+	<p><b>Me - the Basics</b></p>
+
+	<table border="0">
+	<tr>
+		<td align="right"><b>Name:</b></td>
+		<td><input name="shared_name" /></td>
+	</tr>
+	<tr>
+		<td align="right"><b>Email Address:</b></td>
+		<td><input name="shared_email" /></td>
+	</tr>
+	</table>
+
+	<p><b>Faeries and Magic</b></p>
+
+	<p>Why do you believe in faeries?</p>
+	<p><textarea name="faeries1" rows="6" cols="45" wrap="virtual"></textarea></p>
+
+	<p>What do you love about faeries?</p>
+	<p><textarea name="faeries2" rows="6" cols="45" wrap="virtual"></textarea></p>
+
+	<p>Tell everyone why you believe in magic, and why older people who don't believe in magic are missing out:</p>
+	<p><textarea name="faeries3" rows="6" cols="45" wrap="virtual"></textarea></p>
+
+	<p><b>All About Me - Details</b></p>
+
+	<table border="0">
+	<tr valign="top">
+		<td align="right"><b>What do you look like?</b></td>
+		<td><textarea name="q1" rows="4" cols="35" wrap="virtual"></textarea></td>
+	</tr>
+	<tr>
+		<td align="right"><b>Favorite animal?</b></td>
+		<td><input name="q2" /></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Why?</b></td>
+		<td><textarea name="q3" rows="4" cols="35" wrap="virtual"></textarea></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Things you collect:</b></td>
+		<td><textarea name="q4" rows="4" cols="35" wrap="virtual"></textarea></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Hobbies:</b></td>
+		<td><textarea name="q5" rows="4" cols="35" wrap="virtual"></textarea></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>What are your pets and their names?</b></td>
+		<td><textarea name="q6" rows="4" cols="35" wrap="virtual"></textarea></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Favorite body part?</b></td>
+		<td><input name="q7" /></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>What is your favorite thing to wear?</b></td>
+		<td><input name="q8" /></td>
+	</tr>
+
+	<tr valign="top">
+		<td align="right"><b>Best Advice:</b></td>
+		<td><textarea name="advice" rows="4" cols="35" wrap="virtual"></textarea></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Who gave you the advice?</b></td>
+		<td><input name="advice_from" /></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Important lessons you've learned:</b></td>
+		<td><textarea name="lesson" rows="4" cols="35" wrap="virtual"></textarea></td>
+	</tr>
+	</table>
+
+
+
+</Genesis:UserInput>
+_____________________________________________________________________________
+
+<GENESIS:IMPORT FROM="images/luna.gif" TO="luna.gif">
+<GENESIS:IMPORT FROM="images/fairy_bg.jpg" TO="fairy_bg.jpg">
+_____________________________________________________________________________
+
+<Genesis:File name="fhp_index.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title><% if shared_name %>%shared_name%'s<% end if %><% if not shared_name %>My<% end if %> World</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+
+	<h1 align="center"><%if shared_name%>%shared_name%'s<%end if%><%if not shared_name%>My<%end if%> World</h1>
+
+	<p><b>Hey, welcome to my page!</b></p>
+
+	<p><b><a href="fhp_magic.html"><img src="luna.gif" hspace="10" border="0" alt="" /> Faeries and Magic!!</a></b></p>
+
+	<p><b><a href="fhp_about_me.html">All About Me</a></b></p>
+	<p><b><a href="fhp_advice.html">Advice Page</a></b></p>
+
+	<h1 align="center">{ <a href="fhp_index.html"><%if shared_name%>%shared_name%'s<%end if%><%if not shared_name%>My<%end if%> World</a> }</h1>
+	<h1 align="center">~~ <a href="mailto:%shared_email%">talk to me</a> ~~</h1>
+
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="fhp_magic.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Faeries and Magic</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body background="fairy_bg.jpg" style="margin-left:200px">
+
+	<h1 align="center">Faeries and Magic</h1>
+
+	<p>Why do you believe in faeries?</p>
+	<p><b>%faeries1%</b></p>
+	<p><br /></p>
+
+	<p>What do you love about faeries?</p>
+	<p><b>%faeries2%</b></p>
+	<p><br /></p>
+
+	<p>Tell everyone why you believe in magic, and why older people who don't believe in magic are missing out:</p>
+	<p><b>%faeries3%</b></p>
+	<p><br /></p>
+
+	<h1 align="center">{ <a href="fhp_index.html"><%if shared_name%>%shared_name%'s<%end if%><%if not shared_name%>My<%end if%> World</a> }</h1>
+	<h1 align="center">~~ <a href="mailto:%shared_email%">talk to me</a> ~~</h1>
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="fhp_about_me.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>All About Me</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+
+	<p><b>All About Me</b></p>
+
+	<table border="0">
+	<tr valign="top">
+		<td align="right"><b>What do you look like?</b></td>
+		<td>%q1%</td>
+	</tr>
+	<tr>
+		<td align="right"><b>Favorite animal?</b></td>
+		<td>%q2%</td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Why?</b></td>
+		<td>%q3%</td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Things you collect:</b></td>
+		<td>%q4%</td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Hobbies:</b></td>
+		<td>%q5%</td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>What are your pets and their names?</b></td>
+		<td>%q6%</td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>Favorite body part?</b></td>
+		<td>%q7%</td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><b>What is your favorite thing to wear?</b></td>
+		<td>%q8%</td>
+	</tr>
+	</table>
+
+	<h1 align="center">{ <a href="fhp_index.html"><%if shared_name%>%shared_name%'s<%end if%><%if not shared_name%>My<%end if%> World</a> }</h1>
+	<h1 align="center">~~ <a href="mailto:%shared_email%">talk to me</a> ~~</h1>
+
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
+<Genesis:File name="fhp_advice.html">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>My Advice Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+
+	<p><b>Best Advice:</b><% if advice_from %>(I got this from %advice_from%)<% end if %></p>
+	<p><b><%if advice%>%advice%<%end if%><%if not advice%>None yet!<%end if%></b></p>
+
+	<p>Important lessons you've learned: <b><%if lesson%>%lesson%<%end if%><%if not lesson%>um still thinking on this one...<%end if%></b></p>
+
+	<h1 align="center">{ <a href="fhp_index.html"><%if shared_name%>%shared_name%'s<%end if%><%if not shared_name%>My<%end if%> World</a> }</h1>
+	<h1 align="center">~~ <a href="mailto:%shared_email%">talk to me</a> ~~</h1>
+
+</body>
+</html>
+
+</Genesis:File>
+_____________________________________________________________________________
+
