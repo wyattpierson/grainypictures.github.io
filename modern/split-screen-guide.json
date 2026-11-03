@@ -1,0 +1,1035 @@
+{
+  "checked": "2026-11-02",
+  "source": "https://www.criterionchannel.com/search?q=split+screen",
+  "seasons": [
+    {
+      "number": 1,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/VZjWaN3A/john-pierson-introduces-split-screen-season-one",
+        "seconds": 388
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Spike Lee, the Real Fargo, Waters Shocks",
+          "url": "https://www.criterionchannel.com/supplements/lfnfA1u7/split-screen-s1-e1-spike-lee-the-real-fargo-waters-shocks",
+          "seconds": 1685,
+          "original": [
+            {
+              "number": 1,
+              "details": "../splitscreen/epone.html",
+              "credits": "../splitscreen/eponecredits.html"
+            }
+          ],
+          "segments": "Spike’s First Decade · John and Bob in the Office · Hang Your Dog in the Wind · The Real Fargo · The Gruesome Twosome"
+        },
+        {
+          "episode": 2,
+          "title": "Linklater and Bogosian in NYC, Duct Town",
+          "url": "https://www.criterionchannel.com/supplements/hsgpL9j3/split-screen-s1-e2-linklater-and-bogosian-in-nyc-duct-town",
+          "seconds": 1714,
+          "original": [
+            {
+              "number": 2,
+              "details": "../splitscreen/eptwo.html",
+              "credits": "../splitscreen/eptwocredits.html"
+            }
+          ],
+          "segments": "Rick and Eric’s Excellent NY Film Festival Adventure · It’s Impossible to Learn to Plow by Reading Books · Duct Town"
+        },
+        {
+          "episode": 3,
+          "title": "Kevin and CRUMB at the Quick Stop",
+          "url": "https://www.criterionchannel.com/supplements/7MgHrJNG/split-screen-s1-e3-kevin-and-crumb-at-the-quick-stop",
+          "seconds": 1663,
+          "original": [
+            {
+              "number": 3,
+              "details": "../splitscreen/epthree.html",
+              "credits": "../splitscreen/epthreecredits.html"
+            }
+          ],
+          "segments": "Quick Stop · Crumb · Direction Man · Making Northwestern"
+        },
+        {
+          "episode": 4,
+          "title": "Sundance on the Hudson",
+          "url": "https://www.criterionchannel.com/supplements/9uXBK8t5/split-screen-s1-e4-sundance-on-the-hudson",
+          "seconds": 1618,
+          "original": [
+            {
+              "number": 4,
+              "details": "../splitscreen/epfour.html",
+              "credits": "../splitscreen/epfourcredits.html"
+            }
+          ],
+          "segments": "Bob the Mailman in LA · Cold Spring Workshop · Just Another Dance"
+        },
+        {
+          "episode": 5,
+          "title": "Breakthrough Screenwriting",
+          "url": "https://www.criterionchannel.com/supplements/O3RbOkog/split-screen-s1-e5-breakthrough-screenwriting",
+          "seconds": 1679,
+          "original": [
+            {
+              "number": 5,
+              "details": "../splitscreen/epfive.html",
+              "credits": "../splitscreen/epfivecredits.html"
+            }
+          ],
+          "segments": "Screenwriting: An Exact Science · Nine Months · Screenwriting: Part 2"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: Harmony Korine",
+          "url": "https://www.criterionchannel.com/supplements/m4KdAuwb/split-screen-s1-e6-projections-harmony-korine",
+          "seconds": 1734,
+          "original": [
+            {
+              "number": 58,
+              "details": "../splitscreen2/contents58.html",
+              "credits": "../splitscreen2/credits58.html"
+            }
+          ],
+          "segments": "Projections - Harmony Korine"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/GydjGH68/john-pierson-introduces-split-screen-season-two",
+        "seconds": 434
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Lurie Fishes, Gilliam Monkeys",
+          "url": "https://www.criterionchannel.com/supplements/M0ksSGr2/split-screen-s2-e1-lurie-fishes-gilliam-monkeys",
+          "seconds": 1693,
+          "original": [
+            {
+              "number": 6,
+              "details": "../splitscreen/epsix.html",
+              "credits": "../splitscreen/epsixcredits.html"
+            }
+          ],
+          "segments": "Fishing with Two Johns · Isle of Lesbos · Cyberhostage · Hamster Factor"
+        },
+        {
+          "episode": 2,
+          "title": "Errol Rocks, Gators Chomp",
+          "url": "https://www.criterionchannel.com/supplements/grXkMwcS/split-screen-s2-e2-errol-rocks-gators-chomp",
+          "seconds": 1704,
+          "original": [
+            {
+              "number": 7,
+              "details": "../splitscreen/epseven.html",
+              "credits": "../splitscreen/epsevencredits.html"
+            }
+          ],
+          "segments": "Swingblade · Gatorlando · Spread Fred · Errol Morris"
+        },
+        {
+          "episode": 3,
+          "title": "Buscemi and Turturro on the Block",
+          "url": "https://www.criterionchannel.com/supplements/SyzY5CR5/split-screen-s2-e3-buscemi-and-turturro-on-the-block",
+          "seconds": 1624,
+          "original": [
+            {
+              "number": 8,
+              "details": "../splitscreen/epeight.html",
+              "credits": "../splitscreen/epeightcredits.html"
+            }
+          ],
+          "segments": "Mr. Pink and Barton Fink · Inside DuArt · Taranteenties"
+        },
+        {
+          "episode": 4,
+          "title": "Meet the Skolnicks, Sisters in Cinema",
+          "url": "https://www.criterionchannel.com/supplements/ZKBrzHX9/split-screen-s2-e4-meet-the-skolnicks-sisters-in-cinema",
+          "seconds": 1662,
+          "original": [
+            {
+              "number": 9,
+              "details": "../splitscreen/epnine.html",
+              "credits": "../splitscreen/epninecredits.html"
+            }
+          ],
+          "segments": "Cinemoids · Donnie Bosnia · Sisters in Cinema"
+        },
+        {
+          "episode": 5,
+          "title": "Enter BLAIR WITCH, HANDS ON A HARDBODY",
+          "url": "https://www.criterionchannel.com/supplements/jIgHYw0G/split-screen-s2-e5-enter-blair-witch-hands-on-a-hardbody",
+          "seconds": 1503,
+          "original": [
+            {
+              "number": 10,
+              "details": "../splitscreen/epten.html",
+              "credits": "../splitscreen/eptencredits.html"
+            }
+          ],
+          "segments": "Sunflower City · Hands on a Hard Body · The Blair Witch Project"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: Wes Anderson",
+          "url": "https://www.criterionchannel.com/supplements/m8mH3Q63/split-screen-projections-wes-anderson",
+          "seconds": 1658,
+          "original": [
+            {
+              "number": 55,
+              "details": "../splitscreen2/contents55.html",
+              "credits": "../splitscreen2/credits55.html"
+            }
+          ],
+          "segments": "Projections - Wes Anderson",
+          "note": "Criterion’s Season Two listing places this interview after Episode 5. Its title does not carry an S2-E6 label.",
+          "display_label": "Season 2 · Projections"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/I4NyTZCv/john-pierson-introduces-split-screen-season-three",
+        "seconds": 477
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The Blair Witch: I Want to Believe",
+          "url": "https://www.criterionchannel.com/supplements/YafyrPP4/split-screen-s3-e1-the-blair-witch-i-want-to-believe",
+          "seconds": 1743,
+          "original": [
+            {
+              "number": 11,
+              "details": "../splitscreen2/contents.html",
+              "credits": "../splitscreen2/credits11.html"
+            }
+          ],
+          "segments": "The Giant Killer · Pocket Cinema · The Lady in Red · Blair Witch Part II"
+        },
+        {
+          "episode": 2,
+          "title": "John Wayne’s Hairpiece",
+          "url": "https://www.criterionchannel.com/supplements/V4IaPazh/split-screen-s3-e2-john-wayne-s-hairpiece",
+          "seconds": 1713,
+          "original": [
+            {
+              "number": 12,
+              "details": "../splitscreen2/contents12.html",
+              "credits": "../splitscreen2/credits12.html"
+            }
+          ],
+          "segments": "Washington DC · Marathon · John Wayne’s Hairpiece · IFFCON · EZ Rider"
+        },
+        {
+          "episode": 3,
+          "title": "Grizzly Walks, Orson Talks",
+          "url": "https://www.criterionchannel.com/supplements/GMevToMR/split-screen-s3-e3-grizzly-walks-orson-talks",
+          "seconds": 1687,
+          "original": [
+            {
+              "number": 13,
+              "details": "../splitscreen2/contents13.html",
+              "credits": "../splitscreen2/credits13.html"
+            }
+          ],
+          "segments": "Jimi Story · Bootlegger · Project Grizzly · War of the Worlds"
+        },
+        {
+          "episode": 4,
+          "title": "Carl Franklin Breaks it Down",
+          "url": "https://www.criterionchannel.com/supplements/X73kxjZH/split-screen-s3-e4-carl-franklin-breaks-it-down",
+          "seconds": 1644,
+          "original": [
+            {
+              "number": 14,
+              "details": "../splitscreen2/contents14.html",
+              "credits": "../splitscreen2/credits14.html"
+            }
+          ],
+          "segments": "It’s Elementary · Cotton Fields · Carl Franklin · American Breakdown"
+        },
+        {
+          "episode": 5,
+          "title": "THE TIN DRUM: Banned in OK",
+          "url": "https://www.criterionchannel.com/supplements/EJ5OYqbW/split-screen-s3-e5-the-tin-drum-banned-in-ok",
+          "seconds": 1585,
+          "original": [
+            {
+              "number": 15,
+              "details": "../splitscreen2/contents15.html",
+              "credits": "../splitscreen2/credits15.html"
+            }
+          ],
+          "segments": "Reason to Deceive · Dallas Vidfest · Private Eye · Tin Drum"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: David Picker",
+          "url": "https://www.criterionchannel.com/supplements/bAngMF5A/split-screen-s3-e6-projections-david-picker",
+          "seconds": 1729,
+          "original": [
+            {
+              "number": 56,
+              "details": "../splitscreen2/contents56.html",
+              "credits": "../splitscreen2/credits56.html"
+            }
+          ],
+          "segments": "Projections - David Picker"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/hcKH4qCm/john-pierson-introduces-split-screen-season-four",
+        "seconds": 436
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Keep Austin Weird",
+          "url": "https://www.criterionchannel.com/supplements/De56nchZ/split-screen-s4-e1-keep-austin-weird",
+          "seconds": 1710,
+          "original": [
+            {
+              "number": 16,
+              "details": "../splitscreen2/contents16.html",
+              "credits": "../splitscreen2/credits16.html"
+            }
+          ],
+          "segments": "Orson Welles, Not Taco Bells · Gimme Some Larry · Sweet Sweetroll’s Baadasssss Spin · Documation"
+        },
+        {
+          "episode": 2,
+          "title": "The Real Dude Abides",
+          "url": "https://www.criterionchannel.com/supplements/yPRlYhoV/split-screen-s4-e2-the-real-dude-abides",
+          "seconds": 1714,
+          "original": [
+            {
+              "number": 17,
+              "details": "../splitscreen2/contents17.html",
+              "credits": "../splitscreen2/credits17.html"
+            }
+          ],
+          "segments": "Lonesome · Blood Trail · Big Joe · The Real Dude"
+        },
+        {
+          "episode": 3,
+          "title": "All That KC Jazz",
+          "url": "https://www.criterionchannel.com/supplements/qALtJO0q/split-screen-s4-e3-all-that-kc-jazz",
+          "seconds": 1746,
+          "original": [
+            {
+              "number": 18,
+              "details": "../splitscreen2/contents18.html",
+              "credits": "../splitscreen2/credits18.html"
+            }
+          ],
+          "segments": "Return of the Blue Devils · Lost in Spain · The Real Casino · Foxwoods"
+        },
+        {
+          "episode": 4,
+          "title": "Selective Service in Aspen",
+          "url": "https://www.criterionchannel.com/supplements/SjFMgsvI/split-screen-s4-e4-selective-service-in-aspen",
+          "seconds": 1668,
+          "original": [
+            {
+              "number": 19,
+              "details": "../splitscreen2/contents19.html",
+              "credits": "../splitscreen2/credits19.html"
+            }
+          ],
+          "segments": "Selective Service System · Hurricane Teens · Casting Call"
+        },
+        {
+          "episode": 5,
+          "title": "Mr. Moviefone’s Message",
+          "url": "https://www.criterionchannel.com/supplements/KMirGuxo/split-screen-s4-e5-mr-moviefone-s-message",
+          "seconds": 1710,
+          "original": [
+            {
+              "number": 20,
+              "details": "../splitscreen2/contents20.html",
+              "credits": "../splitscreen2/credits20.html"
+            }
+          ],
+          "segments": "Mr MovieFone · Al Milgrom: The Last Crusade · Driver 23 · Cosmic Society"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: David O. Russell",
+          "url": "https://www.criterionchannel.com/supplements/iqtPk2U5/split-screen-s4-e6-projections-david-o-russell",
+          "seconds": 1651,
+          "original": [
+            {
+              "number": 62,
+              "details": "../splitscreen2/contents62.html",
+              "credits": "../splitscreen2/credits62.html"
+            }
+          ],
+          "segments": "Projections - David O. Russell"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/paVG1TGN/john-pierson-introduces-split-screen-season-five",
+        "seconds": 374
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Damon and Norton Play Poker",
+          "url": "https://www.criterionchannel.com/supplements/k6mCFzSZ/split-screen-s5-e1-damon-and-norton-play-poker",
+          "seconds": 1687,
+          "original": [
+            {
+              "number": 21,
+              "details": "../splitscreen2/contents21.html",
+              "credits": "../splitscreen2/credits21.html"
+            }
+          ],
+          "segments": "Rounders in Vegas · Stunts R Us · Crash/Creche · Cattle Drive-In"
+        },
+        {
+          "episode": 2,
+          "title": "Todd Haynes’s Goldmine",
+          "url": "https://www.criterionchannel.com/supplements/mMSUs9s5/split-screen-s5-e2-todd-haynes-s-goldmine",
+          "seconds": 1717,
+          "original": [
+            {
+              "number": 22,
+              "details": "../splitscreen2/contents22.html",
+              "credits": "../splitscreen2/credits22.html"
+            }
+          ],
+          "segments": "Velvet Manifesto · NEA Tapes · Flower Power · Dockers: Changing Pants"
+        },
+        {
+          "episode": 3,
+          "title": "Animal Talent",
+          "url": "https://www.criterionchannel.com/supplements/DZItqZbL/split-screen-s5-e3-animal-talent",
+          "seconds": 1715,
+          "original": [
+            {
+              "number": 23,
+              "details": "../splitscreen2/contents23.html",
+              "credits": "../splitscreen2/credits23.html"
+            }
+          ],
+          "segments": "Sweet Sunshine · Rat Women · Man & Dog · Buy Low, Sell High"
+        },
+        {
+          "episode": 4,
+          "title": "Lars Von Trier is Dogmatic",
+          "url": "https://www.criterionchannel.com/supplements/Qz9X53xS/split-screen-s5-e4-lars-von-trier-is-dogmatic",
+          "seconds": 1711,
+          "original": [
+            {
+              "number": 24,
+              "details": "../splitscreen2/contents24.html",
+              "credits": "../splitscreen2/credits24.html"
+            }
+          ],
+          "segments": "Toy Patient · Making the Waves · Volcano · Indies in Flight"
+        },
+        {
+          "episode": 5,
+          "title": "Crispin Glover’s Syndrome",
+          "url": "https://www.criterionchannel.com/supplements/pZYAKtuz/split-screen-s5-e5-crispin-glover-s-syndrome",
+          "seconds": 1739,
+          "original": [
+            {
+              "number": 25,
+              "details": "../splitscreen2/contents25.html",
+              "credits": "../splitscreen2/credits25.html"
+            }
+          ],
+          "segments": "Crispin Glover: What Is It? · Shiney · Frank Vincent · Trailer Touch-Up"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: Christine Vachon",
+          "url": "https://www.criterionchannel.com/supplements/35ZRUdoT/split-screen-s5-e6-projections-christine-vachon",
+          "seconds": 1709,
+          "original": [
+            {
+              "number": 57,
+              "details": "../splitscreen2/contents57.html",
+              "credits": "../splitscreen2/credits57.html"
+            }
+          ],
+          "segments": "Projections - Christine Vachon"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/zMGsd0Fo/john-pierson-introduces-split-screen-season-six",
+        "seconds": 393
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "From Homicide to Ho Chi Minh",
+          "url": "https://www.criterionchannel.com/supplements/5HPOtBqP/split-screen-s6-e1-from-homicide-to-ho-chi-minh",
+          "seconds": 1619,
+          "original": [
+            {
+              "number": 26,
+              "details": "../splitscreen2/contents26.html",
+              "credits": "../splitscreen2/credits26.html"
+            }
+          ],
+          "segments": "Movie Saves Town · Three Seasons · Homicide is Good · Seven"
+        },
+        {
+          "episode": 2,
+          "title": "Billy Wilder’s Shoes",
+          "url": "https://www.criterionchannel.com/supplements/MuoqmHhP/split-screen-s6-e2-billy-wilder-s-shoes",
+          "seconds": 1700,
+          "original": [
+            {
+              "number": 27,
+              "details": "../splitscreen2/contents27.html",
+              "credits": "../splitscreen2/credits27.html"
+            }
+          ],
+          "segments": "The Shoestore · How'd You Do That? Working With a Deaf Actress · Dennis Woodruff: Cast Me! · Seymore Butts: Filmmaker"
+        },
+        {
+          "episode": 3,
+          "title": "Kuchar Kuts Loose",
+          "url": "https://www.criterionchannel.com/supplements/vSP8qmR1/split-screen-s6-e3-kuchar-kuts-loose",
+          "seconds": 1676,
+          "original": [
+            {
+              "number": 28,
+              "details": "../splitscreen2/contents28.html",
+              "credits": "../splitscreen2/credits28.html"
+            }
+          ],
+          "segments": "Kuchar · Kids · Production 3 · Indie Dogs · Artmark"
+        },
+        {
+          "episode": 4,
+          "title": "Guy Maddin Mystifies",
+          "url": "https://www.criterionchannel.com/supplements/HjGbifrA/split-screen-s6-e4-guy-maddin-mystifies",
+          "seconds": 1720,
+          "original": [
+            {
+              "number": 29,
+              "details": "../splitscreen2/contents29.html",
+              "credits": "../splitscreen2/credits29.html"
+            }
+          ],
+          "segments": "Manitoba Tonight: Guy Maddin · How'd You Do That? Archival FX · Ready, Willing and Able · Jamaica"
+        },
+        {
+          "episode": 5,
+          "title": "Almost Heaven, West Virginia: The Jacob Young Special",
+          "url": "https://www.criterionchannel.com/supplements/xeSTAFr8/split-screen-s6-e5-almost-heaven-west-virginia-the-jacob-young-special",
+          "seconds": 1743,
+          "original": [
+            {
+              "number": 30,
+              "details": "../splitscreen2/contents30.html",
+              "credits": "../splitscreen2/credits30.html"
+            }
+          ],
+          "segments": "The Jacob Young Special"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: Jonas Mekas",
+          "url": "https://www.criterionchannel.com/supplements/P3PCFiuO/split-screen-s6-e6-projections-jonas-mekas",
+          "seconds": 1728,
+          "original": [
+            {
+              "number": 60,
+              "details": "../splitscreen2/contents60.html",
+              "credits": "../splitscreen2/credits60.html"
+            }
+          ],
+          "segments": "Projections - Jonas Mekas"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/0RGy4aC0/john-pierson-introduces-split-screen-season-seven",
+        "seconds": 397
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Run, Jesse Ventura, Run",
+          "url": "https://www.criterionchannel.com/supplements/XK9AD8FM/split-screen-s7-e1-run-jesse-ventura-run",
+          "seconds": 1764,
+          "original": [
+            {
+              "number": 31,
+              "details": "../splitscreen2/contents31.html",
+              "credits": "../splitscreen2/credits31.html"
+            }
+          ],
+          "segments": "Citizen Jesse · AV Geeks · Ugly George vs. Pretty Maggie"
+        },
+        {
+          "episode": 2,
+          "title": "Reverse Speech",
+          "url": "https://www.criterionchannel.com/supplements/x5qXcHoI/split-screen-s7-e2-reverse-speech",
+          "seconds": 1724,
+          "original": [
+            {
+              "number": 32,
+              "details": "../splitscreen2/contents32.html",
+              "credits": "../splitscreen2/credits32.html"
+            }
+          ],
+          "segments": "Reverse Speech · Producing Schlock · From Porn Houses to Art Houses"
+        },
+        {
+          "episode": 3,
+          "title": "Mr. Kinski/Miranda July and Big Miss Moviola",
+          "url": "https://www.criterionchannel.com/supplements/Z066dcKK/split-screen-s7-e3-mr-kinski-miranda-july-and-big-miss-moviola",
+          "seconds": 1702,
+          "original": [
+            {
+              "number": 33,
+              "details": "../splitscreen2/contents33.html",
+              "credits": "../splitscreen2/credits33.html"
+            }
+          ],
+          "segments": "Big Miss Moviola · Please Kill Mr. Kinski · A Fangoria Weekend of Horror"
+        },
+        {
+          "episode": 4,
+          "title": "Thanksgiving Is Not for Turkeys",
+          "url": "https://www.criterionchannel.com/supplements/lhUOsP42/split-screen-s7-e4-thanksgiving-is-not-for-turkeys",
+          "seconds": 1648,
+          "original": [
+            {
+              "number": 34,
+              "details": "../splitscreen2/contents34.html",
+              "credits": "../splitscreen2/credits34.html"
+            }
+          ],
+          "segments": "Young Turkeys · Hair Today, Film Tomorrow · Ring of Steel"
+        },
+        {
+          "episode": 5,
+          "title": "Tommy Lee Meets Bolexbrothers",
+          "url": "https://www.criterionchannel.com/supplements/7TKNmF3S/split-screen-s7-e5-tommy-lee-meets-bolexbrothers",
+          "seconds": 1622,
+          "original": [
+            {
+              "number": 35,
+              "details": "../splitscreen2/contents35.html",
+              "credits": "../splitscreen2/credits35.html"
+            }
+          ],
+          "segments": "bolexbrothers · The Critic · Seth Sells · \"Hamster\""
+        },
+        {
+          "episode": 6,
+          "title": "Projections: Ted Hope and James Schamus",
+          "url": "https://www.criterionchannel.com/supplements/j9f8V0nV/split-screen-s7-e6-projections-ted-hope-and-james-schamus",
+          "seconds": 1733,
+          "original": [
+            {
+              "number": 65,
+              "details": "../splitscreen2/contents65.html",
+              "credits": "../splitscreen2/credits65.html"
+            }
+          ],
+          "segments": "Projections - Ted Hope/James Schamus"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/8Peb4CWi/john-pierson-introduces-split-screen-season-eight",
+        "seconds": 242
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "THE SIMPSONS in Korea",
+          "url": "https://www.criterionchannel.com/supplements/X2Kxe0fz/split-screen-s8-e1-the-simpsons-in-korea",
+          "seconds": 1707,
+          "original": [
+            {
+              "number": 36,
+              "details": "../splitscreen2/contents36.html",
+              "credits": "../splitscreen2/credits36.html"
+            }
+          ],
+          "segments": "Umpire · I Beat Andy Kaufman · Springfield, Korea"
+        },
+        {
+          "episode": 2,
+          "title": "Godzilla Revealed",
+          "url": "https://www.criterionchannel.com/supplements/cskObkGz/split-screen-s8-e2-godzilla-revealed",
+          "seconds": 1766,
+          "original": [
+            {
+              "number": 37,
+              "details": "../splitscreen2/contents37.html",
+              "credits": "../splitscreen2/credits37.html"
+            }
+          ],
+          "segments": "Godzilla · Billy Graham Ministries · Big Shot"
+        },
+        {
+          "episode": 3,
+          "title": "The Fabulous Stains",
+          "url": "https://www.criterionchannel.com/supplements/UPIhGTHr/split-screen-s8-e3-the-fabulous-stains",
+          "seconds": 1694,
+          "original": [
+            {
+              "number": 38,
+              "details": "../splitscreen2/contents38.html",
+              "credits": "../splitscreen2/credits38.html"
+            }
+          ],
+          "segments": "Re-Enact This! · The Fabulous Stains · How to Read a Movie Poster"
+        },
+        {
+          "episode": 4,
+          "title": "Waiting for STAR WARS",
+          "url": "https://www.criterionchannel.com/supplements/F1x8a22R/split-screen-s8-e4-waiting-for-star-wars",
+          "seconds": 1606,
+          "original": [
+            {
+              "number": 39,
+              "details": "../splitscreen2/contents39.html",
+              "credits": "../splitscreen2/credits39.html"
+            }
+          ],
+          "segments": "Red Leader · Keepin' It Real · Tubb in Taos"
+        },
+        {
+          "episode": 5,
+          "title": "Tinseltown and Vaudeville",
+          "url": "https://www.criterionchannel.com/supplements/9kI0Zm2K/split-screen-s8-e5-tinseltown-and-vaudeville",
+          "seconds": 1742,
+          "original": [
+            {
+              "number": 40,
+              "details": "../splitscreen2/contents40.html",
+              "credits": "../splitscreen2/credits40.html"
+            }
+          ],
+          "segments": "Tinseltown · Palm Springs Follies · The Incorrect Video Vault"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: Walter Bernstein",
+          "url": "https://www.criterionchannel.com/supplements/VtpFwQoD/split-screen-s8-e6-projections-walter-bernstein",
+          "seconds": 1735,
+          "original": [
+            {
+              "number": 61,
+              "details": "../splitscreen2/contents61.html",
+              "credits": "../splitscreen2/credits61.html"
+            }
+          ],
+          "segments": "Projections - Walter Bernstein"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/ptrr9zvP/john-pierson-introduces-split-screen-season-nine",
+        "seconds": 266
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Christopher Walken Cooks",
+          "url": "https://www.criterionchannel.com/supplements/P3OrXVXB/split-screen-s9-e1-christopher-walken-cooks",
+          "seconds": 1744,
+          "original": [
+            {
+              "number": 41,
+              "details": "../splitscreen2/contents41.html",
+              "credits": "../splitscreen2/credits41.html"
+            }
+          ],
+          "segments": "Christopher Walken Cooks · The Incredibly Strange Director Who Stopped\nDirecting and Became a Dog-Man Extra · PXL"
+        },
+        {
+          "episode": 2,
+          "title": "Ross McElwee 101",
+          "url": "https://www.criterionchannel.com/supplements/XDagJu9A/split-screen-s9-e2-ross-mcelwee-101",
+          "seconds": 1745,
+          "original": [
+            {
+              "number": 42,
+              "details": "../splitscreen2/contents42.html",
+              "credits": "../splitscreen2/credits42.html"
+            }
+          ],
+          "segments": "Filmmaker Cop · Down the Drain with Blaine · Ross McElwee 101"
+        },
+        {
+          "episode": 3,
+          "title": "Scorsese, Imperioli, and Ventimiglia",
+          "url": "https://www.criterionchannel.com/supplements/Zvda6jNN/split-screen-s9-e3-scorsese-imperioli-and-ventimiglia",
+          "seconds": 1585,
+          "original": [
+            {
+              "number": 43,
+              "details": "../splitscreen2/contents43.html",
+              "credits": "../splitscreen2/credits43.html"
+            }
+          ],
+          "segments": "Waiting for Marty · Lunch Break with Michael & John · Casablanca: New & Improved"
+        },
+        {
+          "episode": 4,
+          "title": "Hangin’ with HOW’S YOUR NEWS?",
+          "url": "https://www.criterionchannel.com/supplements/dbTNxdKq/split-screen-s9-e4-hangin-with-how-s-your-news",
+          "seconds": 1626,
+          "original": [
+            {
+              "number": 44,
+              "details": "../splitscreen2/contents44.html",
+              "credits": "../splitscreen2/credits44.html"
+            }
+          ],
+          "segments": "Inside the Eye of Scorpio Rising · Hangin' With How's Your News"
+        },
+        {
+          "episode": 5,
+          "title": "Cinemaniac",
+          "url": "https://www.criterionchannel.com/supplements/wTPrlvbv/split-screen-s9-e5-cinemaniac",
+          "seconds": 1685,
+          "original": [
+            {
+              "number": 45,
+              "details": "../splitscreen2/contents45.html",
+              "credits": "../splitscreen2/credits45.html"
+            }
+          ],
+          "segments": "Demolition · Movie Madness: The Passion of Jack Angstreich · Fight School"
+        },
+        {
+          "episode": 6,
+          "title": "Projections: Kevin Smith Uncensored",
+          "url": "https://www.criterionchannel.com/supplements/dhFC9wKa/split-screen-s9-e6-projections-kevin-smith-uncensored",
+          "seconds": 3397,
+          "original": [
+            {
+              "number": 49,
+              "details": "../splitscreen2/contents49.html",
+              "credits": "../splitscreen2/credits49.html"
+            },
+            {
+              "number": 50,
+              "details": "../splitscreen2/contents50.html",
+              "credits": "../splitscreen2/credits50.html"
+            }
+          ],
+          "segments": "Kevin Smith Uncensored: This Ain't No Junket · Part 1 / Kevin Smith Uncensored: This Ain't No Junket · Part 2",
+          "note": "One Criterion entry connects to the two original Kevin Smith Uncensored episodes."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "intro": {
+        "url": "https://www.criterionchannel.com/supplements/XjodmE7x/john-pierson-introduces-split-screen-season-ten",
+        "seconds": 267
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Jesus Is in the Mailbox/Atom Egoyan",
+          "url": "https://www.criterionchannel.com/supplements/bPE5oUVl/split-screen-s10-e1-jesus-is-in-the-mailbox-atom-egoyan",
+          "seconds": 1639,
+          "original": [
+            {
+              "number": 46,
+              "details": "../splitscreen2/contents46.html",
+              "credits": "../splitscreen2/credits46.html"
+            }
+          ],
+          "segments": "Manitoba Tonight with Atom Egoyan · Jesus Video Project · Picturing Home"
+        },
+        {
+          "episode": 2,
+          "title": "Field of Feuds",
+          "url": "https://www.criterionchannel.com/supplements/nkUP2XPs/split-screen-s10-e2-field-of-feuds",
+          "seconds": 1683,
+          "original": [
+            {
+              "number": 48,
+              "details": "../splitscreen2/contents48.html",
+              "credits": "../splitscreen2/credits48.html"
+            }
+          ],
+          "segments": "Field of Feuds · The Moth · Ocularis"
+        },
+        {
+          "episode": 3,
+          "title": "The Fiji Stooges",
+          "url": "https://www.criterionchannel.com/supplements/eOhj2I4x/split-screen-s10-e3-the-fiji-stooges",
+          "seconds": 1745,
+          "original": [
+            {
+              "number": 51,
+              "details": "../splitscreen2/contents51.html",
+              "credits": "../splitscreen2/credits51.html"
+            }
+          ],
+          "segments": "The Fiji Stooges · The Lost City"
+        },
+        {
+          "episode": 4,
+          "title": "Animating WAKING LIFE",
+          "url": "https://www.criterionchannel.com/supplements/WzEbtk7t/split-screen-s10-e4-animating-waking-life",
+          "seconds": 1565,
+          "original": [
+            {
+              "number": 52,
+              "details": "../splitscreen2/contents52.html",
+              "credits": "../splitscreen2/credits52.html"
+            }
+          ],
+          "segments": "\"Waking Life\" with Buzz · Alloy in Maui · Multiplex 1 - The Projectionist"
+        },
+        {
+          "episode": 5,
+          "title": "Woodworking with Bill",
+          "url": "https://www.criterionchannel.com/supplements/LbDujRRP/split-screen-s10-e5-woodworking-with-bill",
+          "seconds": 1664,
+          "original": [
+            {
+              "number": 53,
+              "details": "../splitscreen2/contents53.html",
+              "credits": "../splitscreen2/credits53.html"
+            }
+          ],
+          "segments": "Multiplex II - The Manager · Woodworking with Bill · Bikers R People 2 · La Boda"
+        },
+        {
+          "episode": 6,
+          "title": "Focus Group From Hell",
+          "url": "https://www.criterionchannel.com/supplements/PjysW7Ac/split-screen-s10-e6-focus-group-from-hell",
+          "seconds": 1726,
+          "original": [
+            {
+              "number": 54,
+              "details": "../splitscreen2/contents54.html",
+              "credits": "../splitscreen2/credits54.html"
+            }
+          ],
+          "segments": "Video on Vinyl: Then and Now · Focus Group From Hell · Multiplex III - The Staff"
+        },
+        {
+          "episode": 7,
+          "title": "Projections: Buck Henry",
+          "url": "https://www.criterionchannel.com/supplements/fk2HJGBm/split-screen-s10-e7-projections-buck-henry",
+          "seconds": 1724,
+          "original": [
+            {
+              "number": 64,
+              "details": "../splitscreen2/contents64.html",
+              "credits": "../splitscreen2/credits64.html"
+            }
+          ],
+          "segments": "Projections - Buck Henry"
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "title": "SPLIT SCREEN: Series Trailer",
+      "url": "https://www.criterionchannel.com/supplements/0cwkr7E7/split-screen-series-trailer",
+      "seconds": 306
+    },
+    {
+      "title": "SPLIT SCREEN: AMERICAN MOVIE",
+      "url": "https://www.criterionchannel.com/supplements/b2vebYJS/split-screen-american-movie",
+      "seconds": 331
+    },
+    {
+      "title": "SPLIT SCREEN: Spike Lee",
+      "url": "https://www.criterionchannel.com/supplements/2l94BTaC/split-screen-spike-lee",
+      "seconds": 333
+    },
+    {
+      "title": "Split Screen: Direction Man",
+      "url": "https://www.criterionchannel.com/supplements/MKXqXBQT/split-screen-direction-man",
+      "seconds": 370
+    },
+    {
+      "title": "Split Screen: Christopher Walken Cooks",
+      "url": "https://www.criterionchannel.com/supplements/pk6gOFBc/split-screen-christopher-walken-cooks",
+      "seconds": 706
+    },
+    {
+      "title": "Split Screen: The Fiji Stooges",
+      "url": "https://www.criterionchannel.com/supplements/QcFks4PI/split-screen-the-fiji-stooges",
+      "seconds": 592
+    },
+    {
+      "title": "Split Screen: “Selective Service System” Story",
+      "url": "https://www.criterionchannel.com/supplements/QR8tgADX/split-screen-selective-service-system-story",
+      "seconds": 456
+    },
+    {
+      "title": "Split Screen: The Blair Witch Project",
+      "url": "https://www.criterionchannel.com/supplements/3emDkufY/split-screen-the-blair-witch-project",
+      "seconds": 649
+    },
+    {
+      "title": "SPLIT SCREEN: Miranda July’s Big Miss Moviola",
+      "url": "https://www.criterionchannel.com/supplements/FX7IeRH9/split-screen-miranda-july-s-big-miss-moviola",
+      "seconds": 534
+    },
+    {
+      "title": "Criterion Live! SPLIT SCREEN 20th Anniversary, Walter Reade Theater",
+      "url": "https://www.criterionchannel.com/supplements/jam3vhJI/criterion-live-split-screen-20th-anniversary-walter-reade-theater",
+      "seconds": 2881
+    }
+  ],
+  "archive_only": [
+    {
+      "number": 47,
+      "details": "../ep47/index.html",
+      "title": "Banned"
+    },
+    {
+      "number": 59,
+      "details": "../splitscreen2/contents59.html",
+      "credits": "../splitscreen2/credits59.html",
+      "title": "Projections - Juliet Taylor"
+    },
+    {
+      "number": 63,
+      "details": "../splitscreen2/contents63.html",
+      "credits": "../splitscreen2/credits63.html",
+      "title": "Projections - Tod Lippy and John Pierson"
+    },
+    {
+      "number": 66,
+      "details": "../splitscreen2/contents66.html",
+      "credits": "../splitscreen2/credits66.html",
+      "title": "Projections - Stacy Cochran"
+    }
+  ]
+}
